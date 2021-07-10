@@ -1,0 +1,47 @@
+{
+    "sites":[
+        {
+            "site":"",
+            "access": "public",
+            "role": ""
+        },
+        {
+            "site":"login",
+            "access": "public",
+            "role": ""
+        },
+        {
+            "site":"home",
+            "access": "private",
+            "role": "client"
+        },
+        {
+            "site":"updateprofile",
+            "access": "private",
+            "role": "admin"
+        },
+        {
+            "site":"user",
+            "access": "private",
+            "role": "client"
+        },
+        {
+            "site":"admin",
+            "access": "private",
+            "role": "admin"
+        },
+        {
+            "site":"signup",
+            "access": "private",
+            "role": "admin"
+        }
+    ],
+    
+    "default-sites":[
+        {
+            "cliente":"home",
+            "admin": "admin",
+            "loan":"loan"
+        }
+    ]
+}
