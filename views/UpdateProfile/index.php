@@ -145,7 +145,7 @@
                                     <div class="avatar-upload">
                                         <div class="avatar-edit">
                                             <input type="file" id="photo" accept=".png, .jpg, .jpeg" />
-                                            <label for="Photo"></label>
+                                            <label for="photo"></label>
                                         </div>
                                         <div class="avatar-preview">
                                             <div id="imagePreview" style="background-image: url('images/avatar/default.jpg')">
@@ -235,27 +235,28 @@
         </footer>
     </div>
     
-    <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
+
+    <script src="<?php echo constant('URL')?>/assets/js/lib/jquery-3.6.0.js"></script>
+    <script src="<?php echo constant('URL')?>/assets/js/lib/jquery.min.js"></script>
+    <script src="<?php echo constant('URL')?>/assets/js/lib/bootstrap.min.js"></script>
+    <script src="<?php echo constant('URL')?>/assets/js/lib/jquery-2.2.4.min.js"></script>
+    <script src="<?php echo constant('URL')?>/assets/js/lib/popper.min.js"></script>
+    <script src="<?php echo constant('URL')?>/assets/js/lib/jquery.matchHeight-min.js"></script>
     <script src="<?php echo constant('URL')?>/assets/js/main.js"></script>
     <script>
-        jQuery(document).ready(function($) {
-            function readURL(input) {
-                if (input.files && input.files[0]) {
-                    var reader = new FileReader();
-                    reader.onload = function(e) {
-                        $('#imagePreview').css('background-image', 'url('+e.target.result +')');
-                        $('#imagePreview').hide();
-                        $('#imagePreview').fadeIn(650);
-                    }
-                    reader.readAsDataURL(input.files[0]);
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+                    $('#imagePreview').hide();
+                    $('#imagePreview').fadeIn(650);
                 }
+                reader.readAsDataURL(input.files[0]);
             }
-            $("#photo").change(function() {
-                readURL(this);
-            });
+        }
+        $("#photo").change(function() {
+            readURL(this);
         });
     </script>
 </body>

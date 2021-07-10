@@ -1,0 +1,168 @@
+<?php
+
+require_once 'class/SESSION.php';
+require_once 'database/USER.php';
+
+class SessionController extends Controller
+{
+    private $userSession;
+    private $username;
+    private $userId;
+
+    private $session;
+    private $sites;
+    private $defaultSites;
+
+    private $user;
+
+    function __construct()
+    {
+        parent::__construct();
+        $this->init();
+    }
+
+    private function init()
+    {
+        $this->session = new SESSION();
+
+        $json = $this->getJSONFileConfig();
+
+        $this->sites = $json['sites'];
+        $this->defaultSites = $json['default-sites'];
+        $this->validateSession();
+    }
+
+    private function getJSONFileConfig()
+    {
+        return json_decode(
+            file_get_contents('config/access.json'),
+            true);
+    }
+
+    public function ValidateSession()
+    {
+        if($this->existsSession())
+        {
+            $role = $this->getUserSessionData()->ROLE;
+
+            if($this->isPublic())
+            {
+                $this->redirectDefaultSiteByRole($role);
+            }
+            else
+            {
+                if($this->isAuthorized($role))
+                {
+
+                }
+                else
+                {
+                    $this->redirectDefaultSiteByRole($role);
+                }
+            }
+        }
+        else
+        {
+            if($this->isPublic())
+            {
+
+            }
+            else
+            {
+                header('location: ' . constant('URL') . '');
+            }
+        }
+    }
+
+    private function existsSession()
+    {
+        if(!$this->session->Exists()) return false;
+        if($this->session->getCurrentUser() == NULL) return false;
+
+        $userid = $this->session->getCurrentUser();
+        
+        if($userid)
+            return true;
+        else
+            return false;
+    }
+
+    function getUserSessionData()
+    {
+        $id = $this->session->GetCurrentUser();
+        $this->user = new USER();
+        $this->user->Get($id);
+        return $this->user;
+    }
+
+    private function isPublic()
+    {
+        $currentURL = $this->getCurrentPage();
+        $currentURL = preg_replace( "/\?.*/", "", $currentURL);
+
+        for($i = 0; $i < sizeof($this->sites); $i++)
+            if($currentURL === $this->sites[$i]['site'] && $this->sites[$i]['access'] === 'public')
+                return true;
+        
+        return false;
+    }
+
+    private function getCurrentPage()
+    {
+        $Link = trim($_SERVER['REQUEST_URI']);
+        $url = explode('/', $Link);
+        return $url[2];
+    }
+
+    private function redirectDefaultSiteByRole($role)
+    {
+        $url = '';
+
+        for($i = 0; $i < sizeof($this->sites); $i++)
+            if($this->sites[$i]['role'] == $role)
+            {
+                $url = '/' . $this->sites[$i]['site'];
+                break;
+            }
+
+        header('location:' . constant('URL') . $url);
+    }
+
+    private function isAuthorized($role)
+    {
+        $currentURL = $this->getCurrentPage();
+        $currentURL = preg_replace('/\?.*/', "", $currentURL);
+
+        for($i = 0; $i < sizeof($this->sites); $i++)
+            if($currentURL == $this->sites[$i]['site'] && $this->sites[$i]['role'] == $role)
+                return true;
+        
+        return false;
+    }
+
+    public function AuthorizeAccess($role)
+    {
+        switch($role)
+        {
+            case 'user':
+                $this->redirect($this->defaultSites['user'], []);
+                break;
+            case 'admin':
+                $this->redirect($this->defaultSites['admin'], []);
+                break;
+        }
+    }
+
+    public function Initialize($user)
+    {
+        $this->session->setCurrentUser($user->ID);
+        $this->AuthorizeAccess($user->ROLE);
+    }
+
+    public function Logout()
+    {
+        $this->session->CloseSession();
+    }
+}
+
+?>
