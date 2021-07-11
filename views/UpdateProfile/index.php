@@ -28,10 +28,10 @@ require_once "views/Shared/Layout.php";
                                 <div class="form-group">
                                     <label>Cédula</label>
                                     <div class="input-group">
-                                        <input type="text" disabled class="form-control" placeholder="999-999999-9999A" pattern="^[0-9]{3}-[0-9]{6}-[0-9]{4}[a-zA-Z]{1}$" name="identify" id="identify">
+                                        <input type="text" <?php if($this->data['verified']) echo 'disabled'?> class="form-control" placeholder="999-999999-9999A" pattern="^[0-9]{3}-[0-9]{6}-[0-9]{4}[a-zA-Z]{1}$" name="identify" id="identify">
                                         <div class="input-group-btn">
-                                            <div class="btn btn-sm btn-outline-secondary">
-                                                <input type="file" class="file" name="photo_identify" id="photo_identify" accept=".png, .jpg, .jpeg">
+                                            <div class="btn btn-sm btn-outline-secondary <?php if($this->data['verified']) echo 'disabled'?>">
+                                                <input type="file" <?php if($this->data['verified']) echo 'disabled'?> class="file" name="photo_identify" id="photo_identify" accept=".png, .jpg, .jpeg">
                                                 <label for="photo_identify">Subir foto</label>    
                                             </div>
                                         </div>

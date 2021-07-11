@@ -23,9 +23,8 @@ class UpdateProfileController extends SessionController
             "second_name" => $this->user->SECOND_NAME,
             "first_lastname" => $this->user->FIRST_LASTNAME,
             "second_lastname" => $this->user->SECOND_LASTNAME,
-            "verify" => $this->user->VERIFIED
+            "verified" => $this->user->VERIFIED
         ]);
-        error_log($this->user->VERIFIED);
     }
 
     function UpdateUser()
@@ -66,11 +65,13 @@ class UpdateProfileController extends SessionController
                 
             if(isset($_FILES['photo_identify']) && $_FILES['photo_identify']['name'] != NULL)
             {
+                
                 $temp_photo = $this->user->IDENTIFICATION_PHOTO;
+                error_log('temp -> ' . $temp_photo);
                 $this->user->IDENTIFICATION_PHOTO = $this->setPhoto($_FILES['photo_identify'], "images/identification/");
-
+                error_log('new -> ' . $this->user->IDENTIFICATION_PHOTO);
                 if($temp_photo != $this->user->IDENTIFICATION_PHOTO && $temp_photo != NULL)
-                    error_log("Borrando imagen: " . $this->user->IDENTIFICATION_PHOTO . ': '. unlink('images/identification/' . $this->user->IDENTIFICATION_PHOTO) ? 'Borrado' : 'No se ha podido borrar');
+                    error_log("Borrando imagen: " . $this->user->IDENTIFICATION_PHOTO . ': '. unlink('images/identification/' . $temp_photo) ? 'Borrado' : 'No se ha podido borrar');
             }
 
             $this->user->USERNAME = $username;
@@ -81,7 +82,7 @@ class UpdateProfileController extends SessionController
             $this->user->FIRST_LASTNAME = $first_lastname;
             $this->user->SECOND_LASTNAME = $second_lastname;
             $this->user->USER_UPDATE = $this->user->USERNAME;
-            $this->user->DATE_UPDATE = Date('Ymdgi');
+            $this->user->DATE_UPDATE = Date('dmY');
 
             if($this->user->Exists($this->user->ID))
             {

@@ -374,7 +374,6 @@ class USER extends Model implements IModel
 		$this->USER_UPDATE = $data['USER_UPDATE'];
 		$this->DATE_UPDATE = $data['DATE_UPDATE'];
 		$this->setVERIFIED($data['VERIFIED']);
-	}   
-                
+	}           
 }
 ?>

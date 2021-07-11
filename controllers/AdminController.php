@@ -31,13 +31,14 @@ class AdminController extends SessionController
                 $html = $html . '<button type="button" disabled class="btn btn-outline-success btn-sm">Verificado</button>';
 
             else
-                $html = $html . '<button type="button" disabled class="btn btn-outline-danger btn-sm">No verificado</button>';
+                $html = $html . '<button type="button" class="btn btn-outline-info btn-sm" data-toggle="modal" data-target="#modalUser" id="btnVerify_'.$item->ID.'">Verificar</button>';
 
-            $html = $html .'</span> </td> </tr>';   
+            $html = $html .'</span> </td> </tr>';
         }
         
         $this->view->render('Home/admin',[
-            'users' => $html,
+            'tblUsers' => $html,
+            'users' => json_encode($this->model->GetAllArray()),
             'photo' => $this->getUserSessionData()->PHOTO
         ]);
 
