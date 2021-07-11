@@ -3,37 +3,37 @@
         {
             "site":"",
             "access": "public",
-            "role": ""
+            "role": [""]
         },
         {
             "site":"login",
             "access": "public",
-            "role": ""
+            "role": [""]
         },
         {
             "site":"home",
             "access": "private",
-            "role": "client"
+            "role": ["client"]
         },
         {
             "site":"updateprofile",
             "access": "private",
-            "role": "admin"
-        },
-        {
-            "site":"user",
-            "access": "private",
-            "role": "client"
-        },
-        {
-            "site":"admin",
-            "access": "private",
-            "role": "admin"
+            "role": ["client","loan","admin"]
         },
         {
             "site":"signup",
             "access": "private",
-            "role": "admin"
+            "role": ["admin"]
+        },
+        {
+            "site":"home",
+            "access": "private",
+            "role": ["client"]
+        },
+        {
+            "site":"admin",
+            "access": "private",
+            "role": ["admin"]
         }
     ],
     
@@ -41,7 +41,7 @@
         {
             "cliente":"home",
             "admin": "admin",
-            "loan":"loan"
+            "loan":"home"
         }
     ]
 }

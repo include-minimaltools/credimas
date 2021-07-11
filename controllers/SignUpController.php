@@ -45,7 +45,7 @@ class SignUpController extends SessionController
 
             $user->USERNAME = $username;
             $user->PASSWORD = $password;
-            $user->ROLE = 'user';
+            $user->ROLE = 'client';
             $user->PHONE = $phone;
             $user->ADDRESS = $address;
             $user->FIRST_NAME = $first_name;
@@ -57,7 +57,7 @@ class SignUpController extends SessionController
             $user->VERIFIED = false;
 
 
-            if($user->Exists($username))
+            if($user->ExistsUsername($username))
                 $this->Redirect('signup', ['error' => ErrorMessage::ERROR_SIGNUP_NEWUSER_EXIST]);
             else if ($user->Save())
                 $this->Redirect('signup', ['success' => SuccessMessage::SUCCES_SIGNUP_NEWUSER]);

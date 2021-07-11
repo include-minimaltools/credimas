@@ -1,3 +1,4 @@
+<?php if($this->data['photo'] == '') $this->data['photo'] = 'default.jpg';?>
 <!doctype html>
 <html class="no-js" lang="">
 <head>
@@ -25,6 +26,12 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
     
 </head>
+
+<script src="<?php echo constant('URL')?>/assets/js/lib/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
 
 <body>
     <!-- Left Panel -->
@@ -104,7 +111,7 @@
                         </ul>
                     </li>
                 </ul>
-            </div><!-- /.navbar-collapse -->
+            </div>
         </nav>
     </aside>
     <!-- /#left-panel -->
@@ -119,18 +126,23 @@
             </div>
             <div class="top-right">
                 <div class="header-menu">
-                    <div class="user-area dropdown float-right">
+                    <div class="user-area dropdown float-right" style="padding-top:2px;">
                         <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="user-avatar rounded-circle" src="<?php echo constant('URL')?>/Images/admin.jpg" alt="User Avatar">
+                            <!-- <div class="user-avatar rounded-circle" style="background-image: url('<php echo constant('URL')?>/images/avatar/default.jpg');"></div> -->
+                            <!-- <img class="user-avatar rounded-circle" src="<?php echo constant('URL')?>/images/avatar/default.jpg" alt="User Avatar" id="profile_photo"> -->
+                        <div class="user-profile">
+                            <div id="profile_photo" style="background-image: url('images/users/<?php echo $this->data['photo'];?>')"></div>
+                        </div>
                         </a>
                         <div class="user-menu dropdown-menu">
-                            <a class="nav-link" href="#"><i class="fa fa- user"></i>Mi perfil</a>
-                            <a class="nav-link" href="#"><i class="fa fa- user"></i>Notificaciones<span class="count">13</span></a>
-                            <a class="nav-link" href="<?php echo constant('URL') ?>/Logout"><i class="fa fa-power -off"></i>Cerrar Sesion</a>
+                            <a class="nav-link" href="<?php echo constant('URL')?>/updateprofile"><i class="fa fa- user"></i>Mi perfil</a>
+                            <!-- <a class="nav-link" href="<?php echo constant('URL')?>/updateprofile"><i class="fa fa- user"></i>Notificaciones<span class="count">13</span></a> -->
+                            <a class="nav-link" href="<?php echo constant('URL')?>/Logout"><i class="fa fa-power -off"></i>Cerrar Sesion</a>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
+
         <!-- /#header -->
         <div class="content">

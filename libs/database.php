@@ -14,8 +14,6 @@ class Database
         $this->user = constant('USER');
         $this->password = constant('PASSWORD');
         $this->charset = constant('CHARSET');
-
-        error_log("Database::construct -> host: " . $this->host . " | database:" . $this->database . " | user:" . $this->user . " | password:" . $this->password . " | charset: " . $this->charset);
     }
 
     public function Connect()

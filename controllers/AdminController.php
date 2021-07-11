@@ -37,7 +37,8 @@ class AdminController extends SessionController
         }
         
         $this->view->render('Home/admin',[
-            'users' => $html
+            'users' => $html,
+            'photo' => $this->getUserSessionData()->PHOTO
         ]);
 
         return $html;

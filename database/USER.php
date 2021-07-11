@@ -16,6 +16,7 @@ class USER extends Model implements IModel
 	private $FIRST_LASTNAME;
 	private $SECOND_LASTNAME;
 	private $IDENTIFICATION;
+	private $IDENTIFICATION_PHOTO;
 	private $USER_CREATE;
 	private $DATE_CREATE;
 	private $USER_UPDATE;
@@ -36,6 +37,7 @@ class USER extends Model implements IModel
 	private function getFIRST_LASTNAME() { return $this->FIRST_LASTNAME; }
 	private function getSECOND_LASTNAME() { return $this->SECOND_LASTNAME; }
 	private function getIDENTIFICATION() { return $this->IDENTIFICATION; }
+	private function getIDENTIFICATION_PHOTO() { return $this->IDENTIFICATION_PHOTO; }
 	private function getUSER_CREATE() { return $this->USER_CREATE; }
 	private function getDATE_CREATE() { return $this->DATE_CREATE; }
 	private function getUSER_UPDATE() { return $this->USER_UPDATE; }
@@ -55,6 +57,7 @@ class USER extends Model implements IModel
 	private function setFIRST_LASTNAME($FIRST_LASTNAME) { $this->FIRST_LASTNAME = $FIRST_LASTNAME; }
 	private function setSECOND_LASTNAME($SECOND_LASTNAME) { $this->SECOND_LASTNAME = $SECOND_LASTNAME; }
 	private function setIDENTIFICATION($IDENTIFICATION) { $this->IDENTIFICATION = $IDENTIFICATION; }
+	private function setIDENTIFICATION_PHOTO($IDENTIFICATION_PHOTO) { $this->IDENTIFICATION_PHOTO = $IDENTIFICATION_PHOTO; }
 	private function setUSER_CREATE($USER_CREATE) { $this->USER_CREATE = $USER_CREATE; }
 	private function setDATE_CREATE($DATE_CREATE) { $this->DATE_CREATE = $DATE_CREATE; }
 	private function setUSER_UPDATE($USER_UPDATE) { $this->USER_UPDATE = $USER_UPDATE; }
@@ -77,22 +80,6 @@ class USER extends Model implements IModel
 	public function __construct()
 	{
 		parent::__construct();
-		$this->ID = '';
-		$this->USERNAME = '';
-		$this->PASSWORD = '';
-		$this->ROLE = '';
-		$this->PHOTO = '';
-		$this->ADDRESS = '';
-		$this->PHONE = '';
-		$this->FIRST_NAME = '';
-		$this->SECOND_NAME = '';
-		$this->FIRST_LASTNAME = '';
-		$this->SECOND_LASTNAME = '';
-		$this->IDENTIFICATION = '';
-		$this->USER_CREATE = '';
-		$this->DATE_CREATE = '';
-		$this->USER_UPDATE = '';
-		$this->DATE_UPDATE = '';
 		$this->VERIFIED = false;
 	}
 
@@ -101,7 +88,26 @@ class USER extends Model implements IModel
 		return password_hash($password, PASSWORD_DEFAULT, ['cost' => 5]);
 	}
 
-	public function Exists($username)
+	public function Exists($id)
+	{
+		try
+		{
+			error_log('USER::Exist('.$id.')');
+			$query = $this->prepare('SELECT * FROM USERS WHERE ID = :ID');
+			$query->execute(['ID' => $id]);
+
+			error_log('USER::Exist() -> rowCount'.$query->rowCount());
+
+			return ($query->rowCount() != 0);
+		}
+		catch (PDOException $ex)
+		{
+            error_log('USER::Exists->PDOException: '. $ex);
+            return false;
+        }
+	}
+
+	public function ExistsUsername($username)
 	{
 		try
 		{
@@ -138,8 +144,8 @@ class USER extends Model implements IModel
     {
         try
         {
-            $query = $this->prepare('INSERT INTO USERS(USERNAME,  PASSWORD,  ROLE,  PHOTO,  ADDRESS,  PHONE,  FIRST_NAME,  SECOND_NAME,  FIRST_LASTNAME,  SECOND_LASTNAME,  IDENTIFICATION,  USER_CREATE,  DATE_CREATE,  USER_UPDATE,  DATE_UPDATE,  VERIFIED)
-            VALUES(:USERNAME, :PASSWORD, :ROLE, :PHOTO, :ADDRESS, :PHONE, :FIRST_NAME, :SECOND_NAME, :FIRST_LASTNAME, :SECOND_LASTNAME, :IDENTIFICATION, :USER_CREATE, :DATE_CREATE, :USER_UPDATE, :DATE_UPDATE, :VERIFIED)');
+            $query = $this->prepare('INSERT INTO USERS(USERNAME,  PASSWORD,  ROLE,  PHOTO,  ADDRESS,  PHONE,  FIRST_NAME,  SECOND_NAME,  FIRST_LASTNAME,  SECOND_LASTNAME,  IDENTIFICATION, IDENTIFICATION_PHOTO, USER_CREATE,  DATE_CREATE,  USER_UPDATE,  DATE_UPDATE,  VERIFIED)
+            VALUES(:USERNAME, :PASSWORD, :ROLE, :PHOTO, :ADDRESS, :PHONE, :FIRST_NAME, :SECOND_NAME, :FIRST_LASTNAME, :SECOND_LASTNAME, :IDENTIFICATION, :IDENTIFICATION_PHOTO,:USER_CREATE, :DATE_CREATE, :USER_UPDATE, :DATE_UPDATE, :VERIFIED)');
 			$query->execute([
 				'USERNAME' => $this->USERNAME,
 				'PASSWORD' => $this->PASSWORD,
@@ -152,6 +158,7 @@ class USER extends Model implements IModel
 				'FIRST_LASTNAME' => $this->FIRST_LASTNAME,
 				'SECOND_LASTNAME' => $this->SECOND_LASTNAME,
 				'IDENTIFICATION' => $this->IDENTIFICATION,
+				'IDENTIFICATION_PHOTO' => $this->IDENTIFICATION_PHOTO,
 				'USER_CREATE' => $this->USER_CREATE,
 				'DATE_CREATE' => $this->DATE_CREATE,
 				'USER_UPDATE' => $this->USER_UPDATE,
@@ -191,6 +198,7 @@ class USER extends Model implements IModel
 				$item->FIRST_LASTNAME = $entidad['FIRST_LASTNAME'];
 				$item->SECOND_LASTNAME = $entidad['SECOND_LASTNAME'];
 				$item->IDENTIFICATION = $entidad['IDENTIFICATION'];
+				$item->IDENTIFICATION_PHOTO = $entidad['IDENTIFICATION_PHOTO'];
 				$item->USER_CREATE = $entidad['USER_CREATE'];
 				$item->DATE_CREATE = $entidad['DATE_CREATE'];
 				$item->USER_UPDATE = $entidad['USER_UPDATE'];
@@ -235,6 +243,7 @@ class USER extends Model implements IModel
 				$item->FIRST_LASTNAME = $entidad['FIRST_LASTNAME'];
 				$item->SECOND_LASTNAME = $entidad['SECOND_LASTNAME'];
 				$item->IDENTIFICATION = $entidad['IDENTIFICATION'];
+				$item->IDENTIFICATION_PHOTO = $entidad['IDENTIFICATION_PHOTO'];
 				$item->USER_CREATE = $entidad['USER_CREATE'];
 				$item->DATE_CREATE = $entidad['DATE_CREATE'];
 				$item->USER_UPDATE = $entidad['USER_UPDATE'];
@@ -275,6 +284,7 @@ class USER extends Model implements IModel
 			$this->FIRST_LASTNAME = $users['FIRST_LASTNAME'];
 			$this->SECOND_LASTNAME = $users['SECOND_LASTNAME'];
 			$this->IDENTIFICATION = $users['IDENTIFICATION'];
+			$this->IDENTIFICATION_PHOTO = $users['IDENTIFICATION_PHOTO'];
 			$this->USER_CREATE = $users['USER_CREATE'];
 			$this->DATE_CREATE = $users['DATE_CREATE'];
 			$this->USER_UPDATE = $users['USER_UPDATE'];
@@ -313,8 +323,9 @@ class USER extends Model implements IModel
 	{
 		try
 		{
-			$query = $this->prepare('UPDATE USERS SET USERNAME = :USERNAME, PASSWORD = :PASSWORD, ROLE = :ROLE, PHOTO = :PHOTO, ADDRESS = :ADDRESS, PHONE = :PHONE, FIRST_NAME = :FIRST_NAME, SECOND_NAME = :SECOND_NAME, FIRST_LASTNAME = :FIRST_LASTNAME, SECOND_LASTNAME = :SECOND_LASTNAME, IDENTIFICATION = :IDENTIFICATION, USER_CREATE = :USER_CREATE, DATE_CREATE = :DATE_CREATE, USER_UPDATE = :USER_UPDATE, DATE_UPDATE = :DATE_UPDATE, VERIFIED = :VERIFIED WHERE ID = :ID');
+			$query = $this->prepare('UPDATE USERS SET USERNAME = :USERNAME, PASSWORD = :PASSWORD, ROLE = :ROLE, PHOTO = :PHOTO, ADDRESS = :ADDRESS, PHONE = :PHONE, FIRST_NAME = :FIRST_NAME, SECOND_NAME = :SECOND_NAME, FIRST_LASTNAME = :FIRST_LASTNAME, SECOND_LASTNAME = :SECOND_LASTNAME, IDENTIFICATION = :IDENTIFICATION, IDENTIFICATION_PHOTO = :IDENTIFICATION_PHOTO, USER_CREATE = :USER_CREATE, DATE_CREATE = :DATE_CREATE, USER_UPDATE = :USER_UPDATE, DATE_UPDATE = :DATE_UPDATE, VERIFIED = :VERIFIED WHERE ID = :ID');
 			$query->execute([
+				'ID' => $this->ID,
 				'USERNAME' => $this->USERNAME,
 				'PASSWORD' => $this->PASSWORD,
 				'ROLE' => $this->ROLE,
@@ -326,6 +337,7 @@ class USER extends Model implements IModel
 				'FIRST_LASTNAME' => $this->FIRST_LASTNAME,
 				'SECOND_LASTNAME' => $this->SECOND_LASTNAME,
 				'IDENTIFICATION' => $this->IDENTIFICATION,
+				'IDENTIFICATION_PHOTO' => $this->IDENTIFICATION_PHOTO,
 				'USER_CREATE' => $this->USER_CREATE,
 				'DATE_CREATE' => $this->DATE_CREATE,
 				'USER_UPDATE' => $this->USER_UPDATE,
@@ -356,6 +368,7 @@ class USER extends Model implements IModel
 		$this->FIRST_LASTNAME = $data['FIRST_LASTNAME'];
 		$this->SECOND_LASTNAME = $data['SECOND_LASTNAME'];
 		$this->IDENTIFICATION = $data['IDENTIFICATION'];
+		$this->IDENTIFICATION_PHOTO = $data['IDENTIFICATION_PHOTO'];
 		$this->USER_CREATE = $data['USER_CREATE'];
 		$this->DATE_CREATE = $data['DATE_CREATE'];
 		$this->USER_UPDATE = $data['USER_UPDATE'];

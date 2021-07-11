@@ -53,7 +53,7 @@ class SessionController extends Controller
             {
                 if($this->isAuthorized($role))
                 {
-
+                    
                 }
                 else
                 {
@@ -100,9 +100,13 @@ class SessionController extends Controller
         $currentURL = $this->getCurrentPage();
         $currentURL = preg_replace( "/\?.*/", "", $currentURL);
 
-        for($i = 0; $i < sizeof($this->sites); $i++)
-            if($currentURL === $this->sites[$i]['site'] && $this->sites[$i]['access'] === 'public')
+        foreach ($this->sites as $key => $site) 
+            if($currentURL === $site['site'] && $site['access'] == 'public') 
                 return true;
+
+        /* for($i = 0; $i < sizeof($this->sites); $i++)
+            if($currentURL === $this->sites[$i]['site'] && $this->sites[$i]['access'] === 'public')
+                return true; */
         
         return false;
     }
@@ -118,12 +122,22 @@ class SessionController extends Controller
     {
         $url = '';
 
-        for($i = 0; $i < sizeof($this->sites); $i++)
-            if($this->sites[$i]['role'] == $role)
-            {
-                $url = '/' . $this->sites[$i]['site'];
-                break;
+        foreach ($this->sites as $key => $site) 
+        {
+            foreach ($site['role'] as $key => $roleAvailable) {
+                if($roleAvailable == $role)
+                {
+                    $url = '/' . $site['site'];
+                    break;    
+                }
             }
+        }
+        // for($i = 0; $i < sizeof($this->sites); $i++)
+        //     if($this->sites[$i]['role'] == $role)
+        //     {
+        //         $url = '/' . $this->sites[$i]['site'];
+        //         break;
+        //     }
 
         header('location:' . constant('URL') . $url);
     }
@@ -133,24 +147,22 @@ class SessionController extends Controller
         $currentURL = $this->getCurrentPage();
         $currentURL = preg_replace('/\?.*/', "", $currentURL);
 
-        for($i = 0; $i < sizeof($this->sites); $i++)
-            if($currentURL == $this->sites[$i]['site'] && $this->sites[$i]['role'] == $role)
-                return true;
+        foreach ($this->sites as $key => $site) 
+        {
+            if($site['site'] == $currentURL)
+                foreach ($site['role'] as $key => $roleAvailable) {
+                    if($role == $roleAvailable)
+                        return true;
+                }
+            
+        }
         
         return false;
     }
 
     public function AuthorizeAccess($role)
     {
-        switch($role)
-        {
-            case 'user':
-                $this->redirect($this->defaultSites['user'], []);
-                break;
-            case 'admin':
-                $this->redirect($this->defaultSites['admin'], []);
-                break;
-        }
+        $this->redirect($this->defaultSites[$role], []);
     }
 
     public function Initialize($user)

@@ -23,7 +23,7 @@ class Controller
         foreach($parameters as $parameter)
             if(!isset($_POST[$parameter]))
             {
-                error_log('Controller::ExistPOST -> No existe el parametro ' . $parameter);
+                // error_log('Controller::ExistPOST -> No existe el parametro ' . $parameter);
                 return false;
             }
         return true;
