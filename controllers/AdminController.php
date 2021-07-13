@@ -24,16 +24,17 @@ class AdminController extends SessionController
                 <td> <span class="Nombre">'. $item->SECOND_NAME .'</span> </td>
                 <td> <span class="Apellido">'. $item->FIRST_LASTNAME .'</span> </td>
                 <td> <span class="Apellido">'. $item->SECOND_LASTNAME .'</span> </td>
-                <td> <span class="Rol">'. $item->ROLE .'</span> </td>
-                <td> <span class="Verificado">';
+                <td> <span class="Rol">'. $item->ROLE .'</span> </td>';
                 
             if($item->VERIFIED)    
-                $html = $html . '<button type="button" disabled class="btn btn-outline-success btn-sm">Verificado</button>';
+                $html = $html . '<td> <span class="Verificado"> <button type="button" disabled class="btn btn-outline-success btn-sm">Verificado</button> </span> </td>
+                <td> <span class="Acción"> <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalUser" id="btnCancel_'.$item->ID.'">Anular</button> </span> </td>';
 
             else
-                $html = $html . '<button type="button" class="btn btn-outline-info btn-sm" data-toggle="modal" data-target="#modalUser" id="btnVerify_'.$item->ID.'">Verificar</button>';
+                $html = $html . '<td> <span class="Verificado"> <button type="button" disabled class="btn btn-outline-danger btn-sm">No verificado</button> </span> </td>
+                <td> <span class="Acción"> <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modalUser" id="btnVerify_'.$item->ID.'">Verificar</button> </span> </td>';
 
-            $html = $html .'</span> </td> </tr>';
+            $html = $html .'</tr>';
         }
         
         $this->view->render('Home/admin',[
@@ -41,8 +42,24 @@ class AdminController extends SessionController
             'users' => json_encode($this->model->GetAllArray()),
             'photo' => $this->getUserSessionData()->PHOTO
         ]);
-
         return $html;
+    }
+
+    function Verificate()
+    {
+        if(!$this->ExistPOST("id"))
+            return error_log('No existe post');
+        
+
+        $id = $this->POST('id');
+        
+        $user = $this->model->GetById($id);
+
+        $user->VERIFIED = $user->VERIFIED ? false : true;
+
+        $user->Update();
+
+        $this->Redirect('admin',[]);
     }
 }
 ?>

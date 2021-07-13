@@ -1,12 +1,9 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<html class="no-js" lang="">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ela Admin - HTML5 Admin Template</title>
+    <title>Credimas</title>
     <meta name="description" content="Ela Admin - HTML5 Admin Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -27,7 +24,6 @@
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
 </head>
 <body class="bg-dark">
-
     <div class="sufee-login d-flex align-content-center flex-wrap">
         <div class="container">
             <div class="login-content">
@@ -37,7 +33,10 @@
                     </a>
                 </div>
                 <div class="login-form">
-                    <h1>Inicio Sesión</h1>
+                    <div class="text-center">
+                        <h1>Inicio Sesión</h1>
+                    </div>
+                    
                     <form action="<?php echo constant('URL');?>/Login/Authenticate" method="POST">    
                         <div class="form-group">
                             <label>Usuario</label>
@@ -52,6 +51,9 @@
                     <div class="color-red">
                         <p><?php $this->showMessages(); ?></p>
                     </div>
+                    <div class="register-link m-t-15 text-center">
+                            <p>¿No tienes una cuenta? Registrate <a href="<?php echo constant('URL') . '/signup'?>">aquí</a></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -62,6 +64,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
     <script src="assets/js/main.js"></script>
-
 </body>
 </html>

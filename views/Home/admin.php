@@ -31,6 +31,7 @@ include 'Views/Shared/Layout.php'
                                     <th scope="col" colspan="2">Apellido</th>
                                     <th scope="col">Rol</th>
                                     <th scope="col">Estado</th>
+                                    <th scope="col">Acción</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -53,7 +54,7 @@ include 'Views/Shared/Layout.php'
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-            </div>
+            </div>            
             <div class="modal-body">
                 <div class="avatar-upload">
                     <div class="avatar-preview">
@@ -120,17 +121,35 @@ include 'Views/Shared/Layout.php'
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-primary">Verificar</button>
+                <form action="<?php echo constant('URL');?>/admin/verificate" method="POST">
+                    <input hidden id="id" name="id"/>
+                    <button type="submit" id="Submit"></button>
+                </form>        
             </div>
+            
         </div>
     </div>
 </div>
 
 <script>
     $(function () {
+        var users = <?php echo $users; ?>;
+
         $(document).on('click', 'td button[id*="btnVerify_"]', function (e) { 
+            $('#Submit').attr('class','btn btn-primary');
+            $('#Submit').html("Verificar");
+            LoadData(e);
+        });
+
+        $(document).on('click', 'td button[id*="btnCancel_"]', function (e) { 
+            $('#Submit').attr('class','btn btn-danger');
+            $('#Submit').html("Anular");
+            LoadData(e);
+        });
+
+        function LoadData(e)
+        {
             var id = $(e.target).attr('id').split('_')[1];
-            var users = <?php echo $users; ?>;
             var user = users.find(x => x.ID == id);
             
             if(user.PHOTO != null && user.PHOTO != "")
@@ -143,6 +162,7 @@ include 'Views/Shared/Layout.php'
             else
                 $('#documentPreview').removeAttr('src');
 
+            $('#id').val(user.ID);
             $('#username').val(user.USERNAME);
             $('#identification').val(user.IDENTIFICATION);
             $('#phone').val(user.PHONE);
@@ -151,9 +171,8 @@ include 'Views/Shared/Layout.php'
             $('#second_name').val(user.SECOND_NAME);
             $('#first_lastname').val(user.FIRST_LASTNAME);
             $('#second_lastname').val(user.SECOND_LASTNAME);
-        });
+        }
     });
 </script>
-
 
 <?php include 'Views/Shared/Footer.php' ?>

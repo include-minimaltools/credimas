@@ -32,10 +32,10 @@ class Database
 
             
 
-            if($pdo == null)
-                error_log('Database::Connect -> Error connection ');
-            else
-                error_log('Database::Connect -> Successfully connection ');
+                // if($pdo == null)
+                //     error_log('Database::Connect -> Error connection ');
+                // else
+                //     error_log('Database::Connect -> Successfully connection ');
 
             return $pdo;
         }   

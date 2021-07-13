@@ -77,9 +77,6 @@ require_once "views/Shared/Layout.php";
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="form-group color-red">
-                            <p><?php $this->showMessages(); ?></p>
-                        </div> -->
                         <div class="card">
                             <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Actualizar perfil</button>
                         </div>

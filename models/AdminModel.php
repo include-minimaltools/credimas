@@ -45,4 +45,13 @@ class AdminModel extends Model
         
         return $result;
     }
+
+    function GetById($id)
+    {
+        $result = new User();
+
+        $result = $result->Get($id);
+
+        return $result;
+    }
 }?>

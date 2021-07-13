@@ -22,8 +22,8 @@
         },
         {
             "site":"signup",
-            "access": "private",
-            "role": ["admin"]
+            "access": "public",
+            "role": [""]
         },
         {
             "site":"home",
