@@ -9,7 +9,7 @@ class HomeController extends SessionController
 
     function Render()
     {
-        $user = getUserSessionData();
+        $user = $this->getUserSessionData();
         $this->view->render('Home/index',[
             'lenders' => $this->GetLenders(),
             'role' => $user->ROLE,
