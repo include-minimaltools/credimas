@@ -16,7 +16,9 @@ class NewUserController extends SessionController
     public function Render()
     {
         $this->view->render('NewUser/index', [
-            'photo' => $this->user->PHOTO
+            'photo' => $this->user->PHOTO,
+            'role' => $this->user->ROLE,
+            'name' => $this->user->FIRST_NAME . ' ' . $this->user->FIRST_LASTNAME
         ]);
     }
 

@@ -18,12 +18,14 @@ class UpdateProfileController extends SessionController
             "identify" => $this->user->IDENTIFICATION,
             "photo" => $this->user->PHOTO,
             "phone" => $this->user->PHONE,
+            "role" => $this->user->ROLE,
             "address" => $this->user->ADDRESS,
             "first_name" => $this->user->FIRST_NAME,
             "second_name" => $this->user->SECOND_NAME,
             "first_lastname" => $this->user->FIRST_LASTNAME,
             "second_lastname" => $this->user->SECOND_LASTNAME,
-            "verified" => $this->user->VERIFIED
+            "verified" => $this->user->VERIFIED,
+            'name' => $this->user->FIRST_NAME . ' ' . $this->user->FIRST_LASTNAME
         ]);
     }
 

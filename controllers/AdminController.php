@@ -37,12 +37,13 @@ class AdminController extends SessionController
             $html = $html .'</tr>';
         }
         
-        $currentUser = $this->getUserSessionData();
+        $user = $this->getUserSessionData();
         $this->view->render('Home/admin',[
             'tblUsers' => $html,
             'users' => json_encode($this->model->GetAllArray()),
-            'role' => $currentUser->ROLE,
-            'photo' => $currentUser->PHOTO
+            'role' => $user->ROLE,
+            'photo' => $user->PHOTO,
+            'name' => $user->FIRST_NAME . ' ' . $user->FIRST_LASTNAME
         ]);
         return $html;
     }

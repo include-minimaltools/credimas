@@ -77,9 +77,15 @@ require_once "views/Shared/Layout.php";
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Actualizar perfil</button>
+                        <div class="row">
+                            <div class=" col-sm-2">
+                                <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30"><i style="margin-right:10px;" class="fa fa-save"></i>Actualizar perfil</button>
+                            </div>
+                            <div class="col white-color">
+                                <a href="<?php echo constant('URL');?>" class="btn btn-info btn-flat m-b-30 m-t-30"><i style="margin-right:10px;" class="fa white-color fa-arrow-left"></i>Volver al inicio</a>
+                            </div>
                         </div>
+                        
                     </form>
                 </div>
             </div> 

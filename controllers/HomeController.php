@@ -13,7 +13,8 @@ class HomeController extends SessionController
         $this->view->render('Home/index',[
             'lenders' => $this->GetLenders(),
             'role' => $user->ROLE,
-            'photo' => $user->PHOTO
+            'photo' => $user->PHOTO,
+            'name' => $user->FIRST_NAME . ' ' . $user->FIRST_LASTNAME
         ]);
     }
 

@@ -9,9 +9,12 @@ class LenderController extends SessionController
 
     function Render()
     {
+        $user = $this->getUserSessionData();
         $this->view->render('Home/lender',[
             'clients' => $this->GetClients(),
-            'photo' => $this->getUserSessionData()->PHOTO
+            'photo' => $user->PHOTO,
+            'role' => $user->ROLE,
+            'name' => $user->FIRST_NAME . ' ' . $user->FIRST_LASTNAME
         ]);
     }
 
@@ -36,7 +39,6 @@ class LenderController extends SessionController
                 </span> </td>
             </tr>';
         }
-        error_log($html);
         return $html;
     }
 }

@@ -18,12 +18,12 @@
         {
             "site":"updateprofile",
             "access": "private",
-            "role": ["client","loan","admin"]
+            "role": ["client","lender","admin"]
         },
         {
             "site":"NewUser",
             "access": "private",
-            "role": ["client","loan","admin"]
+            "role": ["client","lender","admin"]
         },
         {
             "site":"lender",
