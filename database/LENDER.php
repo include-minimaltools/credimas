@@ -49,14 +49,7 @@ class LENDER extends Model implements IModel
 
 	public function __construct()
 	{
-		$this->ID = '';
-		$this->CAPITAL = '';
-		$this->ACCOUNTS_RECEIVABLE = '';
-		$this->LOANS = '';
-		$this->USER_CREATE = '';
-		$this->DATE_CREATE = '';
-		$this->USER_UPDATE = '';
-		$this->DATE_UPDATE = '';
+		parent::__construct();
 	}
     public function Save() 
     {

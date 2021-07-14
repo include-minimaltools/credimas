@@ -95,7 +95,7 @@ require_once "views/Shared/Layout.php";
             if($key == "photo")
             {
                 if($item == "")
-                    echo `$('#imagePreview').css('background-image', 'url(images/avatar/default.jpg)');\n`;
+                    echo `$('#imagePreview').css('background-image', 'url(images/users/default.jpg)');\n`;
                 else
                     echo "$('#imagePreview').css('background-image', 'url(images/users/$item)');\n";
 

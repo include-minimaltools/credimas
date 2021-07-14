@@ -21,14 +21,14 @@
             "role": ["client","loan","admin"]
         },
         {
-            "site":"signup",
-            "access": "public",
-            "role": [""]
+            "site":"NewUser",
+            "access": "private",
+            "role": ["client","loan","admin"]
         },
         {
-            "site":"home",
+            "site":"lender",
             "access": "private",
-            "role": ["client"]
+            "role": ["lender"]
         },
         {
             "site":"admin",
@@ -39,9 +39,9 @@
     
     "default-sites":[
         {
-            "cliente":"home",
+            "cliente": "home",
             "admin": "admin",
-            "loan":"home"
+            "lender": "lender"
         }
     ]
 }

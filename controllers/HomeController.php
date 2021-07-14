@@ -9,9 +9,11 @@ class HomeController extends SessionController
 
     function Render()
     {
-        $lenders = $this->GetLenders();
+        $user = getUserSessionData();
         $this->view->render('Home/index',[
-            'users' => $lenders
+            'lenders' => $this->GetLenders(),
+            'role' => $user->ROLE,
+            'photo' => $user->PHOTO
         ]);
     }
 
@@ -32,7 +34,7 @@ class HomeController extends SessionController
                 <td> <span class="Apellido">'. $item->FIRST_LASTNAME .'</span> </td>
                 <td> <span class="Apellido">'. $item->SECOND_LASTNAME .'</span> </td>
                 <td> <span class="Accion">
-                    <button type="button" ' . $this->getUserSessionData()->VERIFIED ? '' : 'disabled' .' class="btn btn-outline-primary btn-sm">Solicitar préstamo</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm">Solicitar préstamo</button>
                 </span> </td>
             </tr>';
         }

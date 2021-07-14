@@ -13,11 +13,6 @@ include 'Views/Shared/Layout.php'
                         <div class="col">
                             <strong class="card-title">Prestamistas</strong>
                         </div>
-                        <div class="top-right">
-                            <div class="col">
-                                <a class="btn btn-primary buttons-right" href="<?php echo constant('URL'); ?>/signup">Nuevo usuario</a>
-                            </div>
-                        </div>
                     </div>
                 </div>
 

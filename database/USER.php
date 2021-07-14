@@ -92,7 +92,6 @@ class USER extends Model implements IModel
 	{
 		try
 		{
-			error_log('USER::Exist('.$id.')');
 			$query = $this->prepare('SELECT * FROM USERS WHERE ID = :ID');
 			$query->execute(['ID' => $id]);
 
@@ -223,7 +222,7 @@ class USER extends Model implements IModel
 
 		try
 		{
-			$query = $this->query('SELECT * FROM USERS WHERE ROLE = :ROLE');
+			$query = $this->prepare('SELECT * FROM USERS WHERE ROLE = :ROLE');
 			$query->execute([
 				'ROLE' => $role
 			]);
@@ -269,6 +268,45 @@ class USER extends Model implements IModel
 			$query = $this->prepare('SELECT * FROM USERS WHERE ID = :ID');
 			$query->execute([
 				'ID' => $id
+			]);
+
+			$users = $query->fetch(PDO::FETCH_ASSOC);
+			$this->ID = $users['ID'];
+			$this->USERNAME = $users['USERNAME'];
+			$this->PASSWORD = $users['PASSWORD'];
+			$this->ROLE = $users['ROLE'];
+			$this->PHOTO = $users['PHOTO'];
+			$this->ADDRESS = $users['ADDRESS'];
+			$this->PHONE = $users['PHONE'];
+			$this->FIRST_NAME = $users['FIRST_NAME'];
+			$this->SECOND_NAME = $users['SECOND_NAME'];
+			$this->FIRST_LASTNAME = $users['FIRST_LASTNAME'];
+			$this->SECOND_LASTNAME = $users['SECOND_LASTNAME'];
+			$this->IDENTIFICATION = $users['IDENTIFICATION'];
+			$this->IDENTIFICATION_PHOTO = $users['IDENTIFICATION_PHOTO'];
+			$this->USER_CREATE = $users['USER_CREATE'];
+			$this->DATE_CREATE = $users['DATE_CREATE'];
+			$this->USER_UPDATE = $users['USER_UPDATE'];
+			$this->DATE_UPDATE = $users['DATE_UPDATE'];
+			$this->VERIFIED = $users['VERIFIED'];
+
+			
+			return $this;
+		}
+		catch(PDOException $ex)
+		{
+			error_log('USERS::GetItem->PDOException: ' . $ex);
+			return false;
+		}
+	}
+
+	public function GetByUsername($username) 
+	{
+		try
+		{
+			$query = $this->prepare('SELECT * FROM USERS WHERE USERNAME = :USERNAME');
+			$query->execute([
+				'USERNAME' => $username
 			]);
 
 			$users = $query->fetch(PDO::FETCH_ASSOC);

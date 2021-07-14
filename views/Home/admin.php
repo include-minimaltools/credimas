@@ -16,7 +16,7 @@ include 'Views/Shared/Layout.php'
                         </div>
                         <div class="top-right">
                             <div class="col">
-                                <a class="btn btn-primary buttons-right" href="<?php echo constant('URL'); ?>/signup">Nuevo usuario</a>
+                                <a class="btn btn-primary buttons-right" href="<?php echo constant('URL');?>/NewUser">Nuevo usuario</a>
                             </div>
                         </div>
                     </div>

@@ -1,162 +1,1497 @@
-[12-Jul-2021 02:39:03 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\credimas\libs\controller.php on line 23
-[12-Jul-2021 02:39:03 Europe/Berlin] PHP Warning:  Undefined array key "id" in C:\xampp\htdocs\credimas\libs\controller.php on line 50
-[12-Jul-2021 02:39:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 275
-[12-Jul-2021 02:39:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 276
-[12-Jul-2021 02:39:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 277
-[12-Jul-2021 02:39:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 278
-[12-Jul-2021 02:39:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 279
-[12-Jul-2021 02:39:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 280
-[12-Jul-2021 02:39:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 281
-[12-Jul-2021 02:39:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 282
-[12-Jul-2021 02:39:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 283
-[12-Jul-2021 02:39:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 284
-[12-Jul-2021 02:39:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 285
-[12-Jul-2021 02:39:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 286
-[12-Jul-2021 02:39:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 287
-[12-Jul-2021 02:39:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 288
-[12-Jul-2021 02:39:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 289
-[12-Jul-2021 02:39:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 290
-[12-Jul-2021 02:39:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 291
-[12-Jul-2021 02:39:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 292
-[12-Jul-2021 02:40:25 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\credimas\libs\controller.php on line 23
-[12-Jul-2021 02:40:25 Europe/Berlin] PHP Warning:  Undefined array key "id" in C:\xampp\htdocs\credimas\libs\controller.php on line 50
-[12-Jul-2021 02:40:25 Europe/Berlin] 
-[12-Jul-2021 02:40:25 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 275
-[12-Jul-2021 02:40:25 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 276
-[12-Jul-2021 02:40:25 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 277
-[12-Jul-2021 02:40:25 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 278
-[12-Jul-2021 02:40:25 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 279
-[12-Jul-2021 02:40:25 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 280
-[12-Jul-2021 02:40:25 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 281
-[12-Jul-2021 02:40:25 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 282
-[12-Jul-2021 02:40:25 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 283
-[12-Jul-2021 02:40:25 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 284
-[12-Jul-2021 02:40:25 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 285
-[12-Jul-2021 02:40:25 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 286
-[12-Jul-2021 02:40:25 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 287
-[12-Jul-2021 02:40:25 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 288
-[12-Jul-2021 02:40:25 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 289
-[12-Jul-2021 02:40:25 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 290
-[12-Jul-2021 02:40:25 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 291
-[12-Jul-2021 02:40:25 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 292
-[12-Jul-2021 02:43:06 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\credimas\libs\controller.php on line 23
-[12-Jul-2021 02:43:06 Europe/Berlin] 3
-[12-Jul-2021 02:52:56 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 02:57:01 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 02:57:26 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 02:58:02 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 02:59:39 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:00:04 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:01:01 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:04:09 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\credimas\libs\controller.php on line 23
-[12-Jul-2021 03:05:04 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\credimas\libs\controller.php on line 23
-[12-Jul-2021 03:05:08 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\credimas\libs\controller.php on line 23
-[12-Jul-2021 03:05:47 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\credimas\class\SESSION.php on line 17
-[12-Jul-2021 03:05:47 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 275
-[12-Jul-2021 03:05:47 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 276
-[12-Jul-2021 03:05:47 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 277
-[12-Jul-2021 03:05:47 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 278
-[12-Jul-2021 03:05:47 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 279
-[12-Jul-2021 03:05:47 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 280
-[12-Jul-2021 03:05:47 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 281
-[12-Jul-2021 03:05:47 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 282
-[12-Jul-2021 03:05:47 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 283
-[12-Jul-2021 03:05:47 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 284
-[12-Jul-2021 03:05:47 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 285
-[12-Jul-2021 03:05:47 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 286
-[12-Jul-2021 03:05:47 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 287
-[12-Jul-2021 03:05:47 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 288
-[12-Jul-2021 03:05:47 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 289
-[12-Jul-2021 03:05:47 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 290
-[12-Jul-2021 03:05:47 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 291
-[12-Jul-2021 03:05:47 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 292
-[12-Jul-2021 03:05:47 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:05:47 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:06:33 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:06:33 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:06:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:06:42 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:07:05 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:07:05 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:08:22 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:08:22 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:08:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:08:42 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:08:54 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:08:54 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:09:05 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:09:05 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:09:20 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:09:20 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:09:38 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:09:38 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:09:54 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:09:54 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:10:36 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:10:36 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:11:27 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:11:27 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:11:29 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:11:29 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:11:37 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:11:37 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:11:38 Europe/Berlin] LoginController::Authenticate ->  
-[12-Jul-2021 03:11:38 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:11:38 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:11:40 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:11:40 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:12:09 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:12:09 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:12:10 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:14:05 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:14:16 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:17:35 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:17:35 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:17:40 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:17:40 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:17:46 Europe/Berlin] SignUpController::NewUser ->  
-[12-Jul-2021 03:26:24 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:26:24 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:26:28 Europe/Berlin] $2y$05$CxwIKiSS6Y.rZfZ2TgVyXegaLfowFquBy69C3yoZrRPQ7X3COcVh2 | $2y$05$XHXkA4HxCEs6/WbxIBYJR.eCBf5IY/H5Gl.3hx6Gd/H3nqDuiG2c6
-[12-Jul-2021 03:26:28 Europe/Berlin] LoginModel::Login -> Success
-[12-Jul-2021 03:26:28 Europe/Berlin] PHP Warning:  Undefined array key "admin" in C:\xampp\htdocs\credimas\class\SessionController.php on line 165
-[12-Jul-2021 03:26:28 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:26:28 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:26:30 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:26:50 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:26:52 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\credimas\class\SESSION.php on line 17
-[12-Jul-2021 03:26:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 275
-[12-Jul-2021 03:26:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 276
-[12-Jul-2021 03:26:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 277
-[12-Jul-2021 03:26:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 278
-[12-Jul-2021 03:26:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 279
-[12-Jul-2021 03:26:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 280
-[12-Jul-2021 03:26:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 281
-[12-Jul-2021 03:26:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 282
-[12-Jul-2021 03:26:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 283
-[12-Jul-2021 03:26:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 284
-[12-Jul-2021 03:26:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 285
-[12-Jul-2021 03:26:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 286
-[12-Jul-2021 03:26:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 287
-[12-Jul-2021 03:26:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 288
-[12-Jul-2021 03:26:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 289
-[12-Jul-2021 03:26:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 290
-[12-Jul-2021 03:26:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 291
-[12-Jul-2021 03:26:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 292
-[12-Jul-2021 03:26:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:26:53 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:26:54 Europe/Berlin] PHP Warning:  Undefined array key "verified" in C:\xampp\htdocs\credimas\views\login\signup.php on line 62
-[12-Jul-2021 03:26:54 Europe/Berlin] PHP Warning:  Undefined array key "verified" in C:\xampp\htdocs\credimas\views\login\signup.php on line 64
-[12-Jul-2021 03:26:54 Europe/Berlin] PHP Warning:  Undefined array key "verified" in C:\xampp\htdocs\credimas\views\login\signup.php on line 65
-[12-Jul-2021 03:37:50 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:37:50 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:38:22 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:38:22 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:39:39 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:39:39 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:39:44 Europe/Berlin] $2y$05$a8v9fW7ACGAf5Y6atGdFuegBlZ3Dxypcy2SOoOLYL1lw3UKdbQPUK | $2y$05$XHXkA4HxCEs6/WbxIBYJR.eCBf5IY/H5Gl.3hx6Gd/H3nqDuiG2c6
-[12-Jul-2021 03:39:44 Europe/Berlin] LoginModel::Login -> Success
-[12-Jul-2021 03:39:44 Europe/Berlin] PHP Warning:  Undefined array key "admin" in C:\xampp\htdocs\credimas\class\SessionController.php on line 165
-[12-Jul-2021 03:39:44 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[12-Jul-2021 03:39:44 Europe/Berlin] APP::construct-> 
-[12-Jul-2021 03:40:56 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:32:49 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:32:49 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:32:49 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:32:49 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:32:49 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:32:49 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:32:49 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:32:49 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:32:49 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:32:49 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:32:49 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:32:49 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:32:49 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:32:49 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:32:49 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:32:49 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:32:49 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:32:49 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:32:49 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:32:49 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:22 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:22 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:22 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:22 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:22 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:22 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:22 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:22 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:22 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:22 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:22 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:22 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:22 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:22 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:22 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:22 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:22 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:22 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:22 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:22 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:23 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:23 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:23 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:23 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:23 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:23 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:23 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:23 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:23 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:23 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:23 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:23 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:23 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:23 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:23 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:23 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:23 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:23 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:23 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:23 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:59 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:59 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:59 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:59 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:59 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:59 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:59 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:59 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:59 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:59 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:59 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:59 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:59 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:59 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:59 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:59 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:59 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:59 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:33:59 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:33:59 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:34 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:34 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:34 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:34 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:34 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:34 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:34 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:34 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:34 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:34 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:34 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:34 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:34 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:34 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:34 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:34 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:34 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:34 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:34 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:34 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:35 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:36 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:36 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:36 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:36 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:36 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:36 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:36 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:36 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:36 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:36 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:36 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:36 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:36 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:36 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:36 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:36 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:36 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:36 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:36 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:36 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:36 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:36 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:36 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:36 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:37 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:37 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:37 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:37 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:37 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:37 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:37 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:37 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:37 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:37 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:37 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:37 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:37 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:37 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:37 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:37 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:50 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:50 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:50 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:50 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:50 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:50 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:50 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:50 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:50 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:50 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:50 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:50 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:50 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:50 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:50 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:50 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:50 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:50 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:50 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:50 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:51 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:51 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:51 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:51 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:51 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:51 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:51 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:51 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:51 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:51 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:51 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:51 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:51 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:51 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:51 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:51 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:51 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:51 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:34:51 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:34:51 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:35:51 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:35:51 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:35:51 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:35:51 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:35:51 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:35:51 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:35:51 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:35:51 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:35:51 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:35:51 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:35:51 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:35:51 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:35:51 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:35:51 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:35:51 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:35:51 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:35:51 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:35:51 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:35:52 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:35:52 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:14 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:14 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:14 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:14 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:14 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:14 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:14 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:14 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:14 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:14 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:14 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:14 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:14 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:15 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:15 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:15 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:15 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:15 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:15 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:15 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:15 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:15 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:15 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:15 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:15 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:15 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:15 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:15 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:15 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:15 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:15 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:16 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:16 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:16 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:16 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:16 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:16 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:16 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:16 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:16 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:16 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:16 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:16 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:16 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:16 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:16 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:17 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:17 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:18 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:18 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:18 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:18 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:18 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:18 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:18 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:18 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:18 Europe/Berlin] PHP Warning:  Undefined variable $defaultSites in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:27 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:27 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:27 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:27 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:27 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:27 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:27 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:27 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:27 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:27 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:27 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:27 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:27 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:27 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:27 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:27 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:27 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:27 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:27 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:27 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:27 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:28 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:28 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:28 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:28 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:28 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:28 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:28 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:28 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:28 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:28 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:28 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:28 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:28 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:28 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:28 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:28 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:28 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:28 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:28 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:40:28 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:40:28 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:41 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:41 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:41 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:41 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:41 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:41 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:41 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:41 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:41 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:41 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:41 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:41 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:41 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:41 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:41 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:41 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:41 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:41 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:41 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:41 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:41 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:42 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:42 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:42 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:42 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:42 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:42 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:42 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:42 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:42 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:42 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:42 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:42 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:42 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:42 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:42 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:42 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:42 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:42 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:42 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:42 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:52 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:52 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:52 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:52 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:52 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:52 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:52 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:52 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:52 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:52 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:52 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:52 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:52 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:52 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:52 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:52 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:52 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:52 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:53 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:53 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:53 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:53 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:53 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:53 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:53 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:53 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:53 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:53 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:53 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:53 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:53 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:53 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:53 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:53 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:53 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:53 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:53 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:53 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:53 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:53 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:54 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:54 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:54 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:54 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:54 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:54 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:54 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:54 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:54 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:54 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:54 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:54 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:54 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:54 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:54 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:54 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:54 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:54 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:54 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:54 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:54 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:55 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:55 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:55 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:55 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:55 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:55 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:55 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:55 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:55 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:55 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:55 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:55 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:55 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:55 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:55 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:55 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:55 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:55 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:55 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:41:55 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:41:55 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:01 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:01 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:01 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:01 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:01 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:01 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:01 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:01 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:01 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:01 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:01 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:01 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:01 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:01 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:01 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:01 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:01 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:01 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:01 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:01 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:01 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 119
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:13 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:13 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:13 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:13 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:13 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:13 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:13 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:13 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:13 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:13 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:13 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:13 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:13 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:13 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:13 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:14 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:14 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:14 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:14 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:14 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:14 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:14 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:14 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:14 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:14 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:14 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:14 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:14 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:14 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:14 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:14 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:15 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:15 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:15 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:15 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:15 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:15 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:15 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:15 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:15 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:15 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:15 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:15 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:15 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:15 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:15 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:15 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:15 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:15 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:15 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:15 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:15 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:15 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:15 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:15 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:15 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:15 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:15 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:15 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:15 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:15 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:24 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:24 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:24 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:24 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:24 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:24 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:24 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:24 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:24 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:24 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:24 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:24 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:24 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:24 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:24 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:24 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:24 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:24 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:24 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:24 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:24 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:24 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:24 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:24 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:24 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:24 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:24 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:24 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:24 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:24 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:26 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:26 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:26 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:26 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:26 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:26 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:26 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:26 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:26 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:26 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:26 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:26 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:26 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:26 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:26 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:26 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:26 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:26 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:26 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:26 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:26 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:26 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:26 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:26 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:26 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:26 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:26 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:26 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:26 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:26 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:31 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:31 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:31 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:31 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:31 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:31 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:31 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:31 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:31 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:31 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:31 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:31 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:31 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:31 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:31 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:31 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:31 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:31 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:31 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:31 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:31 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:31 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:31 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:31 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:31 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:31 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:31 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:31 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:31 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:31 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:42 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:42 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:42 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:42 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:42 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:42 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:42 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:42 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:42 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:42:42 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:42:42 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:42:42 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:43:12 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:12 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:12 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:43:12 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:12 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:12 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:43:12 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:12 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:12 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:43:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:13 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:43:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:13 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:43:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:13 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:43:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:13 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:43:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:13 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:43:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:13 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:43:13 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:13 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:13 Europe/Berlin] PHP Warning:  Undefined variable $url in C:\xampp\htdocs\credimas\class\SessionController.php on line 136
+[14-Jul-2021 02:43:22 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:22 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:22 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:22 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:22 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:22 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:22 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:22 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:22 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:22 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:22 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:22 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:22 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:22 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:22 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:22 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:22 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:22 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:22 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:22 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:23 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:23 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:23 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:23 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:23 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:23 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:23 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:23 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:23 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:23 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:23 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:23 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:23 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:23 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:24 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:24 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:24 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:24 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:24 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:24 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:32 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:32 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:32 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:32 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:32 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:32 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:32 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:32 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:32 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:32 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:32 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:32 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:32 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:32 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:33 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:33 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:33 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:33 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:43:33 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:43:33 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:25 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:25 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:26 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:26 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:30 Europe/Berlin] $2y$05$qZTmDUzfUQsaOivBsMMxsOcff8dYVE76iXMWTc1EDe2EyZ2tlVVm6 | $2y$05$XHXkA4HxCEs6/WbxIBYJR.eCBf5IY/H5Gl.3hx6Gd/H3nqDuiG2c6
+[14-Jul-2021 02:44:30 Europe/Berlin] LoginModel::Login -> Success
+[14-Jul-2021 02:44:30 Europe/Berlin] PHP Warning:  Undefined array key "admin" in C:\xampp\htdocs\credimas\class\SessionController.php on line 161
+[14-Jul-2021 02:44:30 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:30 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:33 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\credimas\class\SESSION.php on line 17
+[14-Jul-2021 02:44:33 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 274
+[14-Jul-2021 02:44:33 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 275
+[14-Jul-2021 02:44:33 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 276
+[14-Jul-2021 02:44:33 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 277
+[14-Jul-2021 02:44:33 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 278
+[14-Jul-2021 02:44:33 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 279
+[14-Jul-2021 02:44:33 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 280
+[14-Jul-2021 02:44:33 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 281
+[14-Jul-2021 02:44:33 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 282
+[14-Jul-2021 02:44:33 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 283
+[14-Jul-2021 02:44:33 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 284
+[14-Jul-2021 02:44:33 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 285
+[14-Jul-2021 02:44:33 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 286
+[14-Jul-2021 02:44:33 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 287
+[14-Jul-2021 02:44:33 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 288
+[14-Jul-2021 02:44:33 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 289
+[14-Jul-2021 02:44:33 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 290
+[14-Jul-2021 02:44:33 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\credimas\database\USER.php on line 291
+[14-Jul-2021 02:44:34 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:34 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:39 Europe/Berlin] $2y$05$fN8Am.1J.qM4iDJGOQ29V.SaFn6XyRVNnn.t1lEO/BMAyPao3xgky | $2y$05$lsRwRdGDLGELMwXOT6NbW.ufl9xoLNLPuFj.S3p35zu0.AhR09Zb.
+[14-Jul-2021 02:44:39 Europe/Berlin] LoginModel::Login -> Success
+[14-Jul-2021 02:44:39 Europe/Berlin] PHP Warning:  Undefined array key "lender" in C:\xampp\htdocs\credimas\class\SessionController.php on line 161
+[14-Jul-2021 02:44:39 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:39 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:39 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:39 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:39 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:39 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:39 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:39 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:39 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:39 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:39 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:39 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:39 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:39 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:39 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:39 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:39 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:39 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:39 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:39 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:40 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:40 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:40 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:40 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:40 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:40 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:40 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:40 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:41 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:41 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:41 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:41 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:41 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:41 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:41 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:41 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:41 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:41 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:41 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:41 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:46 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:46 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:46 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:46 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:46 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:46 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:46 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:46 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:46 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:46 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:46 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:46 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:46 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:46 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:46 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:46 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:46 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:46 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:44:46 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:44:46 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:45:05 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 02:45:05 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 02:45:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "lenderModel" not found in C:\xampp\htdocs\credimas\libs\controller.php:17
+Stack trace:
+#0 C:\xampp\htdocs\credimas\libs\app.php(37): Controller->InitModel('lender')
+#1 C:\xampp\htdocs\credimas\index.php(24): App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\credimas\libs\controller.php on line 17
+[14-Jul-2021 02:46:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "LenderModel" not found in C:\xampp\htdocs\credimas\libs\controller.php:17
+Stack trace:
+#0 C:\xampp\htdocs\credimas\libs\app.php(37): Controller->InitModel('Lender')
+#1 C:\xampp\htdocs\credimas\index.php(24): App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\credimas\libs\controller.php on line 17
+[14-Jul-2021 02:46:07 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "lenderModel" not found in C:\xampp\htdocs\credimas\libs\controller.php:17
+Stack trace:
+#0 C:\xampp\htdocs\credimas\libs\app.php(37): Controller->InitModel('lender')
+#1 C:\xampp\htdocs\credimas\index.php(24): App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\credimas\libs\controller.php on line 17
+[14-Jul-2021 02:46:29 Europe/Berlin] PHP Warning:  Undefined array key "lenders" in C:\xampp\htdocs\credimas\views\Home\index.php on line 2
+[14-Jul-2021 02:58:13 Europe/Berlin] PHP Warning:  Undefined array key "lenders" in C:\xampp\htdocs\credimas\views\Home\index.php on line 2
+[14-Jul-2021 02:58:21 Europe/Berlin] PHP Warning:  Undefined array key "lenders" in C:\xampp\htdocs\credimas\views\Home\index.php on line 2
+[14-Jul-2021 02:58:21 Europe/Berlin] PHP Warning:  Undefined array key "lenders" in C:\xampp\htdocs\credimas\views\Home\index.php on line 2
+[14-Jul-2021 02:58:22 Europe/Berlin] PHP Warning:  Undefined array key "lenders" in C:\xampp\htdocs\credimas\views\Home\index.php on line 2
+[14-Jul-2021 02:58:23 Europe/Berlin] PHP Warning:  Undefined array key "lenders" in C:\xampp\htdocs\credimas\views\Home\index.php on line 2
+[14-Jul-2021 02:58:23 Europe/Berlin] PHP Warning:  Undefined array key "lenders" in C:\xampp\htdocs\credimas\views\Home\index.php on line 2
+[14-Jul-2021 02:58:23 Europe/Berlin] PHP Warning:  Undefined array key "lenders" in C:\xampp\htdocs\credimas\views\Home\index.php on line 2
+[14-Jul-2021 02:58:23 Europe/Berlin] PHP Warning:  Undefined array key "lenders" in C:\xampp\htdocs\credimas\views\Home\index.php on line 2
+[14-Jul-2021 02:59:32 Europe/Berlin] 
+            <tr>
+                <td> <span class="Usuario">Luis</span></td>
+                <td> <span class="Nombre">Luis</span> </td>
+                <td> <span class="Nombre">Miguel</span> </td>
+                <td> <span class="Apellido">Pineda</span> </td>
+                <td> <span class="Apellido">Joseph</span> </td>
+                <td> <span class="Accion">
+                    <button type="button" class="btn btn-outline-primary btn-sm">Solicitar préstamo</button>
+                </span> </td>
+            </tr>
+[14-Jul-2021 02:59:32 Europe/Berlin] PHP Warning:  Undefined array key "lenders" in C:\xampp\htdocs\credimas\views\Home\index.php on line 2
+[14-Jul-2021 03:00:07 Europe/Berlin] 
+            <tr>
+                <td> <span class="Usuario">Luis</span></td>
+                <td> <span class="Nombre">Luis</span> </td>
+                <td> <span class="Nombre">Miguel</span> </td>
+                <td> <span class="Apellido">Pineda</span> </td>
+                <td> <span class="Apellido">Joseph</span> </td>
+                <td> <span class="Accion">
+                    <button type="button" class="btn btn-outline-primary btn-sm">Solicitar préstamo</button>
+                </span> </td>
+            </tr>
+[14-Jul-2021 03:02:07 Europe/Berlin] 
+            <tr>
+                <td> <span class="Usuario">Luis</span></td>
+                <td> <span class="Nombre">Luis</span> </td>
+                <td> <span class="Nombre">Miguel</span> </td>
+                <td> <span class="Apellido">Pineda</span> </td>
+                <td> <span class="Apellido">Joseph</span> </td>
+                <td> <span class="Accion">
+                    <button type="button" class="btn btn-outline-primary btn-sm">Realizar préstamo</button>
+                </span> </td>
+            </tr>

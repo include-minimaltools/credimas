@@ -103,10 +103,6 @@ class SessionController extends Controller
         foreach ($this->sites as $key => $site) 
             if($currentURL === $site['site'] && $site['access'] == 'public') 
                 return true;
-
-        /* for($i = 0; $i < sizeof($this->sites); $i++)
-            if($currentURL === $this->sites[$i]['site'] && $this->sites[$i]['access'] === 'public')
-                return true; */
         
         return false;
     }
@@ -121,7 +117,7 @@ class SessionController extends Controller
     private function redirectDefaultSiteByRole($role)
     {
         $url = '';
-
+        
         foreach ($this->sites as $key => $site) 
         {
             foreach ($site['role'] as $key => $roleAvailable) {

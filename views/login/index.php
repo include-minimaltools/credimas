@@ -51,9 +51,6 @@
                     <div class="color-red">
                         <p><?php $this->showMessages(); ?></p>
                     </div>
-                    <div class="register-link m-t-15 text-center">
-                            <p>¿No tienes una cuenta? Registrate <a href="<?php echo constant('URL') . '/signup'?>">aquí</a></p>
-                    </div>
                 </div>
             </div>
         </div>
