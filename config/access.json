@@ -11,9 +11,9 @@
             "role": [""]
         },
         {
-            "site":"home",
+            "site":"financialentities",
             "access": "private",
-            "role": ["client"]
+            "role": ["client","lender","admin"]
         },
         {
             "site":"updateprofile",
@@ -21,9 +21,14 @@
             "role": ["client","lender","admin"]
         },
         {
+            "site":"home",
+            "access": "private",
+            "role": ["client"]
+        },
+        {
             "site":"NewUser",
             "access": "private",
-            "role": ["client","lender","admin"]
+            "role": ["admin"]
         },
         {
             "site":"lender",
@@ -39,7 +44,7 @@
     
     "default-sites":[
         {
-            "cliente": "home",
+            "client": "home",
             "admin": "admin",
             "lender": "lender"
         }

@@ -1,24 +1,88 @@
-[14-Jul-2021 04:52:13 Europe/Berlin] 
-            <tr>
-                <td> <span class="Usuario">Luis</span></td>
-                <td> <span class="Nombre">Luis</span> </td>
-                <td> <span class="Nombre">Miguel</span> </td>
-                <td> <span class="Apellido">Pineda</span> </td>
-                <td> <span class="Apellido">Joseph</span> </td>
-                <td> <span class="Accion">
-                    <button type="button" class="btn btn-outline-primary btn-sm">Realizar préstamo</button>
-                </span> </td>
-            </tr>
-[14-Jul-2021 04:52:18 Europe/Berlin] APP::construct-> No existe el controlador especificado
-[14-Jul-2021 04:52:18 Europe/Berlin] APP::construct-> 
-[14-Jul-2021 04:52:18 Europe/Berlin] 
-            <tr>
-                <td> <span class="Usuario">Luis</span></td>
-                <td> <span class="Nombre">Luis</span> </td>
-                <td> <span class="Nombre">Miguel</span> </td>
-                <td> <span class="Apellido">Pineda</span> </td>
-                <td> <span class="Apellido">Joseph</span> </td>
-                <td> <span class="Accion">
-                    <button type="button" class="btn btn-outline-primary btn-sm">Realizar préstamo</button>
-                </span> </td>
-            </tr>
+[14-Jul-2021 06:54:23 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\credimas\libs\controller.php on line 23
+[14-Jul-2021 06:54:23 Europe/Berlin] ID: LAFISE Description: Banco Lafise
+[14-Jul-2021 06:55:31 Europe/Berlin] ID: LAFISE Description: Banco Lafise
+[14-Jul-2021 06:55:36 Europe/Berlin] ID: LAFISE Description: Banco Lafise
+[14-Jul-2021 06:58:02 Europe/Berlin] ID: LAFISE Description: Banco Lafise
+[14-Jul-2021 07:01:16 Europe/Berlin] ID: LAFISE Description: Banco Lafise Bancentro
+[14-Jul-2021 07:01:45 Europe/Berlin] ID: LAFISE Description: fajf
+[14-Jul-2021 07:01:45 Europe/Berlin] FINANCIAL_ENTITY::Save->PDOException: PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'LAFISE' for key 'PRIMARY' in C:\xampp\htdocs\credimas\database\FINANCIAL_ENTITY.php:71
+Stack trace:
+#0 C:\xampp\htdocs\credimas\database\FINANCIAL_ENTITY.php(71): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php(62): FINANCIAL_ENTITY->Save()
+#2 C:\xampp\htdocs\credimas\libs\app.php(51): FinancialEntitiesController->InsertOrUpdateEntity()
+#3 C:\xampp\htdocs\credimas\index.php(24): App->__construct()
+#4 {main}
+[14-Jul-2021 07:01:54 Europe/Berlin] ID: LAFISE2 Description: -
+[14-Jul-2021 07:04:45 Europe/Berlin] ID: LAFISE Description: f
+[14-Jul-2021 07:04:45 Europe/Berlin] FINANCIAL_ENTITY::Save->PDOException: PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'LAFISE' for key 'PRIMARY' in C:\xampp\htdocs\credimas\database\FINANCIAL_ENTITY.php:71
+Stack trace:
+#0 C:\xampp\htdocs\credimas\database\FINANCIAL_ENTITY.php(71): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php(62): FINANCIAL_ENTITY->Save()
+#2 C:\xampp\htdocs\credimas\libs\app.php(51): FinancialEntitiesController->InsertOrUpdateEntity()
+#3 C:\xampp\htdocs\credimas\index.php(24): App->__construct()
+#4 {main}
+[14-Jul-2021 07:23:26 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, null given in C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php:97
+Stack trace:
+#0 C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php(97): array_push(NULL, Array)
+#1 C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php(16): FinancialEntitiesController->GetDataTable()
+#2 C:\xampp\htdocs\credimas\libs\app.php(55): FinancialEntitiesController->Render()
+#3 C:\xampp\htdocs\credimas\index.php(24): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php on line 97
+[14-Jul-2021 07:23:36 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, null given in C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php:97
+Stack trace:
+#0 C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php(97): array_push(NULL, Array)
+#1 C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php(16): FinancialEntitiesController->GetDataTable()
+#2 C:\xampp\htdocs\credimas\libs\app.php(55): FinancialEntitiesController->Render()
+#3 C:\xampp\htdocs\credimas\index.php(24): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php on line 97
+[14-Jul-2021 07:23:37 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, null given in C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php:97
+Stack trace:
+#0 C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php(97): array_push(NULL, Array)
+#1 C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php(16): FinancialEntitiesController->GetDataTable()
+#2 C:\xampp\htdocs\credimas\libs\app.php(55): FinancialEntitiesController->Render()
+#3 C:\xampp\htdocs\credimas\index.php(24): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php on line 97
+[14-Jul-2021 07:23:37 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, null given in C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php:97
+Stack trace:
+#0 C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php(97): array_push(NULL, Array)
+#1 C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php(16): FinancialEntitiesController->GetDataTable()
+#2 C:\xampp\htdocs\credimas\libs\app.php(55): FinancialEntitiesController->Render()
+#3 C:\xampp\htdocs\credimas\index.php(24): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php on line 97
+[14-Jul-2021 07:23:38 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, null given in C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php:97
+Stack trace:
+#0 C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php(97): array_push(NULL, Array)
+#1 C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php(16): FinancialEntitiesController->GetDataTable()
+#2 C:\xampp\htdocs\credimas\libs\app.php(55): FinancialEntitiesController->Render()
+#3 C:\xampp\htdocs\credimas\index.php(24): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php on line 97
+[14-Jul-2021 07:23:38 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, null given in C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php:97
+Stack trace:
+#0 C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php(97): array_push(NULL, Array)
+#1 C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php(16): FinancialEntitiesController->GetDataTable()
+#2 C:\xampp\htdocs\credimas\libs\app.php(55): FinancialEntitiesController->Render()
+#3 C:\xampp\htdocs\credimas\index.php(24): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php on line 97
+[14-Jul-2021 07:25:05 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, null given in C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php:97
+Stack trace:
+#0 C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php(97): array_push(NULL, Array)
+#1 C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php(16): FinancialEntitiesController->GetDataTable()
+#2 C:\xampp\htdocs\credimas\libs\app.php(55): FinancialEntitiesController->Render()
+#3 C:\xampp\htdocs\credimas\index.php(24): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php on line 97
+[14-Jul-2021 07:36:31 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 07:36:31 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 07:36:32 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 07:36:32 Europe/Berlin] APP::construct-> 
+[14-Jul-2021 07:36:36 Europe/Berlin] $2y$05$KhKv2B90NYlvwP4uWfT49eZ5WiQsmoXZD88n2SMoGEKEMYRcjI8zC | $2y$05$XHXkA4HxCEs6/WbxIBYJR.eCBf5IY/H5Gl.3hx6Gd/H3nqDuiG2c6
+[14-Jul-2021 07:36:36 Europe/Berlin] LoginModel::Login -> Success
+[14-Jul-2021 07:36:36 Europe/Berlin] PHP Warning:  Undefined array key "admin" in C:\xampp\htdocs\credimas\class\SessionController.php on line 161
+[14-Jul-2021 07:36:36 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[14-Jul-2021 07:36:36 Europe/Berlin] APP::construct-> 

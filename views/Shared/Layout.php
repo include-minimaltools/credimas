@@ -65,7 +65,7 @@
             <div class="top-right">
                 <div class="header-menu">  
                     <div class="text-center" style="padding-top:15px;">
-                        <label>Bienvenido!, <?php echo $this->data['name'];?></label>
+                        <label>Bienvenido, <?php echo $this->data['name'];?>!</label>
                     </div>
                     <div class="user-area dropdown float-right">
                         <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
