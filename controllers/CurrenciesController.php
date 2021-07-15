@@ -12,12 +12,12 @@ class CurrenciesController extends SessionController
 
     function Render()
     {
-        $this->view->render('FinancialEntities/index',[
-            'financialEntities' => $this->GetDataTable(),
+        $this->view->render('Currencies/index',[
+            'dataTable' => $this->GetDataTable(),
             'role' => $this->user->ROLE,
             'photo' => $this->user->PHOTO,
             'name' => $this->user->FIRST_NAME . ' ' . $this->user->FIRST_LASTNAME,
-            'entities' => json_encode($this->entities)
+            'currencies' => json_encode($this->currencies)
         ]);
     }
 
@@ -36,7 +36,7 @@ class CurrenciesController extends SessionController
                 return;
             }
             
-            $currency = new FINANCIAL_ENTITY();
+            $currency = new CURRENCY();
             if($currency->Exist($id))
             {
                 $currency = $currency->Get($id);
@@ -47,7 +47,7 @@ class CurrenciesController extends SessionController
 
                 if($currency->Update())
                 {
-                    $this->Redirect('financialentities',[]);
+                    $this->Redirect('currencies',[]);
                 }
                 else
                 {
@@ -63,7 +63,7 @@ class CurrenciesController extends SessionController
 
                 if($currency->Save())
                 {
-                    $this->Redirect('financialentities',[]);
+                    $this->Redirect('currencies',[]);
                 }
                 else
                 {
@@ -79,7 +79,7 @@ class CurrenciesController extends SessionController
 
     function GetDataTable()
     {
-        $currencies = $this->model->GetFinancialEntities();
+        $currencies = $this->model->GetCurrencies();
         $html = '';
         if(empty($currencies))
             return $html;
@@ -92,7 +92,7 @@ class CurrenciesController extends SessionController
                 <td> <span class="Acción"><button class="btn btn-sm btn-primary fa fa-edit" data-toggle="modal" data-target="#modalCurrency" id="btnEdit_'. $item->ID .'"></i></button></span></td>
             </tr>';
 
-            array_push($this->entities,[
+            array_push($this->currencies,[
                 "ID" => $item->ID,
                 "DESCRIPTION" => $item->DESCRIPTION
             ]);

@@ -15,7 +15,7 @@ include 'Views/Shared/Layout.php'
                         </div>
                         <div class="top-right">
                             <div class="col color-white">
-                                <button id="btnAdd" class="btn btn-primary buttons-right" data-toggle="modal" data-target="#modalFinancialEntity">Nueva entidad financiera</button>
+                                <button id="btnAdd" class="btn btn-primary buttons-right" data-toggle="modal" data-target="#modalCurrency">Nueva moneda/divisa</button>
                             </div>
                         </div>
                     </div>
@@ -32,7 +32,7 @@ include 'Views/Shared/Layout.php'
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php echo $financialEntities?>
+                                <?php echo $dataTable?>
                             </tbody>
                         </table>
                     </div> 
@@ -58,7 +58,7 @@ include 'Views/Shared/Layout.php'
                 </div>
             </div>
             <div class="modal-body">
-            <form action="<?php echo constant('URL');?>/financialentities/InsertOrUpdateEntity" method="POST">
+            <form action="<?php echo constant('URL');?>/currencies/InsertOrUpdateCurrency" method="POST">
                 <div class="form-row">
                     <div class="col-sm-3">
                         <div class="form-group">
@@ -84,8 +84,9 @@ include 'Views/Shared/Layout.php'
 </div>
 
 <script>
-    
+
 var currencies = <?php echo $currencies ?>;
+
 $(function(){
     
     $(document).on('click', 'td button[id*="btnEdit_"]', function (e) {

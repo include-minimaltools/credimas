@@ -43,13 +43,19 @@ class CURRENCY extends Model implements IModel
 
 	public function __construct()
 	{
-		$this->ID = '';
-		$this->DESCRIPTION = '';
-		$this->USER_CREATE = '';
-		$this->DATE_CREATE = '';
-		$this->USER_UPDATE = '';
-		$this->DATE_UPDATE = '';
+		parent::__construct();
 	}
+
+	public function Exist($id)
+	{
+		$query = $this->prepare('SELECT * FROM CURRENCIES WHERE ID = :ID');
+		$query->execute([
+			'ID' => $id
+		]);
+
+		return ($query->rowCount() != 0);
+	}
+
     public function Save() 
     {
         try

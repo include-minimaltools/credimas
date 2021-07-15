@@ -1,8 +1,8 @@
 <?php 
 
-require_once 'database/FINANCIAL_ENTITY.php';
+require_once 'database/CURRENCY.php';
 
-class FinancialEntitiesModel extends Model
+class CurrenciesModel extends Model
 {
     function __construct()
     {

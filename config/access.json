@@ -26,6 +26,11 @@
             "role": ["client"]
         },
         {
+            "site":"currencies",
+            "access": "private",
+            "role": ["admin"]
+        },
+        {
             "site":"NewUser",
             "access": "private",
             "role": ["admin"]
