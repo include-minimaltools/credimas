@@ -155,6 +155,7 @@ class CURRENCY extends Model implements IModel
 		{
 			$query = $this->prepare('UPDATE CURRENCIES SET DESCRIPTION = :DESCRIPTION, USER_CREATE = :USER_CREATE, DATE_CREATE = :DATE_CREATE, USER_UPDATE = :USER_UPDATE, DATE_UPDATE = :DATE_UPDATE WHERE ID = :ID');
 			$query->execute([
+				'ID' => $this->ID,
 				'DESCRIPTION' => $this->DESCRIPTION,
 				'USER_CREATE' => $this->USER_CREATE,
 				'DATE_CREATE' => $this->DATE_CREATE,

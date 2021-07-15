@@ -50,7 +50,7 @@ class FINANCIAL_ENTITY extends Model implements IModel
 	{
 		$query = $this->prepare('SELECT * FROM FINANCIAL_ENTITIES WHERE ID = :ID');
 		$query->execute([
-			'ID' => $this->ID
+			'ID' => $id
 		]);
 
 		return ($query->rowCount() != 0);
@@ -161,6 +161,7 @@ class FINANCIAL_ENTITY extends Model implements IModel
 		{
 			$query = $this->prepare('UPDATE FINANCIAL_ENTITIES SET DESCRIPTION = :DESCRIPTION, USER_CREATE = :USER_CREATE, DATE_CREATE = :DATE_CREATE, USER_UPDATE = :USER_UPDATE, DATE_UPDATE = :DATE_UPDATE WHERE ID = :ID');
 			$query->execute([
+				'ID' => $this->ID,
 				'DESCRIPTION' => $this->DESCRIPTION,
 				'USER_CREATE' => $this->USER_CREATE,
 				'DATE_CREATE' => $this->DATE_CREATE,

@@ -44,11 +44,13 @@
                         <ul class="sub-menu children dropdown-menu show">
 
                             <li><i class="fa fa-home"></i><a href="<?php echo constant('URL')?>">Inicio</a></li>
-
+                            <li><i class="menu-icon fa fa-money"></i><a href="<?php echo constant('URL')?>/financialentities">Entidades Financieras</a></li>
+                            <li><i class="menu-icon fa fa-dollar"></i><a href="<?php echo constant('URL')?>/financialentities">Monedas y Divisas</a></li>
                             
                             <li class="menu-title">Configuración</li>
                             <li><i class="menu-icon fa fa-cog"></i><a href="<?php echo constant('URL')?>/updateprofile">Editar cuenta</a></li>
-                            <li><i class="menu-icon fa fa-sign-in"></i><a href="<?php echo constant('URL')?>/Logout">Cerrar sesión</a></li>
+                            <li><i class="menu-icon fa fa-sign-out"></i><a href="<?php echo constant('URL')?>/Logout">Cerrar sesión</a></li>
+                            
                         </ul>
                     </li>
                 </ul>

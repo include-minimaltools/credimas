@@ -1,6 +1,6 @@
 <?php 
-    $financialEntities = $this->data['financialEntities'];
-    $entities = $this->data['entities'];
+    $dataTable = $this->data['dataTable'];
+    $currencies = $this->data['currencies'];
 include 'Views/Shared/Layout.php' 
 ?>
 
@@ -11,7 +11,7 @@ include 'Views/Shared/Layout.php'
                 <div class="card-header">
                     <div class="row">
                         <div class="col">
-                            <strong class="card-title">Entidades Financieras</strong>
+                            <strong class="card-title">Monedas y Divisas</strong>
                         </div>
                         <div class="top-right">
                             <div class="col color-white">
@@ -26,7 +26,7 @@ include 'Views/Shared/Layout.php'
                         <table class="table" id="tblUsers">
                             <thead>
                                 <tr>
-                                    <th scope="col">Entidad Financiera</th>
+                                    <th scope="col">Id Moneda</th>
                                     <th scope="col">Descripción</th>
                                     <th scope="col">Acción</th>
                                 </tr>
@@ -42,13 +42,13 @@ include 'Views/Shared/Layout.php'
     </div>
 </div>
 
-<div class="modal fade" id="modalFinancialEntity" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel" aria-hidden="true">
+<div class="modal fade" id="modalCurrency" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header text-center">
                 <div class="row">
                     <div class="col">
-                        <h2>Entidad Financiera</h2>
+                        <h2>Moneda / Divisa</h2>
                     </div>
                     <div class="top-right col-1">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -62,7 +62,7 @@ include 'Views/Shared/Layout.php'
                 <div class="form-row">
                     <div class="col-sm-3">
                         <div class="form-group">
-                            <label>Entidad Financiera:</label>
+                            <label>Moneda:</label>
                             <input type="text" maxlength="10" class="form-control" name="id" id="id" required>
                         </div>
                     </div>
@@ -84,35 +84,33 @@ include 'Views/Shared/Layout.php'
 </div>
 
 <script>
-    var entities = <?php echo $entities ?>;
-    $(function(){
+    
+var currencies = <?php echo $currencies ?>;
+$(function(){
+    
+    $(document).on('click', 'td button[id*="btnEdit_"]', function (e) {
+
+        var id = $(e.target).attr('id').split('_')[1];
+        var currency = currencies.find(x => x.ID == id);
         
-        $(document).on('click', 'td button[id*="btnEdit_"]', function (e) {
-
-            var id = $(e.target).attr('id').split('_')[1];
-            var entity = entities.find(x => x.ID == id);
-            
-            $('#id').attr('disabled', true);
-            $('#Submit').html('Actualizar');
-            $('#id').val(entity.ID);
-            $('#description').val(entity.DESCRIPTION);
-        });
-
-        $('#Submit').on('click', function(){
-            $('#id').removeAttr('disabled');
-        });
-
-        $('#btnAdd').on('click', function() {
-            $('#Submit').html('Agregar');
-            $('#id').val('');
-            $('#description').val('');
-            $('#id').removeAttr('disabled');
-        });
-        
+        $('#id').attr('disabled', true);
+        $('#Submit').html('Actualizar');
+        $('#id').val(currency.ID);
+        $('#description').val(currency.DESCRIPTION);
     });
 
+    $('#Submit').on('click', function(){
+        $('#id').removeAttr('disabled');
+    });
+
+    $('#btnAdd').on('click', function() {
+        $('#Submit').html('Agregar');
+        $('#id').val('');
+        $('#description').val('');
+        $('#id').removeAttr('disabled');
+    });
     
-    
+});
 
 </script>
 

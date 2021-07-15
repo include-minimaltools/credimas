@@ -1,9 +1,9 @@
 <?php 
 
-class FinancialEntitiesController extends SessionController
+class CurrenciesController extends SessionController
 {
     private $user;
-    private $entities = [];
+    private $currencies = [];
     function __construct()
     {
         parent::__construct();
@@ -21,7 +21,7 @@ class FinancialEntitiesController extends SessionController
         ]);
     }
 
-    function InsertOrUpdateEntity()
+    function InsertOrUpdateCurrency()
     {
         if($this->ExistPOST(["id","description"]))
         {
@@ -36,16 +36,16 @@ class FinancialEntitiesController extends SessionController
                 return;
             }
             
-            $financialEntity = new FINANCIAL_ENTITY();
-            if($financialEntity->Exist($id))
+            $currency = new FINANCIAL_ENTITY();
+            if($currency->Exist($id))
             {
-                $financialEntity = $financialEntity->Get($id);
-                $financialEntity->ID = $id;
-                $financialEntity->DESCRIPTION = $description;
-                $financialEntity->USER_UPDATE = $this->user->USERNAME;
-                // $financialEntity->DATE_UPDATE = '';
+                $currency = $currency->Get($id);
+                $currency->ID = $id;
+                $currency->DESCRIPTION = $description;
+                $currency->USER_UPDATE = $this->user->USERNAME;
+                // $currency->DATE_UPDATE = '';
 
-                if($financialEntity->Update())
+                if($currency->Update())
                 {
                     $this->Redirect('financialentities',[]);
                 }
@@ -56,12 +56,12 @@ class FinancialEntitiesController extends SessionController
             }
             else
             {
-                $financialEntity->ID = $id;
-                $financialEntity->DESCRIPTION = $description;
-                $financialEntity->USER_CREATE = $this->user->USERNAME;
-                $financialEntity->DATE_CREATE = '';
+                $currency->ID = $id;
+                $currency->DESCRIPTION = $description;
+                $currency->USER_CREATE = $this->user->USERNAME;
+                $currency->DATE_CREATE = '';
 
-                if($financialEntity->Save())
+                if($currency->Save())
                 {
                     $this->Redirect('financialentities',[]);
                 }
@@ -79,17 +79,17 @@ class FinancialEntitiesController extends SessionController
 
     function GetDataTable()
     {
-        $financialEntities = $this->model->GetFinancialEntities();
+        $currencies = $this->model->GetFinancialEntities();
         $html = '';
-        if(empty($financialEntities))
+        if(empty($currencies))
             return $html;
 
-        foreach ($financialEntities as $key => $item) {
+        foreach ($currencies as $key => $item) {
             $html = $html . '
             <tr>
                 <td> <span class="Entidad Financiera">'. $item->ID .'</span></td>
                 <td> <span class="Descripción">'. $item->DESCRIPTION .'</span> </td>
-                <td> <span class="Acción"><button class="btn btn-sm btn-primary fa fa-edit" data-toggle="modal" data-target="#modalFinancialEntity" id="btnEdit_'. $item->ID .'"></i></button></span></td>
+                <td> <span class="Acción"><button class="btn btn-sm btn-primary fa fa-edit" data-toggle="modal" data-target="#modalCurrency" id="btnEdit_'. $item->ID .'"></i></button></span></td>
             </tr>';
 
             array_push($this->entities,[

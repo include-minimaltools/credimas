@@ -162,6 +162,7 @@ class CLIENT extends Model implements IModel
 		{
 			$query = $this->prepare('UPDATE CLIENTS SET ACCOUNTS_PAYABLE = :ACCOUNTS_PAYABLE, LOANS = :LOANS, TYPE = :TYPE, USER_CREATE = :USER_CREATE, DATE_CREATE = :DATE_CREATE, USER_UPDATE = :USER_UPDATE, DATE_UPDATE = :DATE_UPDATE WHERE ID = :ID');
 			$query->execute([
+				'ID' => $this->ID,
 				'ACCOUNTS_PAYABLE' => $this->ACCOUNTS_PAYABLE,
 				'LOANS' => $this->LOANS,
 				'TYPE' => $this->TYPE,

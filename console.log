@@ -86,3 +86,82 @@ Stack trace:
 [14-Jul-2021 07:36:36 Europe/Berlin] PHP Warning:  Undefined array key "admin" in C:\xampp\htdocs\credimas\class\SessionController.php on line 161
 [14-Jul-2021 07:36:36 Europe/Berlin] APP::construct-> No existe el controlador especificado
 [14-Jul-2021 07:36:36 Europe/Berlin] APP::construct-> 
+[15-Jul-2021 03:04:58 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[15-Jul-2021 03:04:58 Europe/Berlin] APP::construct-> 
+[15-Jul-2021 03:04:59 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[15-Jul-2021 03:04:59 Europe/Berlin] APP::construct-> 
+[15-Jul-2021 03:05:03 Europe/Berlin] $2y$05$btm1PEiDOv5p5w/KlfSw6eYEfomf6oND4bvUEjCqiYBgYbWF1ZixS | $2y$05$XHXkA4HxCEs6/WbxIBYJR.eCBf5IY/H5Gl.3hx6Gd/H3nqDuiG2c6
+[15-Jul-2021 03:05:03 Europe/Berlin] LoginModel::Login -> Success
+[15-Jul-2021 03:05:03 Europe/Berlin] PHP Warning:  Undefined array key "admin" in C:\xampp\htdocs\credimas\class\SessionController.php on line 161
+[15-Jul-2021 03:05:03 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[15-Jul-2021 03:05:03 Europe/Berlin] APP::construct-> 
+[15-Jul-2021 03:11:05 Europe/Berlin] APP::construct-> No existe el controlador especificado
+[15-Jul-2021 03:11:05 Europe/Berlin] APP::construct-> 
+[15-Jul-2021 03:11:29 Europe/Berlin] ID: BANPRO Description: Banco Promerica
+[15-Jul-2021 03:12:00 Europe/Berlin] No existen los post solicitados
+[15-Jul-2021 03:12:03 Europe/Berlin] No existen los post solicitados
+[15-Jul-2021 03:12:31 Europe/Berlin] No existen los post solicitados
+[15-Jul-2021 03:12:48 Europe/Berlin] No existen los post solicitados
+[15-Jul-2021 03:13:05 Europe/Berlin] No existen los post solicitados
+[15-Jul-2021 03:13:57 Europe/Berlin] No existen los post solicitados
+[15-Jul-2021 03:15:45 Europe/Berlin] ID: LAFISE Description: Banco Lafise Bancentro
+[15-Jul-2021 03:15:45 Europe/Berlin] FINANCIAL_ENTITY::Save->PDOException: PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'LAFISE' for key 'PRIMARY' in C:\xampp\htdocs\credimas\database\FINANCIAL_ENTITY.php:71
+Stack trace:
+#0 C:\xampp\htdocs\credimas\database\FINANCIAL_ENTITY.php(71): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php(64): FINANCIAL_ENTITY->Save()
+#2 C:\xampp\htdocs\credimas\libs\app.php(51): FinancialEntitiesController->InsertOrUpdateEntity()
+#3 C:\xampp\htdocs\credimas\index.php(24): App->__construct()
+#4 {main}
+[15-Jul-2021 03:16:09 Europe/Berlin] ID: LAFISE Description: Banco Lafise Bancentro
+[15-Jul-2021 03:16:09 Europe/Berlin] FINANCIAL_ENTITY::Save->PDOException: PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'LAFISE' for key 'PRIMARY' in C:\xampp\htdocs\credimas\database\FINANCIAL_ENTITY.php:71
+Stack trace:
+#0 C:\xampp\htdocs\credimas\database\FINANCIAL_ENTITY.php(71): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php(64): FINANCIAL_ENTITY->Save()
+#2 C:\xampp\htdocs\credimas\libs\app.php(51): FinancialEntitiesController->InsertOrUpdateEntity()
+#3 C:\xampp\htdocs\credimas\index.php(24): App->__construct()
+#4 {main}
+[15-Jul-2021 03:17:24 Europe/Berlin] ID: BANPRO Description: Banco Promerica
+[15-Jul-2021 03:17:24 Europe/Berlin] FINANCIAL_ENTITY::Save->PDOException: PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'BANPRO' for key 'PRIMARY' in C:\xampp\htdocs\credimas\database\FINANCIAL_ENTITY.php:71
+Stack trace:
+#0 C:\xampp\htdocs\credimas\database\FINANCIAL_ENTITY.php(71): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php(64): FINANCIAL_ENTITY->Save()
+#2 C:\xampp\htdocs\credimas\libs\app.php(51): FinancialEntitiesController->InsertOrUpdateEntity()
+#3 C:\xampp\htdocs\credimas\index.php(24): App->__construct()
+#4 {main}
+[15-Jul-2021 03:17:30 Europe/Berlin] ID: BANPRO Description: Banco Promerica
+[15-Jul-2021 03:17:30 Europe/Berlin] FINANCIAL_ENTITY::Save->PDOException: PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'BANPRO' for key 'PRIMARY' in C:\xampp\htdocs\credimas\database\FINANCIAL_ENTITY.php:71
+Stack trace:
+#0 C:\xampp\htdocs\credimas\database\FINANCIAL_ENTITY.php(71): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php(64): FINANCIAL_ENTITY->Save()
+#2 C:\xampp\htdocs\credimas\libs\app.php(51): FinancialEntitiesController->InsertOrUpdateEntity()
+#3 C:\xampp\htdocs\credimas\index.php(24): App->__construct()
+#4 {main}
+[15-Jul-2021 03:18:09 Europe/Berlin] ID: LAFISE Description: Banco Lafise Bancentro
+[15-Jul-2021 03:18:09 Europe/Berlin] FINANCIAL_ENTITY::UpdateItem->PDOException: PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\credimas\database\FINANCIAL_ENTITY.php:168
+Stack trace:
+#0 C:\xampp\htdocs\credimas\database\FINANCIAL_ENTITY.php(168): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php(48): FINANCIAL_ENTITY->Update()
+#2 C:\xampp\htdocs\credimas\libs\app.php(51): FinancialEntitiesController->InsertOrUpdateEntity()
+#3 C:\xampp\htdocs\credimas\index.php(24): App->__construct()
+#4 {main}
+[15-Jul-2021 03:19:14 Europe/Berlin] ID: BANPRO Description: Banco Promerica
+[15-Jul-2021 03:19:14 Europe/Berlin] FINANCIAL_ENTITY::UpdateItem->PDOException: PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\credimas\database\FINANCIAL_ENTITY.php:168
+Stack trace:
+#0 C:\xampp\htdocs\credimas\database\FINANCIAL_ENTITY.php(168): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php(48): FINANCIAL_ENTITY->Update()
+#2 C:\xampp\htdocs\credimas\libs\app.php(51): FinancialEntitiesController->InsertOrUpdateEntity()
+#3 C:\xampp\htdocs\credimas\index.php(24): App->__construct()
+#4 {main}
+[15-Jul-2021 03:19:20 Europe/Berlin] ID: BANPRO Description: Banco Promerica
+[15-Jul-2021 03:19:20 Europe/Berlin] FINANCIAL_ENTITY::UpdateItem->PDOException: PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\credimas\database\FINANCIAL_ENTITY.php:168
+Stack trace:
+#0 C:\xampp\htdocs\credimas\database\FINANCIAL_ENTITY.php(168): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\credimas\controllers\FinancialEntitiesController.php(48): FINANCIAL_ENTITY->Update()
+#2 C:\xampp\htdocs\credimas\libs\app.php(51): FinancialEntitiesController->InsertOrUpdateEntity()
+#3 C:\xampp\htdocs\credimas\index.php(24): App->__construct()
+#4 {main}
+[15-Jul-2021 03:20:18 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "->", expecting identifier or variable or "{" or "$" in C:\xampp\htdocs\credimas\database\FINANCIAL_ENTITY.php on line 164
+[15-Jul-2021 03:20:20 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "->", expecting identifier or variable or "{" or "$" in C:\xampp\htdocs\credimas\database\FINANCIAL_ENTITY.php on line 164
+[15-Jul-2021 03:20:32 Europe/Berlin] ID: BANPRO Description: Banco Promerica
+[15-Jul-2021 03:20:40 Europe/Berlin] ID: BANPRO Description: Banco Promérica
+[15-Jul-2021 03:21:35 Europe/Berlin] ID: LAFISE2 Description: Banco Lafise Bancentro 
