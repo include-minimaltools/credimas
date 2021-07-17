@@ -2,7 +2,7 @@
 
 require_once 'libs/model.php';
 
-class USER extends Model implements IModel
+class USER extends Model implements IModel, JsonSerializable
 {
 	private $ID;
 	private $USERNAME;
@@ -412,6 +412,16 @@ class USER extends Model implements IModel
 		$this->USER_UPDATE = $data['USER_UPDATE'];
 		$this->DATE_UPDATE = $data['DATE_UPDATE'];
 		$this->setVERIFIED($data['VERIFIED']);
-	}           
+	}
+	
+	public function jsonSerialize()
+	{
+		return json_encode(get_object_vars($this));
+	}
+
+	public function array()
+	{
+		return get_object_vars($this);
+	}
 }
 ?>

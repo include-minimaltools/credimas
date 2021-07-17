@@ -44,8 +44,14 @@
                         <ul class="sub-menu children dropdown-menu show">
 
                             <li><i class="fa fa-home"></i><a href="<?php echo constant('URL')?>">Inicio</a></li>
+
+                            <?php
+                            if($this->data['role'] == "admin") {
+                            ?>
                             <li><i class="menu-icon fa fa-money"></i><a href="<?php echo constant('URL')?>/financialentities">Entidades Financieras</a></li>
                             <li><i class="menu-icon fa fa-dollar"></i><a href="<?php echo constant('URL')?>/currencies">Monedas y Divisas</a></li>
+                            <?php } ?>
+                            
                             
                             <li class="menu-title">Configuración</li>
                             <li><i class="menu-icon fa fa-cog"></i><a href="<?php echo constant('URL')?>/updateprofile">Editar cuenta</a></li>

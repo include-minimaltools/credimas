@@ -44,4 +44,5 @@ class LoginController extends SessionController
             $this->Redirect('',['error' => ErrorMessage::ERROR_LOGIN_AUTHENTICATE]);
         }
     }
-}?>
+}
+?>

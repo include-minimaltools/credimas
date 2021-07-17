@@ -29,7 +29,7 @@
             <div class="login-content">
                 <div class="login-logo">
                     <a href="index.html">
-                        <img class="align-content" src="images/logo.png" alt="">
+                        <!-- <img class="align-content" src="images/logo.png" alt=""> -->
                     </a>
                 </div>
                 <div class="login-form">
@@ -56,6 +56,7 @@
         </div>
     </div>
 
+    <script src="assets/js/lib/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>

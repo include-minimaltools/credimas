@@ -2,7 +2,7 @@
 
 require_once 'libs/model.php';
 
-class LOAN_DOCUMENT extends Model implements IModel
+class LOAN_DOCUMENT extends Model implements IModel, JsonSerializable
 {
 	private $ID;
 	private $ID_LENDER;
@@ -279,7 +279,16 @@ class LOAN_DOCUMENT extends Model implements IModel
 		$this->USER_UPDATE = $data['USER_UPDATE'];
 		$this->DATE_UPDATE = $data['DATE_UPDATE'];
 
-	}   
-                
+	}
+
+	public function jsonSerialize()
+	{
+		return json_encode(get_object_vars($this));
+	}
+
+	public function array()
+	{
+		return get_object_vars($this);
+	}
 }
 ?>

@@ -2,7 +2,7 @@
 
 require_once 'libs/model.php';
 
-class CLIENT extends Model implements IModel
+class CLIENT extends Model implements IModel, JsonSerializable
 {
 	private $ID;
 	private $ACCOUNTS_PAYABLE;
@@ -193,6 +193,14 @@ class CLIENT extends Model implements IModel
 		$this->DATE_UPDATE = $data['DATE_UPDATE'];
 
 	}   
-                
+	public function jsonSerialize()
+	{
+		return json_encode(get_object_vars($this));
+	}
+
+	public function array()
+	{
+		return get_object_vars($this);
+	}
 }
 ?>

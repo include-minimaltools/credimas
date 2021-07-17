@@ -2,7 +2,7 @@
 
 require_once 'libs/model.php';
 
-class CURRENCY extends Model implements IModel
+class CURRENCY extends Model implements IModel, JsonSerializable
 {
 	private $ID;
 	private $DESCRIPTION;
@@ -188,6 +188,15 @@ class CURRENCY extends Model implements IModel
 		$this->DATE_UPDATE = $data['DATE_UPDATE'];
 
 	}   
+	public function jsonSerialize()
+	{
+		return json_encode(get_object_vars($this));
+	}
+
+	public function array()
+	{
+		return get_object_vars($this);
+	}
                 
 }
 ?>
