@@ -34,7 +34,6 @@ class UpdateProfileController extends SessionController
         if($this->ExistPOST(['username','phone','address','first_name','second_name','first_lastname','second_lastname']))
         {
             $username = $this->POST('username');
-            // $password = $this->POST('password');
             $phone = $this->POST('phone');
             $address = $this->POST('address');
             $first_name = $this->POST('first_name');
@@ -42,20 +41,12 @@ class UpdateProfileController extends SessionController
             $first_lastname = $this->POST('first_lastname');
             $second_lastname = $this->POST('second_lastname');
             
-            if ($username == '' || empty($username) ||
-                // $password == '' || empty($password) ||
-                // $address == ''  || empty($address) ||
-                // $first_name == '' || empty($first_name) ||
-                // $second_name == '' || empty($second_name) ||
-                // $first_lastname == '' || empty($first_lastname) ||
-                // $second_lastname == '' || empty($second_lastname))
-                $phone == ''    || empty($phone))
+            if ($username == '' || empty($username) || $phone == ''    || empty($phone))
             {
                 $this->Redirect('signup', ['error' => ErrorMessage::ERROR_SIGNUP_NEWUSER_EMPTY]);
                 return;
             }
 
-            // Si existe una foto, sustituir la anterior
             if(isset($_FILES['photo']) && $_FILES['photo']['name'] != NULL)
             {
                 $temp_photo = $this->user->PHOTO;
@@ -63,8 +54,7 @@ class UpdateProfileController extends SessionController
                 if($temp_photo != $this->user->PHOTO && $temp_photo != NULL)
                     error_log("Borrando imagen: " . $temp_photo . ': '. unlink('images/users/' . $temp_photo) ? 'Borrado' : 'No se ha podido borrar');    
             }
-
-                
+            
             if(isset($_FILES['photo_identify']) && $_FILES['photo_identify']['name'] != NULL)
             {
                 
@@ -84,7 +74,9 @@ class UpdateProfileController extends SessionController
             $this->user->FIRST_LASTNAME = $first_lastname;
             $this->user->SECOND_LASTNAME = $second_lastname;
             $this->user->USER_UPDATE = $this->user->USERNAME;
-            $this->user->DATE_UPDATE = Date('dmY');
+            $this->user->DATE_UPDATE = Date('Ymd');
+
+            error_log($this->user->DATE_UPDATE);
 
             if($this->user->Exists($this->user->ID))
             {

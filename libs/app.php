@@ -16,7 +16,6 @@ class App
         if(empty($url[0]))
         {
             error_log('APP::construct-> No existe el controlador especificado');
-            error_log('APP::construct-> '.$url[0]);
             $controller = 'controllers/LoginController.php';
             require_once $controller;
             $controller = new LoginController();

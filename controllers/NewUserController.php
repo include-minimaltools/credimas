@@ -43,11 +43,6 @@ class NewUserController extends SessionController
                 $confirmPassword == '' || empty($confirmPassword) ||
                 $identification == '' || empty($identification) ||
                 $role == '' || empty($role) ||
-                // $address == ''  || empty($address) ||
-                // $first_name == '' || empty($first_name) ||
-                // $second_name == '' || empty($second_name) ||
-                // $first_lastname == '' || empty($first_lastname) ||
-                // $second_lastname == '' || empty($second_lastname))
                 $phone == ''    || empty($phone))
             {
                 // $this->Redirect('signup', ['error' => ErrorMessage::ERROR_SIGNUP_NEWUSER_EMPTY]);
@@ -75,8 +70,6 @@ class NewUserController extends SessionController
                 $user->IDENTIFICATION_PHOTO = $this->setPhoto($_FILES['photo_identify'], "images/identification/");
             }
 
-            $date = getdate();
-
             $user->USERNAME = $username;
             $user->PASSWORD = $password;
             $user->PHONE = $phone;
@@ -88,7 +81,7 @@ class NewUserController extends SessionController
             $user->FIRST_LASTNAME = $first_lastname;
             $user->SECOND_LASTNAME = $second_lastname;
             $user->USER_CREATE = $this->user->USERNAME;
-            $user->DATE_CREATE = $date['year'] . '-' .  $date['month'] . '-' . $date['mday'];
+            $user->DATE_CREATE = Date('Ymd');
             $user->VERIFIED = false;
 
             if($user->ExistsUsername($user->USERNAME))
