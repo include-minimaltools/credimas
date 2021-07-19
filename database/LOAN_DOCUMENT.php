@@ -1,8 +1,6 @@
 <?php
 
-require_once 'libs/model.php';
-
-class LOAN_DOCUMENT extends Model implements IModel, JsonSerializable
+class LOAN_DOCUMENT extends Model implements IModel
 {
 	private $ID;
 	private $ID_LENDER;
@@ -17,6 +15,7 @@ class LOAN_DOCUMENT extends Model implements IModel, JsonSerializable
 	private $STATUS;
 	private $TERM;
 	private $LOAN_RECEIPT;
+	private $INIT_DATE;
 	private $USER_CREATE;
 	private $DATE_CREATE;
 	private $USER_UPDATE;
@@ -37,6 +36,7 @@ class LOAN_DOCUMENT extends Model implements IModel, JsonSerializable
 	private function getSTATUS() { return $this->STATUS; }
 	private function getTERM() { return $this->TERM; }
 	private function getLOAN_RECEIPT() { return $this->LOAN_RECEIPT; }
+	private function getINIT_DATE() { return $this->INIT_DATE; }
 	private function getUSER_CREATE() { return $this->USER_CREATE; }
 	private function getDATE_CREATE() { return $this->DATE_CREATE; }
 	private function getUSER_UPDATE() { return $this->USER_UPDATE; }
@@ -56,6 +56,7 @@ class LOAN_DOCUMENT extends Model implements IModel, JsonSerializable
 	private function setSTATUS($STATUS) { $this->STATUS = $STATUS; }
 	private function setTERM($TERM) { $this->TERM = $TERM; }
 	private function setLOAN_RECEIPT($LOAN_RECEIPT) { $this->LOAN_RECEIPT = $LOAN_RECEIPT; }
+	private function setINIT_DATE($INIT_DATE) { $this->INIT_DATE = $INIT_DATE; }
 	private function setUSER_CREATE($USER_CREATE) { $this->USER_CREATE = $USER_CREATE; }
 	private function setDATE_CREATE($DATE_CREATE) { $this->DATE_CREATE = $DATE_CREATE; }
 	private function setUSER_UPDATE($USER_UPDATE) { $this->USER_UPDATE = $USER_UPDATE; }
@@ -89,6 +90,7 @@ class LOAN_DOCUMENT extends Model implements IModel, JsonSerializable
 		$this->STATUS = '';
 		$this->TERM = '';
 		$this->LOAN_RECEIPT = '';
+		$this->INIT_DATE = '';
 		$this->USER_CREATE = '';
 		$this->DATE_CREATE = '';
 		$this->USER_UPDATE = '';
@@ -98,8 +100,8 @@ class LOAN_DOCUMENT extends Model implements IModel, JsonSerializable
     {
         try
         {
-            $query = $this->prepare('INSERT INTO LOAN_DOCUMENTS( ID,  ID_LENDER,  ID_CLIENT,  GROSS_AMOUNT,  PARTIAL_AMOUNT,  INTERES_RATE,  TOTAL_AMOUNT,  PARTIALS,  BALANCE,  CURRENCY,  STATUS,  TERM,  LOAN_RECEIPT,  USER_CREATE,  DATE_CREATE,  USER_UPDATE,  DATE_UPDATE)
-            VALUES(:ID, :ID_LENDER, :ID_CLIENT, :GROSS_AMOUNT, :PARTIAL_AMOUNT, :INTERES_RATE, :TOTAL_AMOUNT, :PARTIALS, :BALANCE, :CURRENCY, :STATUS, :TERM, :LOAN_RECEIPT, :USER_CREATE, :DATE_CREATE, :USER_UPDATE, :DATE_UPDATE)');
+            $query = $this->prepare('INSERT INTO LOAN_DOCUMENTS( ID,  ID_LENDER,  ID_CLIENT,  GROSS_AMOUNT,  PARTIAL_AMOUNT,  INTERES_RATE,  TOTAL_AMOUNT,  PARTIALS,  BALANCE,  CURRENCY,  STATUS,  TERM,  LOAN_RECEIPT,  INIT_DATE,  USER_CREATE,  DATE_CREATE,  USER_UPDATE,  DATE_UPDATE)
+            VALUES(:ID, :ID_LENDER, :ID_CLIENT, :GROSS_AMOUNT, :PARTIAL_AMOUNT, :INTERES_RATE, :TOTAL_AMOUNT, :PARTIALS, :BALANCE, :CURRENCY, :STATUS, :TERM, :LOAN_RECEIPT, :INIT_DATE, :USER_CREATE, :DATE_CREATE, :USER_UPDATE, :DATE_UPDATE)');
 			$query->execute([
 				'ID' => $this->ID,
 				'ID_LENDER' => $this->ID_LENDER,
@@ -114,6 +116,7 @@ class LOAN_DOCUMENT extends Model implements IModel, JsonSerializable
 				'STATUS' => $this->STATUS,
 				'TERM' => $this->TERM,
 				'LOAN_RECEIPT' => $this->LOAN_RECEIPT,
+				'INIT_DATE' => $this->INIT_DATE,
 				'USER_CREATE' => $this->USER_CREATE,
 				'DATE_CREATE' => $this->DATE_CREATE,
 				'USER_UPDATE' => $this->USER_UPDATE,
@@ -153,6 +156,7 @@ class LOAN_DOCUMENT extends Model implements IModel, JsonSerializable
 				$item->STATUS = $entidad['STATUS'];
 				$item->TERM = $entidad['TERM'];
 				$item->LOAN_RECEIPT = $entidad['LOAN_RECEIPT'];
+				$item->INIT_DATE = $entidad['INIT_DATE'];
 				$item->USER_CREATE = $entidad['USER_CREATE'];
 				$item->DATE_CREATE = $entidad['DATE_CREATE'];
 				$item->USER_UPDATE = $entidad['USER_UPDATE'];
@@ -193,6 +197,7 @@ class LOAN_DOCUMENT extends Model implements IModel, JsonSerializable
 			$this->STATUS = $loan_document['STATUS'];
 			$this->TERM = $loan_document['TERM'];
 			$this->LOAN_RECEIPT = $loan_document['LOAN_RECEIPT'];
+			$this->INIT_DATE = $loan_document['INIT_DATE'];
 			$this->USER_CREATE = $loan_document['USER_CREATE'];
 			$this->DATE_CREATE = $loan_document['DATE_CREATE'];
 			$this->USER_UPDATE = $loan_document['USER_UPDATE'];
@@ -230,8 +235,9 @@ class LOAN_DOCUMENT extends Model implements IModel, JsonSerializable
 	{
 		try
 		{
-			$query = $this->prepare('UPDATE LOAN_DOCUMENTS SET ID_LENDER = :ID_LENDER, ID_CLIENT = :ID_CLIENT, GROSS_AMOUNT = :GROSS_AMOUNT, PARTIAL_AMOUNT = :PARTIAL_AMOUNT, INTERES_RATE = :INTERES_RATE, TOTAL_AMOUNT = :TOTAL_AMOUNT, PARTIALS = :PARTIALS, BALANCE = :BALANCE, CURRENCY = :CURRENCY, STATUS = :STATUS, TERM = :TERM, LOAN_RECEIPT = :LOAN_RECEIPT, USER_CREATE = :USER_CREATE, DATE_CREATE = :DATE_CREATE, USER_UPDATE = :USER_UPDATE, DATE_UPDATE = :DATE_UPDATE WHERE ID = :ID');
+			$query = $this->prepare('UPDATE LOAN_DOCUMENTS SET ID_LENDER = :ID_LENDER, ID_CLIENT = :ID_CLIENT, GROSS_AMOUNT = :GROSS_AMOUNT, PARTIAL_AMOUNT = :PARTIAL_AMOUNT, INTERES_RATE = :INTERES_RATE, TOTAL_AMOUNT = :TOTAL_AMOUNT, PARTIALS = :PARTIALS, BALANCE = :BALANCE, CURRENCY = :CURRENCY, STATUS = :STATUS, TERM = :TERM, LOAN_RECEIPT = :LOAN_RECEIPT, INIT_DATE = :INIT_DATE, USER_CREATE = :USER_CREATE, DATE_CREATE = :DATE_CREATE, USER_UPDATE = :USER_UPDATE, DATE_UPDATE = :DATE_UPDATE WHERE ID = :ID');
 			$query->execute([
+				'ID' => $this->ID,
 				'ID_LENDER' => $this->ID_LENDER,
 				'ID_CLIENT' => $this->ID_CLIENT,
 				'GROSS_AMOUNT' => $this->GROSS_AMOUNT,
@@ -244,6 +250,7 @@ class LOAN_DOCUMENT extends Model implements IModel, JsonSerializable
 				'STATUS' => $this->STATUS,
 				'TERM' => $this->TERM,
 				'LOAN_RECEIPT' => $this->LOAN_RECEIPT,
+				'INIT_DATE' => $this->INIT_DATE,
 				'USER_CREATE' => $this->USER_CREATE,
 				'DATE_CREATE' => $this->DATE_CREATE,
 				'USER_UPDATE' => $this->USER_UPDATE,
@@ -261,7 +268,7 @@ class LOAN_DOCUMENT extends Model implements IModel, JsonSerializable
 
     public function From($data) 
 	{
-				$this->ID = $data['ID'];
+		$this->ID = $data['ID'];
 		$this->ID_LENDER = $data['ID_LENDER'];
 		$this->ID_CLIENT = $data['ID_CLIENT'];
 		$this->GROSS_AMOUNT = $data['GROSS_AMOUNT'];
@@ -274,13 +281,14 @@ class LOAN_DOCUMENT extends Model implements IModel, JsonSerializable
 		$this->STATUS = $data['STATUS'];
 		$this->TERM = $data['TERM'];
 		$this->LOAN_RECEIPT = $data['LOAN_RECEIPT'];
+		$this->INIT_DATE = $data['INIT_DATE'];
 		$this->USER_CREATE = $data['USER_CREATE'];
 		$this->DATE_CREATE = $data['DATE_CREATE'];
 		$this->USER_UPDATE = $data['USER_UPDATE'];
 		$this->DATE_UPDATE = $data['DATE_UPDATE'];
 
-	}
-
+	}   
+                
 	public function jsonSerialize()
 	{
 		return json_encode(get_object_vars($this));

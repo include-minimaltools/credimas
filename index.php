@@ -5,6 +5,8 @@
     ini_set('display_error', FALSE);
     ini_set('log_errors', TRUE);
 
+    date_default_timezone_set('America/Managua');
+    
     ini_set('error_log','console.log');
 
     require_once 'class/messages/error.php';

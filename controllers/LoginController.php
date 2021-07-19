@@ -21,7 +21,6 @@ class LoginController extends SessionController
 
             if($username == '' || empty($username) || $password == '' || empty($password))
             {
-                error_log("LoginController::Authenticate -> " . $username . " " . $password);
                 $this->Redirect('', ['error' => ErrorMessage::ERROR_LOGIN_AUTHENTICATE_EMPTY]);
                 return;
             }

@@ -31,7 +31,7 @@ class UpdateProfileController extends SessionController
 
     function UpdateUser()
     {
-        if($this->ExistPOST(['username','phone','address','first_name','second_name','first_lastname','second_lastname']))
+        if($this->ExistPOST(['username','phone']))
         {
             $username = $this->POST('username');
             $phone = $this->POST('phone');
@@ -40,7 +40,8 @@ class UpdateProfileController extends SessionController
             $second_name = $this->POST('second_name');
             $first_lastname = $this->POST('first_lastname');
             $second_lastname = $this->POST('second_lastname');
-            
+            $identify = $this->POST('identify');
+
             if ($username == '' || empty($username) || $phone == ''    || empty($phone))
             {
                 $this->Redirect('signup', ['error' => ErrorMessage::ERROR_SIGNUP_NEWUSER_EMPTY]);
@@ -69,14 +70,13 @@ class UpdateProfileController extends SessionController
             $this->user->USERNAME = $username;
             $this->user->PHONE = $phone;
             $this->user->ADDRESS = $address;
+            $this->user->IDENTIFICATION = $identify;
             $this->user->FIRST_NAME = $first_name;
             $this->user->SECOND_NAME = $second_name;
             $this->user->FIRST_LASTNAME = $first_lastname;
             $this->user->SECOND_LASTNAME = $second_lastname;
             $this->user->USER_UPDATE = $this->user->USERNAME;
-            $this->user->DATE_UPDATE = Date('Ymd');
-
-            error_log($this->user->DATE_UPDATE);
+            $this->user->DATE_UPDATE = Date('Y-m-d');
 
             if($this->user->Exists($this->user->ID))
             {

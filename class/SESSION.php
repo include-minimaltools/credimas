@@ -14,7 +14,7 @@ class SESSION
 	//getters
 	public function GetCurrentUser() 
     {
-        return $_SESSION[$this->sessionName];
+        return $this->Exists() ? $_SESSION[$this->sessionName] : NULL;
     }
 
 	//setters

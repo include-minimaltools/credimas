@@ -11,6 +11,11 @@
             "role": [""]
         },
         {
+            "site":"newloan",
+            "access": "private",
+            "role": ["lender"]
+        },
+        {
             "site":"financialentities",
             "access": "private",
             "role": ["client","lender","admin"]
@@ -47,11 +52,11 @@
         }
     ],
     
-    "default-sites":[
-        {
-            "client": "home",
-            "admin": "admin",
-            "lender": "lender"
-        }
-    ]
+    "default-sites":
+    {
+        "client": "home",
+        "admin": "admin",
+        "lender": "lender"
+    }
+    
 }

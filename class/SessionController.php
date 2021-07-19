@@ -26,9 +26,10 @@ class SessionController extends Controller
         $this->session = new SESSION();
 
         $json = $this->getJSONFileConfig();
-
+        
         $this->sites = $json['sites'];
         $this->defaultSites = $json['default-sites'];
+
         $this->validateSession();
     }
 
@@ -90,6 +91,8 @@ class SessionController extends Controller
     function getUserSessionData()
     {
         $id = $this->session->GetCurrentUser();
+        if($id == null)
+            return new User();
         $this->user = new USER();
         $this->user->Get($id);
         return $this->user;

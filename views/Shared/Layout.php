@@ -50,8 +50,11 @@
                             ?>
                             <li><i class="menu-icon fa fa-money"></i><a href="<?php echo constant('URL')?>/financialentities">Entidades Financieras</a></li>
                             <li><i class="menu-icon fa fa-dollar"></i><a href="<?php echo constant('URL')?>/currencies">Monedas y Divisas</a></li>
+                            <?php 
+                            } else if($this->data['role'] == 'lender') {
+                            ?>
+                            <li><i class="menu-icon fa fa-money"></i><a href="<?php echo constant('URL')?>/newloan">Nuevo Préstamo</a></li>
                             <?php } ?>
-                            
                             
                             <li class="menu-title">Configuración</li>
                             <li><i class="menu-icon fa fa-cog"></i><a href="<?php echo constant('URL')?>/updateprofile">Editar cuenta</a></li>

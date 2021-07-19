@@ -23,15 +23,12 @@ class LoginModel extends Model
                 $user = new USER();
                 $user->From($item);
 
-                error_log(password_hash($password, PASSWORD_DEFAULT, ['cost' => 5]) . ' | ' . $user->PASSWORD);
                 if(password_verify($password, $user->PASSWORD))
                 {
-                    error_log('LoginModel::Login -> Success');
                     return $user;
                 }
                 else
                 {
-                    error_log('LoginModel::Login -> Password incorrect');
                     return NULL;
                 }
             }

@@ -95,8 +95,6 @@ class USER extends Model implements IModel, JsonSerializable
 			$query = $this->prepare('SELECT * FROM USERS WHERE ID = :ID');
 			$query->execute(['ID' => $id]);
 
-			error_log('USER::Exist() -> rowCount'.$query->rowCount());
-
 			return ($query->rowCount() != 0);
 		}
 		catch (PDOException $ex)
@@ -110,11 +108,8 @@ class USER extends Model implements IModel, JsonSerializable
 	{
 		try
 		{
-			error_log('USER::Exist('.$username.')');
 			$query = $this->prepare('SELECT * FROM USERS WHERE USERNAME = :USERNAME');
 			$query->execute(['USERNAME' => $username]);
-
-			error_log('USER::Exist() -> rowCount'.$query->rowCount());
 
 			return ($query->rowCount() != 0);
 		}
@@ -250,6 +245,31 @@ class USER extends Model implements IModel, JsonSerializable
 				$item->VERIFIED = $entidad['VERIFIED'];
 
 				array_push($result, $item);
+			}
+			
+			return $result;
+		}
+		catch(PDOException $ex)
+		{
+			error_log('USERS::GetByRole->PDOException: ' . $ex);
+			return false;
+		}
+	}
+
+	public function GetByRoleArray($role) 
+	{
+		$result = [];
+
+		try
+		{
+			$query = $this->prepare('SELECT * FROM USERS WHERE ROLE = :ROLE');
+			$query->execute([
+				'ROLE' => $role
+			]);
+
+			while($entidad = $query->fetch(PDO::FETCH_ASSOC))
+			{
+				array_push($result, $entidad);
 			}
 			
 			return $result;
