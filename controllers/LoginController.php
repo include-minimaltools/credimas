@@ -21,7 +21,7 @@ class LoginController extends SessionController
 
             if($username == '' || empty($username) || $password == '' || empty($password))
             {
-                $this->Redirect('', ['error' => ErrorMessage::ERROR_LOGIN_AUTHENTICATE_EMPTY]);
+                $this->Redirect('', ['error' => ErrorMessage::LOGIN_AUTHENTICATE_EMPTY]);
                 return;
             }
 
@@ -30,17 +30,17 @@ class LoginController extends SessionController
             if($user != null)
             {
                 $this->Initialize($user);
-                $this->Redirect('',['success' => SuccessMessage::SUCCESS_LOGIN]);
+                $this->Redirect('',['success' => SuccessMessage::LOGIN]);
             }
             else 
             {
-                $this->Redirect('',['error' => ErrorMessage::ERROR_LOGIN_AUTHENTICATE_DATA]);
+                $this->Redirect('',['error' => ErrorMessage::LOGIN_AUTHENTICATE_DATA]);
             }
             
         }
         else
         {
-            $this->Redirect('',['error' => ErrorMessage::ERROR_LOGIN_AUTHENTICATE]);
+            $this->Redirect('',['error' => ErrorMessage::LOGIN_AUTHENTICATE]);
         }
     }
 }

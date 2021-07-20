@@ -77,24 +77,7 @@ class LOAN_DOCUMENT extends Model implements IModel
 
 	public function __construct()
 	{
-		$this->ID = '';
-		$this->ID_LENDER = '';
-		$this->ID_CLIENT = '';
-		$this->GROSS_AMOUNT = '';
-		$this->PARTIAL_AMOUNT = '';
-		$this->INTERES_RATE = '';
-		$this->TOTAL_AMOUNT = '';
-		$this->PARTIALS = '';
-		$this->BALANCE = '';
-		$this->CURRENCY = '';
-		$this->STATUS = '';
-		$this->TERM = '';
-		$this->LOAN_RECEIPT = '';
-		$this->INIT_DATE = '';
-		$this->USER_CREATE = '';
-		$this->DATE_CREATE = '';
-		$this->USER_UPDATE = '';
-		$this->DATE_UPDATE = '';
+		parent::__construct();
 	}
     public function Save() 
     {

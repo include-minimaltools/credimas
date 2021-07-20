@@ -26,34 +26,45 @@ class NewLoanController extends SessionController
 
     public function CreateLoan()
     {
-        if($this->ExistPOST(['client','currency','gross_amount','partials','interes_rate','partial_amount','term','date']))
+        try 
         {
-            $lender = $this->user->ID;
-            $client = $this->POST('client');
-            $currency = $this->POST('currency');
-            $gross_amount = $this->POST('gross_amount');
-            $partials = $this->POST('partials');
-            $interes_rate = $this->POST('interes_rate');
-            $partial_amount = $this->POST('partial_amount');
-            $term = $this->POST('term');
-            $init_date = $this->POST('date');
-
-            if($client == '' || $currency == '' || $gross_amount == '' || $partials == '' || $interes_rate == '' || $partial_amount == '' || $term == '' || $init_date == '')
+            if($this->ExistPOST(['client','currency','gross_amount','partials','interes_rate','partial_amount','term','date']))
             {
-                error_log('NewLoanController::CreateLoan->Post vacío');
-                return;
+                $lender = $this->user->ID;
+                $client = $this->POST('client');
+                $currency = $this->POST('currency');
+                $gross_amount = $this->POST('gross_amount');
+                $partials = $this->POST('partials');
+                $interes_rate = $this->POST('interes_rate');
+                $partial_amount = $this->POST('partial_amount');
+                $term = $this->POST('term');
+                $init_date = $this->POST('date');
+
+                if(isset($_FILES['loan_receipt']) && $_FILES['loan_receipt']['name'] != NULL)
+                {
+                    $loan_receipt = $this->setPhoto($_FILES['loan_receipt'], "images/loan_receipt/");
+                }
+                else
+                {
+                    $this->Redirect('newloan',['error' => ErrorMessage::NEWLOAN_PHOTO_REQUIRED]);
+                }
+
+                if($client == '' || $currency == '' || $gross_amount == '' || $partials == '' || $interes_rate == '' || $partial_amount == '' || $term == '' || $init_date == '')
+                {
+                    $this->Redirect('newloan',['error' => ErrorMessage::NEWLOAN_EMPTY]);
+                }
+
+                $this->model->CreateNewLoan($this->user,$lender, $client, $currency, $gross_amount, $partials, $interes_rate, $partial_amount, $term, $init_date, $loan_receipt);
+                $this->Redirect('newloan',[]);
             }
-
-            foreach (['client','currency','gross_amount','partials','interes_rate','partial_amount','term','date'] as $key => $value) 
+            else
             {
-                error_log($this->POST($value));
-            }            
-
-            $this->model->CreateNewLoan($this->user,$lender, $client, $currency, $gross_amount, $partials, $interes_rate, $partial_amount, $term, $init_date);
-        }
-        else
+                $this->Redirect('newloan',['error' => ErrorMessage::NEWLOAN_EMPTY]);
+            }
+        } 
+        catch (Exception $ex) 
         {
-            error_log("NewLoanController::CreateLoan->No se encontró una variable requerida");
+            error_log('NewLoanController::CreateLoan -> '.$ex->getMessage());
         }
     }
 

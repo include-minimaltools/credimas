@@ -57,10 +57,10 @@ require_once "views/Shared/Layout.php";
                             </div>
                             <div class="col">
                                 <label>Recibo de transacción:</label>
-                                <input hidden type="file" id="loan_receipt">
+                                <input hidden type="file" name="loan_receipt" id="loan_receipt">
                                 <div class="row">
                                     <div class="col">
-                                        <button disabled data-toggle="modal" id="btnModal" data-target="#modalImage" class="form-control">Visualizar recibo</button>
+                                        <input type="button" disabled data-toggle="modal" id="btnModal" data-target="#modalImage" class="form-control" value="Visualizar recibo"></input>
                                     </div>
                                     <div class="col">
                                         <label for="loan_receipt" id="lblloan_receipt" class="form-control btn-outline-primary">Cambiar imagen</label>
@@ -71,7 +71,7 @@ require_once "views/Shared/Layout.php";
                         <div class="form-group form-row">
                             <div class="col">
                                 <label>Plazo:</label>
-                                <select name="term" id="term" class="form-control">
+                                <select name="term" id="term" class="form-control" required>
                                     <option value="">Seleccione un plazo</option>
                                     <option value="7">Semanal</option>
                                     <option value="15">Quincenal</option>
@@ -84,8 +84,11 @@ require_once "views/Shared/Layout.php";
                             </div>
                             <div class="col">
                                 <label>Fecha de incio:</label>
-                                <input type="date" name="date" class="form-control-plaintext">
+                                <input type="date" name="date" class="form-control-plaintext" required>
                             </div>
+                        </div>
+                        <div class="form-group color-red">
+                            <p><?php echo $this->showMessages(); ?></p>
                         </div>
                         <div class="form-group form-row">
                             <div class="col-sm-3">

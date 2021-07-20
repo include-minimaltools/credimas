@@ -2,8 +2,8 @@
 class SuccessMessage
 {
     const TEST = "123";
-    const SUCCES_SIGNUP_NEWUSER = "305";
-    const SUCCESS_LOGIN = "434";
+    const SIGNUP_NEWUSER = "305";
+    const LOGIN = "434";
 
     private $success = [];
 
@@ -11,8 +11,8 @@ class SuccessMessage
     {
         $this->success = [
             SuccessMessage::TEST => 'Mensaje de exito',
-            SuccessMessage::SUCCES_SIGNUP_NEWUSER => 'Se ha registrado correctamente.',
-            SuccessMessage::SUCCESS_LOGIN => 'Se ha iniciado sesión correctamente'
+            SuccessMessage::SIGNUP_NEWUSER => 'Se ha registrado correctamente.',
+            SuccessMessage::LOGIN => 'Se ha iniciado sesión correctamente'
         ];
     }
 

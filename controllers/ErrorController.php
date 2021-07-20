@@ -7,6 +7,6 @@
 
     function Render()
     {
-        $this->view->render('Error/index');   
+        $this->view->render('Error/index');
     }
 }?>
