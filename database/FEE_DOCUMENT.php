@@ -8,7 +8,6 @@ class FEE_DOCUMENT extends Model implements IModel, JsonSerializable
 	private $ID_LOAN;
 	private $N_PARTIAL;
 	private $GROSS_AMOUNT;
-	private $FINANCIAL_ENTITY;
 	private $CURRENCY;
 	private $INTERES_RATE;
 	private $DEDUCTION;
@@ -28,7 +27,6 @@ class FEE_DOCUMENT extends Model implements IModel, JsonSerializable
 	private function getID_LOAN() { return $this->ID_LOAN; }
 	private function getN_PARTIAL() { return $this->N_PARTIAL; }
 	private function getGROSS_AMOUNT() { return $this->GROSS_AMOUNT; }
-	private function getFINANCIAL_ENTITY() { return $this->FINANCIAL_ENTITY; }
 	private function getCURRENCY() { return $this->CURRENCY; }
 	private function getINTERES_RATE() { return $this->INTERES_RATE; }
 	private function getDEDUCTION() { return $this->DEDUCTION; }
@@ -47,7 +45,6 @@ class FEE_DOCUMENT extends Model implements IModel, JsonSerializable
 	private function setID_LOAN($ID_LOAN) { $this->ID_LOAN = $ID_LOAN; }
 	private function setN_PARTIAL($N_PARTIAL) { $this->N_PARTIAL = $N_PARTIAL; }
 	private function setGROSS_AMOUNT($GROSS_AMOUNT) { $this->GROSS_AMOUNT = $GROSS_AMOUNT; }
-	private function setFINANCIAL_ENTITY($FINANCIAL_ENTITY) { $this->FINANCIAL_ENTITY = $FINANCIAL_ENTITY; }
 	private function setCURRENCY($CURRENCY) { $this->CURRENCY = $CURRENCY; }
 	private function setINTERES_RATE($INTERES_RATE) { $this->INTERES_RATE = $INTERES_RATE; }
 	private function setDEDUCTION($DEDUCTION) { $this->DEDUCTION = $DEDUCTION; }
@@ -82,14 +79,13 @@ class FEE_DOCUMENT extends Model implements IModel, JsonSerializable
     {
         try
         {
-            $query = $this->prepare('INSERT INTO FEES_DOCUMENTS( ID,  ID_LOAN,  N_PARTIAL,  GROSS_AMOUNT,  FINANCIAL_ENTITY,  CURRENCY,  INTERES_RATE,  DEDUCTION,  TOTAL_AMOUNT,  BALANCE,  TRANSACTION,  STATUS,  PAYMENT_DATE,  USER_CREATE,  DATE_CREATE,  USER_UPDATE,  DATE_UPDATE)
-            VALUES(:ID, :ID_LOAN, :N_PARTIAL, :GROSS_AMOUNT, :FINANCIAL_ENTITY, :CURRENCY, :INTERES_RATE, :DEDUCTION, :TOTAL_AMOUNT, :BALANCE, :TRANSACTION, :STATUS, :PAYMENT_DATE, :USER_CREATE, :DATE_CREATE, :USER_UPDATE, :DATE_UPDATE)');
+            $query = $this->prepare('INSERT INTO FEES_DOCUMENTS( ID,  ID_LOAN,  N_PARTIAL,  GROSS_AMOUNT,  CURRENCY,  INTERES_RATE,  DEDUCTION,  TOTAL_AMOUNT,  BALANCE,  TRANSACTION,  STATUS,  PAYMENT_DATE,  USER_CREATE,  DATE_CREATE,  USER_UPDATE,  DATE_UPDATE)
+            VALUES(:ID, :ID_LOAN, :N_PARTIAL, :GROSS_AMOUNT, :CURRENCY, :INTERES_RATE, :DEDUCTION, :TOTAL_AMOUNT, :BALANCE, :TRANSACTION, :STATUS, :PAYMENT_DATE, :USER_CREATE, :DATE_CREATE, :USER_UPDATE, :DATE_UPDATE)');
 			$query->execute([
 				'ID' => $this->ID,
 				'ID_LOAN' => $this->ID_LOAN,
 				'N_PARTIAL' => $this->N_PARTIAL,
 				'GROSS_AMOUNT' => $this->GROSS_AMOUNT,
-				'FINANCIAL_ENTITY' => $this->FINANCIAL_ENTITY,
 				'CURRENCY' => $this->CURRENCY,
 				'INTERES_RATE' => $this->INTERES_RATE,
 				'DEDUCTION' => $this->DEDUCTION,
@@ -113,6 +109,49 @@ class FEE_DOCUMENT extends Model implements IModel, JsonSerializable
         }
     }
 
+	public function GetByIdLoan($id)
+	{
+		try
+		{
+			$result = [];
+
+			$query = $this->prepare('SELECT * FROM FEES_DOCUMENTS WHERE ID_LOAN = :ID_LOAN');
+			$query->execute([
+				'ID_LOAN' => $id
+			]);
+
+			while($entidad = $query->fetch(PDO::FETCH_ASSOC))
+			{
+				$item = new FEE_DOCUMENT();
+				$item->ID = $entidad['ID'];
+				$item->ID_LOAN = $entidad['ID_LOAN'];
+				$item->N_PARTIAL = $entidad['N_PARTIAL'];
+				$item->GROSS_AMOUNT = $entidad['GROSS_AMOUNT'];
+				$item->CURRENCY = $entidad['CURRENCY'];
+				$item->INTERES_RATE = $entidad['INTERES_RATE'];
+				$item->DEDUCTION = $entidad['DEDUCTION'];
+				$item->TOTAL_AMOUNT = $entidad['TOTAL_AMOUNT'];
+				$item->BALANCE = $entidad['BALANCE'];
+				$item->TRANSACTION = $entidad['TRANSACTION'];
+				$item->STATUS = $entidad['STATUS'];
+				$item->PAYMENT_DATE = $entidad['PAYMENT_DATE'];
+				$item->USER_CREATE = $entidad['USER_CREATE'];
+				$item->DATE_CREATE = $entidad['DATE_CREATE'];
+				$item->USER_UPDATE = $entidad['USER_UPDATE'];
+				$item->DATE_UPDATE = $entidad['DATE_UPDATE'];
+
+				array_push($result, $item);
+			}
+			
+			return $result;
+		}
+		catch (PDOException $ex)
+		{
+            error_log('FEE_DOCUMENT::Save->PDOException: '. $ex);
+            return false;
+        }
+	}
+
     public function GetAll() 
 	{
 		$result = [];
@@ -128,7 +167,6 @@ class FEE_DOCUMENT extends Model implements IModel, JsonSerializable
 				$item->ID_LOAN = $entidad['ID_LOAN'];
 				$item->N_PARTIAL = $entidad['N_PARTIAL'];
 				$item->GROSS_AMOUNT = $entidad['GROSS_AMOUNT'];
-				$item->FINANCIAL_ENTITY = $entidad['FINANCIAL_ENTITY'];
 				$item->CURRENCY = $entidad['CURRENCY'];
 				$item->INTERES_RATE = $entidad['INTERES_RATE'];
 				$item->DEDUCTION = $entidad['DEDUCTION'];
@@ -168,7 +206,6 @@ class FEE_DOCUMENT extends Model implements IModel, JsonSerializable
 			$this->ID_LOAN = $fee_document['ID_LOAN'];
 			$this->N_PARTIAL = $fee_document['N_PARTIAL'];
 			$this->GROSS_AMOUNT = $fee_document['GROSS_AMOUNT'];
-			$this->FINANCIAL_ENTITY = $fee_document['FINANCIAL_ENTITY'];
 			$this->CURRENCY = $fee_document['CURRENCY'];
 			$this->INTERES_RATE = $fee_document['INTERES_RATE'];
 			$this->DEDUCTION = $fee_document['DEDUCTION'];
@@ -214,12 +251,11 @@ class FEE_DOCUMENT extends Model implements IModel, JsonSerializable
 	{
 		try
 		{
-			$query = $this->prepare('UPDATE FEES_DOCUMENTS SET ID_LOAN = :ID_LOAN, N_PARTIAL = :N_PARTIAL, GROSS_AMOUNT = :GROSS_AMOUNT, FINANCIAL_ENTITY = :FINANCIAL_ENTITY, CURRENCY = :CURRENCY, INTERES_RATE = :INTERES_RATE, DEDUCTION = :DEDUCTION, TOTAL_AMOUNT = :TOTAL_AMOUNT, BALANCE = :BALANCE, TRANSACTION = :TRANSACTION, STATUS = :STATUS, PAYMENT_DATE = :PAYMENT_DATE, USER_CREATE = :USER_CREATE, DATE_CREATE = :DATE_CREATE, USER_UPDATE = :USER_UPDATE, DATE_UPDATE = :DATE_UPDATE WHERE ID = :ID');
+			$query = $this->prepare('UPDATE FEES_DOCUMENTS SET ID_LOAN = :ID_LOAN, N_PARTIAL = :N_PARTIAL, GROSS_AMOUNT = :GROSS_AMOUNT, CURRENCY = :CURRENCY, INTERES_RATE = :INTERES_RATE, DEDUCTION = :DEDUCTION, TOTAL_AMOUNT = :TOTAL_AMOUNT, BALANCE = :BALANCE, TRANSACTION = :TRANSACTION, STATUS = :STATUS, PAYMENT_DATE = :PAYMENT_DATE, USER_CREATE = :USER_CREATE, DATE_CREATE = :DATE_CREATE, USER_UPDATE = :USER_UPDATE, DATE_UPDATE = :DATE_UPDATE WHERE ID = :ID');
 			$query->execute([
 				'ID_LOAN' => $this->ID_LOAN,
 				'N_PARTIAL' => $this->N_PARTIAL,
 				'GROSS_AMOUNT' => $this->GROSS_AMOUNT,
-				'FINANCIAL_ENTITY' => $this->FINANCIAL_ENTITY,
 				'CURRENCY' => $this->CURRENCY,
 				'INTERES_RATE' => $this->INTERES_RATE,
 				'DEDUCTION' => $this->DEDUCTION,
@@ -245,11 +281,10 @@ class FEE_DOCUMENT extends Model implements IModel, JsonSerializable
 
     public function From($data) 
 	{
-				$this->ID = $data['ID'];
+		$this->ID = $data['ID'];
 		$this->ID_LOAN = $data['ID_LOAN'];
 		$this->N_PARTIAL = $data['N_PARTIAL'];
 		$this->GROSS_AMOUNT = $data['GROSS_AMOUNT'];
-		$this->FINANCIAL_ENTITY = $data['FINANCIAL_ENTITY'];
 		$this->CURRENCY = $data['CURRENCY'];
 		$this->INTERES_RATE = $data['INTERES_RATE'];
 		$this->DEDUCTION = $data['DEDUCTION'];

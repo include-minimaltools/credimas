@@ -11,6 +11,11 @@
             "role": [""]
         },
         {
+            "site":"viewloans",
+            "access": "private",
+            "role": ["client"]
+        },
+        {
             "site":"newloan",
             "access": "private",
             "role": ["lender"]
@@ -19,6 +24,11 @@
             "site":"financialentities",
             "access": "private",
             "role": ["client","lender","admin"]
+        },
+        {
+            "site":"payfee",
+            "access":"private",
+            "role": ["client"]
         },
         {
             "site":"updateprofile",

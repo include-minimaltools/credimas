@@ -41,7 +41,7 @@ class App
                         $parameters = [];
                         
                         for($i = 0; $i < count($url) - 2; $i++)
-                            array_push($parameters, $url[$i] + 2);
+                            array_push($parameters, $url[$i + 2]);
 
                         $controller->{$url[1]}($parameters);
                     }

@@ -74,7 +74,7 @@ class NewLoanModel extends Model
         $newLoan->INIT_DATE = $init_date;
         $newLoan->USER_CREATE = $session->ID;
         $newLoan->DATE_CREATE = Date('Y-m-d');
-        // $newLoan->Save();
+        $newLoan->Save();
         error_log('---------------- Prestamo ----------------');
         foreach ($newLoan->array() as $key => $value)
         {
@@ -125,6 +125,6 @@ class NewLoanModel extends Model
             error_log($key . ':' . $value);
         }
 
-        // $newFee->Save();
+        $newFee->Save();
     }
 }

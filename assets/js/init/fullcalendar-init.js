@@ -14,7 +14,7 @@
     };
 
 
-    /* on drop */
+    //#region methods
     CalendarApp.prototype.onDrop = function (eventObj, date) { 
         var $this = this;
             // retrieve the dropped element's stored Event Object
@@ -119,6 +119,7 @@
             });
         });
     }
+    //#endregion
     /* Initializing */
     CalendarApp.prototype.init = function() {
         this.enableDrag();

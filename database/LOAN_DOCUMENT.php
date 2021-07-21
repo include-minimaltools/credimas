@@ -79,6 +79,7 @@ class LOAN_DOCUMENT extends Model implements IModel
 	{
 		parent::__construct();
 	}
+
     public function Save() 
     {
         try
@@ -153,6 +154,32 @@ class LOAN_DOCUMENT extends Model implements IModel
 		catch(PDOException $ex)
 		{
 			error_log('LOAN_DOCUMENT::GetAll->PDOException: ' . $ex);
+			return false;
+		}
+	}
+
+	public function GetByIdClient($id)
+	{
+		try
+		{
+			$result = [];
+			$query = $this->prepare('SELECT * FROM LOAN_DOCUMENTS WHERE ID_CLIENT = :ID_CLIENT');
+			$query->execute([
+				'ID_CLIENT' => $id
+			]);
+
+			while($entidad = $query->fetch(PDO::FETCH_ASSOC))
+			{
+				$item = new LOAN_DOCUMENT();
+				$item->From($entidad);
+				array_push($result, $item);
+			}
+			
+			return $result;
+		}
+		catch(PDOException $ex)
+		{
+			error_log('LOAN_DOCUMENT::GetByIdClient->PDOException: ' . $ex);
 			return false;
 		}
 	}

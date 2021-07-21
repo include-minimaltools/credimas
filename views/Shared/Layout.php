@@ -24,14 +24,16 @@
     <link href="https://cdn.jsdelivr.net/npm/chartist@0.11.0/dist/chartist.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/jqvmap@1.5.1/dist/jqvmap.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
-    
-</head>
-
-<script src="<?php echo constant('URL')?>/assets/js/lib/jquery.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css" rel="stylesheet" />
+    <script src="<?php echo constant('URL')?>/assets/js/lib/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
+</head>
+
+
 
 <body>
     <!-- Left Panel -->
@@ -46,15 +48,19 @@
                             <li><i class="fa fa-home"></i><a href="<?php echo constant('URL')?>">Inicio</a></li>
 
                             <?php
-                            if($this->data['role'] == "admin") {
-                            ?>
-                            <li><i class="menu-icon fa fa-money"></i><a href="<?php echo constant('URL')?>/financialentities">Entidades Financieras</a></li>
-                            <li><i class="menu-icon fa fa-dollar"></i><a href="<?php echo constant('URL')?>/currencies">Monedas y Divisas</a></li>
+                            if($this->data['role'] == "admin") 
+                            {   ?>
+                                <li><i class="menu-icon fa fa-money"></i><a href="<?php echo constant('URL')?>/financialentities">Entidades Financieras</a></li>
+                                <li><i class="menu-icon fa fa-dollar"></i><a href="<?php echo constant('URL')?>/currencies">Monedas y Divisas</a></li>
                             <?php 
-                            } else if($this->data['role'] == 'lender') {
+                            } else if($this->data['role'] == 'lender') { ?>
+                                <li><i class="menu-icon fa fa-money"></i><a href="<?php echo constant('URL')?>/newloan">Nuevo Préstamo</a></li>
+                            <?php 
+                            } else if($this->data['role'] == 'client') {
                             ?>
-                            <li><i class="menu-icon fa fa-money"></i><a href="<?php echo constant('URL')?>/newloan">Nuevo Préstamo</a></li>
-                            <?php } ?>
+                                <li><i class="menu-icon fa fa-money"></i><a href="<?php echo constant('URL')?>/viewloans">Visualizar préstamos</a></li>
+                            <?php 
+                            } ?>
                             
                             <li class="menu-title">Configuración</li>
                             <li><i class="menu-icon fa fa-cog"></i><a href="<?php echo constant('URL')?>/updateprofile">Editar cuenta</a></li>
@@ -81,7 +87,7 @@
                     <div class="user-area dropdown float-right">
                         <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="user-profile">
-                            <div id="profile_photo" style="background-image: url('images/users/<?php echo $this->data['photo'];?>')"></div>
+                            <div id="profile_photo" style="background-image: url('<?php echo constant('URL').'/images/users/'.$this->data['photo'];?>')"></div>
                         </div>
                         </a>
                         <div class="user-menu dropdown-menu">
