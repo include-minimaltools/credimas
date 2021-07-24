@@ -158,6 +158,32 @@ class LOAN_DOCUMENT extends Model implements IModel
 		}
 	}
 
+	public function GetByIdLender($id)
+	{
+		try
+		{
+			$result = [];
+			$query = $this->prepare('SELECT * FROM LOAN_DOCUMENTS WHERE ID_LENDER = :ID_LENDER');
+			$query->execute([
+				'ID_LENDER' => $id
+			]);
+
+			while($entidad = $query->fetch(PDO::FETCH_ASSOC))
+			{
+				$item = new LOAN_DOCUMENT();
+				$item->From($entidad);
+				array_push($result, $item);
+			}
+			
+			return $result;
+		}
+		catch(PDOException $ex)
+		{
+			error_log('LOAN_DOCUMENT::GetByIdClient->PDOException: ' . $ex);
+			return false;
+		}
+	}
+
 	public function GetByIdClient($id)
 	{
 		try
@@ -182,6 +208,33 @@ class LOAN_DOCUMENT extends Model implements IModel
 			error_log('LOAN_DOCUMENT::GetByIdClient->PDOException: ' . $ex);
 			return false;
 		}
+	}
+
+	public function GetByIdLenderAndIdClient($id_lender, $id_client)
+	{
+		try
+		{
+			$result = [];
+			$query = $this->prepare('SELECT * FROM LOAN_DOCUMENTS WHERE ID_LENDER = :ID_LENDER AND ID_CLIENT = :ID_CLIENT');
+			$query->execute([
+				'ID_LENDER' => $id_lender,
+				'ID_CLIENT' => $id_client
+			]);
+
+			while($entidad = $query->fetch(PDO::FETCH_ASSOC))
+			{
+				$item = new LOAN_DOCUMENT();
+				$item->From($entidad);
+				array_push($result, $item);
+			}
+			
+			return $result;
+		}
+		catch(PDOException $ex)
+		{
+			error_log('LOAN_DOCUMENT::GetByIdLoanAndIdClient->PDOException: ' . $ex);
+			return false;
+		}		
 	}
 
     public function Get($id) 

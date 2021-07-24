@@ -31,7 +31,7 @@ class App
             require_once $controller;
 
             $controllerName = $url[0] . 'Controller';
-            $controller = new $controllerName;
+            $controller = new $controllerName();
             $controller->InitModel($url[0]);
 
             if(isset($url[1]))

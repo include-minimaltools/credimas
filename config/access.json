@@ -11,6 +11,11 @@
             "role": [""]
         },
         {
+            "site":"editfee",
+            "access": "private",
+            "role": ["lender"]
+        },
+        {
             "site":"viewloans",
             "access": "private",
             "role": ["client"]

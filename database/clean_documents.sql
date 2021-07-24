@@ -1,3 +1,4 @@
-DELETE FROM `fees_documents`;
-DELETE FROM `loan_documents`;
+DELETE FROM payment_details;
+DELETE FROM fees_documents;
+DELETE FROM loan_documents;
 UPDATE CONSECUTIVE SET FEES_DOCUMENTS = 1, LOAN_DOCUMENTS = 1 WHERE ID = 1;

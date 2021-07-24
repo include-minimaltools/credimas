@@ -43,8 +43,8 @@
                 <ul class="nav navbar-nav">
                     <li class="menu-title">Menú</li>
                     <li class="menu-item-has-children dropdown">
-                        <ul class="sub-menu children dropdown-menu show">
-
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-folder"></i>Formularios</a>
+                        <ul class="sub-menu children dropdown-menu">
                             <li><i class="fa fa-home"></i><a href="<?php echo constant('URL')?>">Inicio</a></li>
 
                             <?php
@@ -55,14 +55,18 @@
                             <?php 
                             } else if($this->data['role'] == 'lender') { ?>
                                 <li><i class="menu-icon fa fa-money"></i><a href="<?php echo constant('URL')?>/newloan">Nuevo Préstamo</a></li>
+                                <li><i class="menu-icon fa fa-archive"></i><a href="<?php echo constant('URL')?>/editfee">Editar cuotas</a></li>
                             <?php 
                             } else if($this->data['role'] == 'client') {
                             ?>
                                 <li><i class="menu-icon fa fa-money"></i><a href="<?php echo constant('URL')?>/viewloans">Visualizar préstamos</a></li>
                             <?php 
                             } ?>
-                            
-                            <li class="menu-title">Configuración</li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Configuración</a>
+                        <ul class="sub-menu children dropdown-menu">
                             <li><i class="menu-icon fa fa-cog"></i><a href="<?php echo constant('URL')?>/updateprofile">Editar cuenta</a></li>
                             <li><i class="menu-icon fa fa-sign-out"></i><a href="<?php echo constant('URL')?>/Logout">Cerrar sesión</a></li>
                             
@@ -98,5 +102,12 @@
                 </div>
             </div>
         </header>
+
+        <script>
+            $('#main-menu').on('click',function(){
+               $('#menu').attr('show'); 
+            });
+        </script>
+
         <div class="content">
 <!------------------- Aquí continúa el código de cada formulario -------------------->

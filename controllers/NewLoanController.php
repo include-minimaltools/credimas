@@ -55,7 +55,7 @@ class NewLoanController extends SessionController
                 }
 
                 $this->model->CreateNewLoan($this->user,$lender, $client, $currency, $gross_amount, $partials, $interes_rate, $partial_amount, $term, $init_date, $loan_receipt);
-                $this->Redirect('newloan',[]);
+                $this->Redirect('lender',[]);
             }
             else
             {

@@ -35,7 +35,7 @@ class LenderController extends SessionController
                 <td> <span class="Apellido">'. $item->FIRST_LASTNAME .'</span> </td>
                 <td> <span class="Apellido">'. $item->SECOND_LASTNAME .'</span> </td>
                 <td> <span class="Accion">
-                    <button type="button" class="btn btn-outline-primary btn-sm">Realizar préstamo</button>
+                    <a href="'.URL.'/newloan" type="button" class="btn btn-outline-primary btn-sm">Realizar préstamo</a>
                 </span> </td>
             </tr>';
         }

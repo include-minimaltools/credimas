@@ -93,7 +93,6 @@ class NewLoanModel extends Model
                 $newLoan->ID,
                 $i, 
                 $newLoan->PARTIAL_AMOUNT,
-                $newLoan->INTERES_RATE,
                 $interes,
                 $newLoan->CURRENCY,
                 $payment_date,
@@ -102,7 +101,7 @@ class NewLoanModel extends Model
         }
     }
 
-    function CreateNewFee($id_loan, $partial, $gross_amount, $interes_rate, $interes, $currency, $payment_date, $session)
+    function CreateNewFee($id_loan, $partial, $gross_amount, $interes, $currency, $payment_date, $session)
     {
         $newFee = new FEE_DOCUMENT();
 
@@ -111,7 +110,7 @@ class NewLoanModel extends Model
         $newFee->N_PARTIAL = $partial;
         $newFee->CURRENCY = $currency;
         $newFee->GROSS_AMOUNT = $gross_amount;
-        $newFee->INTERES_RATE = $interes_rate;
+        $newFee->INTERES = $interes;
         $newFee->DEDUCTION = 0;
         $newFee->TOTAL_AMOUNT =  $interes + $gross_amount;
         $newFee->BALANCE = $interes + $gross_amount;

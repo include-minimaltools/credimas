@@ -9,7 +9,7 @@ class FEE_DOCUMENT extends Model implements IModel, JsonSerializable
 	private $N_PARTIAL;
 	private $GROSS_AMOUNT;
 	private $CURRENCY;
-	private $INTERES_RATE;
+	private $INTERES;
 	private $DEDUCTION;
 	private $TOTAL_AMOUNT;
 	private $BALANCE;
@@ -28,7 +28,7 @@ class FEE_DOCUMENT extends Model implements IModel, JsonSerializable
 	private function getN_PARTIAL() { return $this->N_PARTIAL; }
 	private function getGROSS_AMOUNT() { return $this->GROSS_AMOUNT; }
 	private function getCURRENCY() { return $this->CURRENCY; }
-	private function getINTERES_RATE() { return $this->INTERES_RATE; }
+	private function getINTERES() { return $this->INTERES; }
 	private function getDEDUCTION() { return $this->DEDUCTION; }
 	private function getTOTAL_AMOUNT() { return $this->TOTAL_AMOUNT; }
 	private function getBALANCE() { return $this->BALANCE; }
@@ -46,7 +46,7 @@ class FEE_DOCUMENT extends Model implements IModel, JsonSerializable
 	private function setN_PARTIAL($N_PARTIAL) { $this->N_PARTIAL = $N_PARTIAL; }
 	private function setGROSS_AMOUNT($GROSS_AMOUNT) { $this->GROSS_AMOUNT = $GROSS_AMOUNT; }
 	private function setCURRENCY($CURRENCY) { $this->CURRENCY = $CURRENCY; }
-	private function setINTERES_RATE($INTERES_RATE) { $this->INTERES_RATE = $INTERES_RATE; }
+	private function setINTERES($INTERES) { $this->INTERES = $INTERES; }
 	private function setDEDUCTION($DEDUCTION) { $this->DEDUCTION = $DEDUCTION; }
 	private function setTOTAL_AMOUNT($TOTAL_AMOUNT) { $this->TOTAL_AMOUNT = $TOTAL_AMOUNT; }
 	private function setBALANCE($BALANCE) { $this->BALANCE = $BALANCE; }
@@ -79,15 +79,15 @@ class FEE_DOCUMENT extends Model implements IModel, JsonSerializable
     {
         try
         {
-            $query = $this->prepare('INSERT INTO FEES_DOCUMENTS( ID,  ID_LOAN,  N_PARTIAL,  GROSS_AMOUNT,  CURRENCY,  INTERES_RATE,  DEDUCTION,  TOTAL_AMOUNT,  BALANCE,  TRANSACTION,  STATUS,  PAYMENT_DATE,  USER_CREATE,  DATE_CREATE,  USER_UPDATE,  DATE_UPDATE)
-            VALUES(:ID, :ID_LOAN, :N_PARTIAL, :GROSS_AMOUNT, :CURRENCY, :INTERES_RATE, :DEDUCTION, :TOTAL_AMOUNT, :BALANCE, :TRANSACTION, :STATUS, :PAYMENT_DATE, :USER_CREATE, :DATE_CREATE, :USER_UPDATE, :DATE_UPDATE)');
+            $query = $this->prepare('INSERT INTO FEES_DOCUMENTS( ID,  ID_LOAN,  N_PARTIAL,  GROSS_AMOUNT,  CURRENCY,  INTERES,  DEDUCTION,  TOTAL_AMOUNT,  BALANCE,  TRANSACTION,  STATUS,  PAYMENT_DATE,  USER_CREATE,  DATE_CREATE,  USER_UPDATE,  DATE_UPDATE)
+            VALUES(:ID, :ID_LOAN, :N_PARTIAL, :GROSS_AMOUNT, :CURRENCY, :INTERES, :DEDUCTION, :TOTAL_AMOUNT, :BALANCE, :TRANSACTION, :STATUS, :PAYMENT_DATE, :USER_CREATE, :DATE_CREATE, :USER_UPDATE, :DATE_UPDATE)');
 			$query->execute([
 				'ID' => $this->ID,
 				'ID_LOAN' => $this->ID_LOAN,
 				'N_PARTIAL' => $this->N_PARTIAL,
 				'GROSS_AMOUNT' => $this->GROSS_AMOUNT,
 				'CURRENCY' => $this->CURRENCY,
-				'INTERES_RATE' => $this->INTERES_RATE,
+				'INTERES' => $this->INTERES,
 				'DEDUCTION' => $this->DEDUCTION,
 				'TOTAL_AMOUNT' => $this->TOTAL_AMOUNT,
 				'BALANCE' => $this->BALANCE,
@@ -128,7 +128,7 @@ class FEE_DOCUMENT extends Model implements IModel, JsonSerializable
 				$item->N_PARTIAL = $entidad['N_PARTIAL'];
 				$item->GROSS_AMOUNT = $entidad['GROSS_AMOUNT'];
 				$item->CURRENCY = $entidad['CURRENCY'];
-				$item->INTERES_RATE = $entidad['INTERES_RATE'];
+				$item->INTERES = $entidad['INTERES'];
 				$item->DEDUCTION = $entidad['DEDUCTION'];
 				$item->TOTAL_AMOUNT = $entidad['TOTAL_AMOUNT'];
 				$item->BALANCE = $entidad['BALANCE'];
@@ -168,7 +168,7 @@ class FEE_DOCUMENT extends Model implements IModel, JsonSerializable
 				$item->N_PARTIAL = $entidad['N_PARTIAL'];
 				$item->GROSS_AMOUNT = $entidad['GROSS_AMOUNT'];
 				$item->CURRENCY = $entidad['CURRENCY'];
-				$item->INTERES_RATE = $entidad['INTERES_RATE'];
+				$item->INTERES = $entidad['INTERES'];
 				$item->DEDUCTION = $entidad['DEDUCTION'];
 				$item->TOTAL_AMOUNT = $entidad['TOTAL_AMOUNT'];
 				$item->BALANCE = $entidad['BALANCE'];
@@ -207,7 +207,7 @@ class FEE_DOCUMENT extends Model implements IModel, JsonSerializable
 			$this->N_PARTIAL = $fee_document['N_PARTIAL'];
 			$this->GROSS_AMOUNT = $fee_document['GROSS_AMOUNT'];
 			$this->CURRENCY = $fee_document['CURRENCY'];
-			$this->INTERES_RATE = $fee_document['INTERES_RATE'];
+			$this->INTERES = $fee_document['INTERES'];
 			$this->DEDUCTION = $fee_document['DEDUCTION'];
 			$this->TOTAL_AMOUNT = $fee_document['TOTAL_AMOUNT'];
 			$this->BALANCE = $fee_document['BALANCE'];
@@ -251,13 +251,14 @@ class FEE_DOCUMENT extends Model implements IModel, JsonSerializable
 	{
 		try
 		{
-			$query = $this->prepare('UPDATE FEES_DOCUMENTS SET ID_LOAN = :ID_LOAN, N_PARTIAL = :N_PARTIAL, GROSS_AMOUNT = :GROSS_AMOUNT, CURRENCY = :CURRENCY, INTERES_RATE = :INTERES_RATE, DEDUCTION = :DEDUCTION, TOTAL_AMOUNT = :TOTAL_AMOUNT, BALANCE = :BALANCE, TRANSACTION = :TRANSACTION, STATUS = :STATUS, PAYMENT_DATE = :PAYMENT_DATE, USER_CREATE = :USER_CREATE, DATE_CREATE = :DATE_CREATE, USER_UPDATE = :USER_UPDATE, DATE_UPDATE = :DATE_UPDATE WHERE ID = :ID');
+			$query = $this->prepare('UPDATE FEES_DOCUMENTS SET ID_LOAN = :ID_LOAN, N_PARTIAL = :N_PARTIAL, GROSS_AMOUNT = :GROSS_AMOUNT, CURRENCY = :CURRENCY, INTERES = :INTERES, DEDUCTION = :DEDUCTION, TOTAL_AMOUNT = :TOTAL_AMOUNT, BALANCE = :BALANCE, TRANSACTION = :TRANSACTION, STATUS = :STATUS, PAYMENT_DATE = :PAYMENT_DATE, USER_CREATE = :USER_CREATE, DATE_CREATE = :DATE_CREATE, USER_UPDATE = :USER_UPDATE, DATE_UPDATE = :DATE_UPDATE WHERE ID = :ID');
 			$query->execute([
+				'ID' => $this->ID,
 				'ID_LOAN' => $this->ID_LOAN,
 				'N_PARTIAL' => $this->N_PARTIAL,
 				'GROSS_AMOUNT' => $this->GROSS_AMOUNT,
 				'CURRENCY' => $this->CURRENCY,
-				'INTERES_RATE' => $this->INTERES_RATE,
+				'INTERES' => $this->INTERES,
 				'DEDUCTION' => $this->DEDUCTION,
 				'TOTAL_AMOUNT' => $this->TOTAL_AMOUNT,
 				'BALANCE' => $this->BALANCE,
@@ -286,7 +287,7 @@ class FEE_DOCUMENT extends Model implements IModel, JsonSerializable
 		$this->N_PARTIAL = $data['N_PARTIAL'];
 		$this->GROSS_AMOUNT = $data['GROSS_AMOUNT'];
 		$this->CURRENCY = $data['CURRENCY'];
-		$this->INTERES_RATE = $data['INTERES_RATE'];
+		$this->INTERES = $data['INTERES'];
 		$this->DEDUCTION = $data['DEDUCTION'];
 		$this->TOTAL_AMOUNT = $data['TOTAL_AMOUNT'];
 		$this->BALANCE = $data['BALANCE'];
