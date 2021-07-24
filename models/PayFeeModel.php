@@ -67,5 +67,10 @@ class PayFeeModel extends Model
         $payment->DATE_CREATE = Date("Ymd");
 
         $payment->Save();
+
+        $feeDocument = (new FEE_DOCUMENT)->Get($fee_id);
+        $feeDocument->STATUS = 'in process';
+        
+        $feeDocument->Save();
     }
 }?>

@@ -75,19 +75,19 @@ class NewLoanModel extends Model
         $newLoan->USER_CREATE = $session->ID;
         $newLoan->DATE_CREATE = Date('Y-m-d');
         $newLoan->Save();
-        error_log('---------------- Prestamo ----------------');
-        foreach ($newLoan->array() as $key => $value)
-        {
-            error_log($key . ':' . $value);
-        }
+        // error_log('---------------- Prestamo ----------------');
+        // foreach ($newLoan->array() as $key => $value)
+        // {
+        //     error_log($key . ':' . $value);
+        // }
 
-        error_log('----------------- Cuotas -----------------');
+        // error_log('----------------- Cuotas -----------------');
         for ($i=1; $i <= $partials; $i++) 
         {
             $payment_date = date('Y-m-d',strtotime($init_date."+".(intval($term) * $i)." days"));
 
             $interes = round(($gross_amount - $partial_amount * ($i - 1)) * $interes_rate / 100, 2);
-            error_log('Interes en cuota '.$i.': '.$interes);
+            // error_log('Interes en cuota '.$i.': '.$interes);
             $this->CreateNewFee
             (   
                 $newLoan->ID,
@@ -119,10 +119,10 @@ class NewLoanModel extends Model
         $newFee->DATE_CREATE = Date('Y-m-d');
         $newFee->Status = 'pending';
 
-        foreach ($newFee->array() as $key => $value) 
-        {
-            error_log($key . ':' . $value);
-        }
+        // foreach ($newFee->array() as $key => $value) 
+        // {
+        //     error_log($key . ':' . $value);
+        // }
 
         $newFee->Save();
     }

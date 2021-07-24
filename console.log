@@ -226,3 +226,8 @@
 [24-Jul-2021 16:43:21 America/Managua] APP::construct-> No existe el controlador especificado
 [24-Jul-2021 16:44:23 America/Managua] Borrado
 [24-Jul-2021 16:46:17 America/Managua] PHP Warning:  Undefined variable $transaction in C:\xampp\htdocs\credimas\controllers\PayFeeController.php on line 98
+[24-Jul-2021 17:09:51 America/Managua] PHP Parse error:  syntax error, unexpected identifier "true" in C:\xampp\htdocs\credimas\controllers\ViewLoansController.php on line 58
+[24-Jul-2021 17:09:52 America/Managua] PHP Parse error:  syntax error, unexpected identifier "true" in C:\xampp\htdocs\credimas\controllers\ViewLoansController.php on line 58
+[24-Jul-2021 17:09:52 America/Managua] PHP Parse error:  syntax error, unexpected identifier "true" in C:\xampp\htdocs\credimas\controllers\ViewLoansController.php on line 58
+[24-Jul-2021 17:09:52 America/Managua] PHP Parse error:  syntax error, unexpected identifier "true" in C:\xampp\htdocs\credimas\controllers\ViewLoansController.php on line 58
+[24-Jul-2021 17:09:53 America/Managua] PHP Parse error:  syntax error, unexpected identifier "true" in C:\xampp\htdocs\credimas\controllers\ViewLoansController.php on line 58

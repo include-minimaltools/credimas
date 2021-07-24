@@ -95,6 +95,11 @@ class EditFeeController extends SessionController
                 $dataTable .= '<td> <span class="btn-sm btn-primary disabled">Pendiente</span></td>
                 <td><label id="btnEdit_'.$feeDocument->ID.'" class="btn-sm btn-info fa fa-edit" data-toggle="modal" data-target="#modalDeduction"></label></td>';
             }
+            else if($feeDocument->STATUS == 'in process')
+            {
+                $dataTable .= '<td> <span class="btn-sm btn-warning disabled">En proceso</span></td>
+                <td><label class="btn-sm btn-secondary fa fa-edit disabled"></label></td>';
+            }
 
             $dataTable .= '<td> <span class="Acción">'. '' .'</span></td>
             </tr>';
@@ -118,7 +123,7 @@ class EditFeeController extends SessionController
             $deduction = $this->POST('deduction');
 
             $this->model->ProcessDeduction($idFeeDocument, $deduction);
-            $this->Redirect('editfee/render/'.$client.'/'.$status,[]);
+            $this->Redirect('editfee/render/' . $client . '/' . $status, []);
         }
         catch(Exception $ex)
         {

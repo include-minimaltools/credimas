@@ -43,7 +43,8 @@
         if(calEvent.id == 0)
             return;
 
-        window.location = '<?php echo constant('URL'); ?>/payfee/render/' + calEvent.id;
+        if(calEvent.status == "pending" || calEvent.status == "late")
+            window.location = '<?php echo constant('URL'); ?>/payfee/render/' + calEvent.id;
     },
 
     CalendarApp.prototype.enableDrag = function() {

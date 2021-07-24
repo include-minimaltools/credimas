@@ -28,13 +28,29 @@ class ViewLoansController extends SessionController
 
         foreach ($fees_documents as $key => $fee_document) 
         {
-            $className = date("Ymd") < $fee_document->PAYMENT_DATE ? "bg-danger" : "bg-info";
+            if($fee_document->STATUS == 'paid')
+            {
+                $className = "bg-secondary";
+            }
+            else if($fee_document->STATUS == 'late')
+            {
+                $className = "bg-danger";
+            } 
+            else if($fee_document->STATUS == 'pending')
+            {
+                $className = "bg-primary";
+            }
+            else if($fee_document->STATUS == 'in process')
+            {
+                $className = "bg-dark";
+            }
             
             $defaultEvents .= '{
-                id:'.$fee_document->ID.',
-                title: "Cuota '.$fee_document->N_PARTIAL.'",
-                start: new Date("'.date('Y-m-d',strtotime($fee_document->PAYMENT_DATE."+ 1 days")).'"),
-                className: "'. $className .'"
+                id:' . $fee_document->ID . ',
+                title: "Cuota ' . $fee_document->N_PARTIAL . '",
+                start: new Date("' . date('Y-m-d',strtotime($fee_document->PAYMENT_DATE."+ 1 days")) . '"),
+                className: "' . $className . '",
+                status: "' . $fee_document->STATUS . '"
             },';
         }
 
