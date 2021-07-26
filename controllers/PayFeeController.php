@@ -104,7 +104,7 @@ class PayFeeController extends SessionController
                     $transaction,
                     $this->user
                 );
-                
+                $this->Redirect('lender',[]);
             }
             else
             {

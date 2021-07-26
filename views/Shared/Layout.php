@@ -26,7 +26,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
     <link href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css" rel="stylesheet" />
-    <script src="<?php echo constant('URL')?>/assets/js/lib/jquery.js"></script>
+    <script src="<?php echo URL?>/assets/js/lib/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
@@ -56,6 +56,7 @@
                             } else if($this->data['role'] == 'lender') { ?>
                                 <li><i class="menu-icon fa fa-money"></i><a href="<?php echo constant('URL')?>/newloan">Nuevo Préstamo</a></li>
                                 <li><i class="menu-icon fa fa-archive"></i><a href="<?php echo constant('URL')?>/editfee">Editar cuotas</a></li>
+                                <li><i class="menu-icon fa fa-paypal"></i><a href="<?php echo constant('URL')?>/listofpayments">Registro de pagos</a></li>
                             <?php 
                             } else if($this->data['role'] == 'client') {
                             ?>

@@ -11,6 +11,11 @@
             "role": [""]
         },
         {
+            "site":"listofpayments",
+            "access": "private",
+            "role": ["lender"]
+        },
+        {
             "site":"editfee",
             "access": "private",
             "role": ["lender"]

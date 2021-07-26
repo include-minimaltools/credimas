@@ -71,6 +71,6 @@ class PayFeeModel extends Model
         $feeDocument = (new FEE_DOCUMENT)->Get($fee_id);
         $feeDocument->STATUS = 'in process';
         
-        $feeDocument->Save();
+        $feeDocument->Update();
     }
 }?>

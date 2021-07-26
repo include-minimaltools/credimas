@@ -147,6 +147,33 @@ class PAYMENT_DETAIL extends Model implements IModel
 		}
 	}
 
+	public function GetByFeeId($id_fee_document)
+	{
+		$result = [];
+
+		try
+		{
+			$query = $this->prepare('SELECT * FROM PAYMENTS_DETAILS WHERE ID_FEE_DOCUMENT = :ID_FEE_DOCUMENT');
+			$query->execute([
+				'ID_FEE_DOCUMENT' => $id_fee_document
+			]);
+
+			while($item = $query->fetch(PDO::FETCH_ASSOC))
+			{
+				$payment = new PAYMENT_DETAIL();
+				$payment->From($item);
+				array_push($result, $payment);
+			}
+			
+			return $result;
+		}
+		catch(PDOException $ex)
+		{
+			error_log('PAYMENT_DETAIL::GetItem->PDOException: ' . $ex);
+			return false;
+		}	
+	}
+
     public function Get($id) 
 	{
 		try

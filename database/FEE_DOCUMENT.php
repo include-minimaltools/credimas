@@ -109,6 +109,50 @@ class FEE_DOCUMENT extends Model implements IModel, JsonSerializable
         }
     }
 
+	public function GetByIdLoanAndStatus($id, $status)
+	{
+		try
+		{
+			$result = [];
+
+			$query = $this->prepare('SELECT * FROM FEES_DOCUMENTS WHERE ID_LOAN = :ID_LOAN AND STATUS = :STATUS');
+			$query->execute([
+				'ID_LOAN' => $id,
+				'STATUS' => $status
+			]);
+
+			while($entidad = $query->fetch(PDO::FETCH_ASSOC))
+			{
+				$item = new FEE_DOCUMENT();
+				$item->ID = $entidad['ID'];
+				$item->ID_LOAN = $entidad['ID_LOAN'];
+				$item->N_PARTIAL = $entidad['N_PARTIAL'];
+				$item->GROSS_AMOUNT = $entidad['GROSS_AMOUNT'];
+				$item->CURRENCY = $entidad['CURRENCY'];
+				$item->INTERES = $entidad['INTERES'];
+				$item->DEDUCTION = $entidad['DEDUCTION'];
+				$item->TOTAL_AMOUNT = $entidad['TOTAL_AMOUNT'];
+				$item->BALANCE = $entidad['BALANCE'];
+				$item->TRANSACTION = $entidad['TRANSACTION'];
+				$item->STATUS = $entidad['STATUS'];
+				$item->PAYMENT_DATE = $entidad['PAYMENT_DATE'];
+				$item->USER_CREATE = $entidad['USER_CREATE'];
+				$item->DATE_CREATE = $entidad['DATE_CREATE'];
+				$item->USER_UPDATE = $entidad['USER_UPDATE'];
+				$item->DATE_UPDATE = $entidad['DATE_UPDATE'];
+
+				array_push($result, $item);
+			}
+			
+			return $result;
+		}
+		catch (PDOException $ex)
+		{
+            error_log('FEE_DOCUMENT::GetByIdLoanAndStatus->PDOException: '. $ex);
+            return false;
+        }
+	}
+
 	public function GetByIdLoan($id)
 	{
 		try
@@ -147,7 +191,7 @@ class FEE_DOCUMENT extends Model implements IModel, JsonSerializable
 		}
 		catch (PDOException $ex)
 		{
-            error_log('FEE_DOCUMENT::Save->PDOException: '. $ex);
+            error_log('FEE_DOCUMENT::GetByIdLoan->PDOException: '. $ex);
             return false;
         }
 	}
