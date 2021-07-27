@@ -48,21 +48,28 @@ class HomeModel extends Model
 
     function RefreshFeesDocuments()
     {
-        $fees_documents = (new FEE_DOCUMENT())->GetAll();
-
-        foreach ($fees_documents as $key => $fee_document) 
+        try
         {
-            if($fee_document->STATUS == "paid")
-                continue;
-            
-            if($fee_document->PAYMENT_DATE < Date("Y-m-d"))
-            {
-                $fee_document->STATUS = "pending";
-                $fee_document->USER_UPDATE = "1";
-                $fee_document->DATE_UPDATE = Date("Ymd");
+            $fees_documents = (new FEE_DOCUMENT())->GetAll();
 
-                $fee_document->UPDATE();
+            foreach ($fees_documents as $key => $fee_document) 
+            {
+                if($fee_document->STATUS == "paid")
+                    continue;
+                
+                if($fee_document->PAYMENT_DATE < Date("Y-m-d"))
+                {
+                    $fee_document->STATUS = "pending";
+                    $fee_document->USER_UPDATE = "1";
+                    $fee_document->DATE_UPDATE = Date("Ymd");
+
+                    $fee_document->UPDATE();
+                }
             }
+        }
+        catch(Exception $ex)
+        {
+            error_log("HomeModel::RefreshFeesDocuments->Exception: ". $ex);
         }
     }
 }?>

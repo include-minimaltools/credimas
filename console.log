@@ -1,0 +1,40 @@
+[26-Jul-2021 18:55:56 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 18:57:03 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 18:57:03 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 18:57:04 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 18:57:04 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 18:57:04 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 18:57:04 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 18:57:04 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 18:57:05 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 18:57:05 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 18:57:05 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 18:57:05 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 18:57:05 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 18:57:06 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 18:57:06 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 18:57:06 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 18:57:06 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 18:57:07 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 18:57:07 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 18:57:08 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 18:57:08 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 18:57:14 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 18:57:16 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 19:01:55 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 19:03:58 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 19:04:05 America/Managua] PHP Warning:  Undefined array key "identify" in C:\xampp\htdocs\credimas\libs\controller.php on line 49
+[26-Jul-2021 19:04:05 America/Managua] PHP Warning:  unlink(images/users/1b037184570d9d534cba6e494ae3a365.png): No such file or directory in C:\xampp\htdocs\credimas\controllers\UpdateProfileController.php on line 56
+[26-Jul-2021 19:04:05 America/Managua] Borrado
+[26-Jul-2021 19:04:15 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 19:04:15 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 19:04:16 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 19:04:16 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 19:04:16 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 19:04:17 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 19:04:17 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 19:04:17 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 19:04:17 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 19:04:17 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 19:04:21 America/Managua] APP::construct-> No existe el controlador especificado
+[26-Jul-2021 19:04:21 America/Managua] APP::construct-> No existe el controlador especificado
