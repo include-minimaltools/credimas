@@ -10,7 +10,7 @@ require_once "views/Shared/Layout.php";
                     <div class="text-center">
                         <h1 class="">Perfil de Usuario</h1>
                     </div>
-                    <form action="<?php echo constant('URL');?>/NewUser/CreateUser" method="POST" enctype="multipart/form-data">
+                    <form action="<?php echo constant('URL');?>/NewClient/CreateUser" method="POST" enctype="multipart/form-data">
                         <div class="avatar-upload">
                             <div class="avatar-edit">
                                 <input type="file" id="photo" name="photo" accept=".png, .jpg, .jpeg" >
@@ -23,14 +23,11 @@ require_once "views/Shared/Layout.php";
                         <div class="form-row">
                             <div class="col">
                                 <label>Usuario</label>
-                                <input type="text" minlength="7" class="form-control" placeholder="" name="username" id="username" required>
+                                <input type="text" class="form-control" placeholder="" name="username" id="username" required>
                             </div>
                             <div class="col">
                                 <label>Rol de usuario:</label>
-                                <select name="role" id="role" class="form-control" required>
-                                    <option value="">Seleccione una opción</option>
-                                    <option value="admin">Administrador</option>
-                                    <option value="lender">Prestamista</option>
+                                <select name="role" id="role" class="form-control" disabled>
                                     <option value="client">Cliente</option>
                                 </select>
                             </div>

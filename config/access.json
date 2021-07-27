@@ -56,9 +56,14 @@
             "role": ["admin"]
         },
         {
+            "site":"newclient",
+            "access": "private",
+            "role": ["lender"]
+        },
+        {
             "site":"NewUser",
             "access": "private",
-            "role": ["admin","lender"]
+            "role": ["admin"]
         },
         {
             "site":"lender",

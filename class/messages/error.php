@@ -10,6 +10,7 @@ class ErrorMessage
     const LOGIN_AUTHENTICATE_DATA = "4572726f726";
     const NEWLOAN_EMPTY = "4572726f725";
     const NEWLOAN_PHOTO_REQUIRED = "4572726f726";
+    const ERROR = "4572726afafref726";
 
     private $bugs = [];
 
@@ -24,7 +25,9 @@ class ErrorMessage
             ErrorMessage::LOGIN_AUTHENTICATE => 'Ha ocurrido un error al iniciar sesion',
             ErrorMessage::LOGIN_AUTHENTICATE_DATA => 'Usuario y/o contraseña incorrecta',
             ErrorMessage::NEWLOAN_EMPTY => 'Debe llenar todos los campos para continuar, vuelva a intentarlo',
-            ErrorMessage::NEWLOAN_PHOTO_REQUIRED => 'Debe anexar una imagen del recibo para continuar, vuelva a intentarlo'
+            ErrorMessage::NEWLOAN_PHOTO_REQUIRED => 'Debe anexar una imagen del recibo para continuar, vuelva a intentarlo',
+            ErrorMessage::ERROR => 'Ha ocurrido un error inesperado'
+
         ];
     }
 

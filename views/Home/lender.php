@@ -13,6 +13,9 @@ include 'Views/Shared/Layout.php'
                         <div class="col">
                             <strong class="card-title">Clientes</strong>
                         </div>
+                        <div class="col-auto">
+                            <a href="<?php echo URL;?>/newclient" class="btn btn-primary">Nuevo Cliente</a>
+                        </div>
                     </div>
                 </div>
 
