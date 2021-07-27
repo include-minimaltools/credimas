@@ -9,6 +9,7 @@ class HomeModel extends Model
     function __construct()
     {
         parent::__construct();
+        $this->RefreshFeesDocuments();
     }
 
     function GetLenders()
@@ -43,5 +44,25 @@ class HomeModel extends Model
         $result = (new USER())->Get($loan_document->ID_LENDER);
 
         return $result->FIRST_NAME . ' ' . $result->FIRST_LASTNAME;
+    }
+
+    function RefreshFeesDocuments()
+    {
+        $fees_documents = (new FEE_DOCUMENT())->GetAll();
+
+        foreach ($fees_documents as $key => $fee_document) 
+        {
+            if($fee_document->STATUS == "paid")
+                continue;
+            
+            if($fee_document->PAYMENT_DATE < Date("Y-m-d"))
+            {
+                $fee_document->STATUS = "pending";
+                $fee_document->USER_UPDATE = "1";
+                $fee_document->DATE_UPDATE = Date("Ymd");
+
+                $fee_document->UPDATE();
+            }
+        }
     }
 }?>

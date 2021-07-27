@@ -69,19 +69,19 @@ require_once "views/Shared/Layout.php";
                         </div>
                         <div class="form-group">
                             <label>Dirección</label>
-                            <input type="text" class="form-control" placeholder="" name="address" id="address" required>
+                            <input type="text" class="form-control" placeholder="" name="address" id="address">
                         </div>
                         <div class="form-row">
                             <div class="col">
                                 <div class="form-group">
                                     <label>Primer Nombre</label>
-                                    <input type="text" class="form-control" placeholder="" name="first_name" id="first_name" required>
+                                    <input type="text" class="form-control" placeholder="" name="first_name" id="first_name">
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-group">
                                     <label>Segundo Nombre</label>
-                                    <input type="text" class="form-control" placeholder="" name="second_name" id="second_name" required>
+                                    <input type="text" class="form-control" placeholder="" name="second_name" id="second_name">
                                 </div>
                             </div>
                         </div> 
@@ -89,13 +89,13 @@ require_once "views/Shared/Layout.php";
                             <div class="col">
                                 <div class="form-group">
                                     <label>Primer Apellido</label>
-                                    <input type="text" class="form-control" placeholder="" name="first_lastname" id="first_lastname" required>
+                                    <input type="text" class="form-control" placeholder="" name="first_lastname" id="first_lastname">
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-group">
                                     <label>Segundo Apellido</label>
-                                    <input type="text" class="form-control" placeholder="" name="second_lastname" id="second_lastname" required>
+                                    <input type="text" class="form-control" placeholder="" name="second_lastname" id="second_lastname">
                                 </div>
                             </div>
                         </div>
