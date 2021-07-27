@@ -97,7 +97,7 @@ class ListOfPaymentsController extends SessionController
             <td> <span>'. $payment->EXCHANGE_RATE . '</span></td>
             <td> '. $status .'</td>
             <td>
-                <label class="btn-sm btn-primary fa fa-eye" data-toggle="modal" data-target="#modal" id="btnEdit_'.$payment->ID.'"><label style="margin-left: 3px;" for="btnEdit_'.$payment->ID.'">Detalles</label></label>
+                <label class="btn-sm btn-primary fa fa-eye" data-toggle="modal" data-target="#modal" id="btnEdit_'.$payment->ID.'"></label>
             </td>
             </tr>';
         }

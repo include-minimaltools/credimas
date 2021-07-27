@@ -186,7 +186,7 @@
         var id = $(e.target).attr('id').split('_')[1];
         var payment = payments.find(x => x.id == id);
         
-        if(payment.status != 'pending')
+        if(payment.status != 'Pendiente')
         {
             $('#Accept').attr('hidden',true);
             $('#Reject').attr('hidden',true);
