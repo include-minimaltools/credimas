@@ -58,7 +58,7 @@
         {
             "site":"NewUser",
             "access": "private",
-            "role": ["admin"]
+            "role": ["admin","lender"]
         },
         {
             "site":"lender",

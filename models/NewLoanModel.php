@@ -1,5 +1,6 @@
 <?php 
 
+require_once 'database/CLIENT.php';
 require_once 'database/USER.php';
 require_once 'database/CURRENCY.php';
 require_once 'database/LENDER.php';
@@ -75,13 +76,15 @@ class NewLoanModel extends Model
         $newLoan->USER_CREATE = $session->ID;
         $newLoan->DATE_CREATE = Date('Y-m-d');
         $newLoan->Save();
-        // error_log('---------------- Prestamo ----------------');
-        // foreach ($newLoan->array() as $key => $value)
-        // {
-        //     error_log($key . ':' . $value);
-        // }
 
-        // error_log('----------------- Cuotas -----------------');
+        $userclient = (new CLIENT())->Get($client);
+        $userclient->LOANS++;
+        $userclient->USER_UPDATE = $lender;
+        $userclient->DATE_UPDATE = Date('Y-m-d');
+
+        $userclient->Update();
+
+
         for ($i=1; $i <= $partials; $i++) 
         {
             $payment_date = date('Y-m-d',strtotime($init_date."+".(intval($term) * $i)." days"));
