@@ -36,3 +36,4 @@
 [26-Jul-2021 20:34:45 America/Managua] PHP Parse error:  syntax error, unexpected token ";" in C:\xampp\htdocs\credimas\views\Home\lender.php on line 102
 [26-Jul-2021 20:36:18 America/Managua] PHP Warning:  Undefined property: LenderController::$user in C:\xampp\htdocs\credimas\controllers\LenderController.php on line 76
 [26-Jul-2021 20:36:18 America/Managua] PHP Warning:  Attempt to read property "ID" on null in C:\xampp\htdocs\credimas\models\LenderModel.php on line 30
+[26-Jul-2021 20:57:23 America/Managua] APP::construct-> No existe el controlador especificado
