@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 27-07-2021 a las 03:07:34
+-- Tiempo de generación: 27-07-2021 a las 05:23:00
 -- Versión del servidor: 10.4.19-MariaDB
 -- Versión de PHP: 8.0.7
 
@@ -44,8 +44,8 @@ CREATE TABLE `clients` (
 --
 
 INSERT INTO `clients` (`ID`, `ACCOUNTS_PAYABLE`, `LOANS`, `TYPE`, `LATENESS`, `USER_CREATE`, `DATE_CREATE`, `USER_UPDATE`, `DATE_UPDATE`) VALUES
-(16, 0, 0, 'C', 0, 'admin', '0000-00-00', NULL, NULL),
-(20, 0, 0, 'C', 0, 'admin', '0000-00-00', NULL, NULL);
+(16, 0, 0, 'A', 0, 'admin', '0000-00-00', NULL, '2021-07-26'),
+(20, 0, 0, 'B', 0, 'admin', '0000-00-00', NULL, '2021-07-26');
 
 -- --------------------------------------------------------
 
@@ -123,9 +123,9 @@ CREATE TABLE `fees_documents` (
 --
 
 INSERT INTO `fees_documents` (`ID`, `ID_LOAN`, `N_PARTIAL`, `GROSS_AMOUNT`, `FINANCIAL_ENTITY`, `CURRENCY`, `INTERES`, `DEDUCTION`, `TOTAL_AMOUNT`, `BALANCE`, `TRANSACTION`, `STATUS`, `PAYMENT_DATE`, `USER_CREATE`, `DATE_CREATE`, `USER_UPDATE`, `DATE_UPDATE`) VALUES
-(3, 3, 1, 33.33, NULL, 'USD', 10, 33.33, 10, 43.33, NULL, 'pending', '2021-08-23', '19', '2021-07-24', '1', '2021-07-26'),
+(3, 3, 1, 33.33, NULL, 'USD', 10, 33.33, 10, 43.33, NULL, 'paid', '2021-08-23', '19', '2021-07-24', '19', '2021-07-26'),
 (4, 3, 2, 33.33, NULL, 'USD', 6.67, 5, 35, 40, NULL, 'pending', '2021-09-22', '19', '2021-07-24', '1', '2021-07-26'),
-(5, 3, 3, 33.33, NULL, 'USD', 3.33, 0, 36.66, 36.66, NULL, 'pending', '2021-10-22', '19', '2021-07-24', '1', '2021-07-26'),
+(5, 3, 3, 33.33, NULL, 'USD', 3.33, 1, 35.66, 36.66, NULL, 'pending', '2021-10-22', '19', '2021-07-24', '1', '2021-07-26'),
 (6, 4, 1, 41.67, NULL, 'EUR', 75, 0, 116.67, 116.67, NULL, 'pending', '2021-08-30', '19', '2021-07-24', '1', '2021-07-26'),
 (7, 4, 2, 41.67, NULL, 'EUR', 68.75, 0, 110.42, 110.42, NULL, 'pending', '2021-09-29', '19', '2021-07-24', '1', '2021-07-26'),
 (8, 4, 3, 41.67, NULL, 'EUR', 62.5, 0, 104.17, 104.17, NULL, 'pending', '2021-10-29', '19', '2021-07-24', '1', '2021-07-26'),
@@ -251,7 +251,8 @@ CREATE TABLE `payments_details` (
 --
 
 INSERT INTO `payments_details` (`ID`, `ID_FEE_DOCUMENT`, `ID_CLIENT`, `AMOUNT`, `CURRENCY`, `FINANCIAL_ENTITY`, `CURRENCY_DOCUMENT`, `EXCHANGE_RATE`, `TRANSACTION`, `STATUS`, `USER_CREATE`, `DATE_CREATE`, `USER_UPDATE`, `DATE_UPDATE`) VALUES
-(7, 3, 16, 10, 'USD', 'BANPRO', 'USD', 1, NULL, 'rejected', '16', '2021-07-24', NULL, NULL);
+(7, 3, 16, 10, 'USD', 'BANPRO', 'USD', 1, NULL, 'rejected', '16', '2021-07-24', NULL, NULL),
+(8, 3, 16, 10, 'USD', 'BANPRO', 'USD', 1, '285679994696124aba69d9d4dd52f01c.png', 'accepted', '16', '2021-07-26', '19', '2021-07-26');
 
 -- --------------------------------------------------------
 
@@ -286,7 +287,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`ID`, `USERNAME`, `PASSWORD`, `ROLE`, `PHOTO`, `ADDRESS`, `PHONE`, `FIRST_NAME`, `SECOND_NAME`, `FIRST_LASTNAME`, `SECOND_LASTNAME`, `IDENTIFICATION`, `IDENTIFICATION_PHOTO`, `USER_CREATE`, `DATE_CREATE`, `USER_UPDATE`, `DATE_UPDATE`, `VERIFIED`) VALUES
 (1, 'admin', '$2y$05$XHXkA4HxCEs6/WbxIBYJR.eCBf5IY/H5Gl.3hx6Gd/H3nqDuiG2c6', 'admin', NULL, 'De', '5768-9250', 'Gabriel', 'Alejandro', 'Ortiz', 'Amador', NULL, NULL, 'admin', '2021-07-09', 'admin', '2021-07-26', 1),
-(16, 'Luis', '$2y$05$3wNMHO3HlqNFpaObMDq/De2E9ww/sbbZbP7T1ZxvxdXCQkMrvbDvS', 'client', NULL, 'De la Rotonda b...', '4356-5607', 'Luis', 'Miguel', 'Pineda', 'Joseph', '001-200504-1002L', NULL, 'admin', '0000-00-00', 'Luis', '2021-07-17', 0),
+(16, 'Luis', '$2y$05$3wNMHO3HlqNFpaObMDq/De2E9ww/sbbZbP7T1ZxvxdXCQkMrvbDvS', 'client', NULL, 'De la Rotonda b...', '4356-5607', 'Luis', 'Miguel', 'Pineda', 'Joseph', '001-000004-0000L', NULL, 'admin', '0000-00-00', 'Luis', '2021-07-17', 0),
 (19, 'Engel', '$2y$05$lsRwRdGDLGELMwXOT6NbW.ufl9xoLNLPuFj.S3p35zu0.AhR09Zb.', 'lender', NULL, '-', '4546-6543', 'Engel', 'Gabriel', 'Reyes', 'Moreno', '607-654545-3430A', NULL, 'admin', '0000-00-00', 'Engel', '2021-07-17', 0),
 (20, 'SA', '$2y$05$Oe7QqwX.PFKXiF4UB4Pzu.WA/DpU8JMYtHoHK9rXYcZV7cNgzcoFS', 'client', NULL, '-', '8945-6634', 'Cristian', '', 'Rodriguez', '', '001-304404-2043U', NULL, 'admin', '0000-00-00', 'SA', '2021-07-24', 0),
 (21, 'G_ORTIZ', '$2y$05$hncuvrW1b2uEN5EsxwoiVu8qJET.ayOIQ41cHB.CvRNyXGvmtR89q', 'client', NULL, '-', '5768-9250', 'Alejandro', 'Gabriel', 'Amador', 'Ortiz', '570-251102-1010Q', NULL, 'admin', '2021-07-26', NULL, NULL, 0),
@@ -387,7 +388,7 @@ ALTER TABLE `loan_documents`
 -- AUTO_INCREMENT de la tabla `payments_details`
 --
 ALTER TABLE `payments_details`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
