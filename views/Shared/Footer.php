@@ -8,7 +8,7 @@
                     Copyright &copy; HSC - Minimal Tools
                 </div>
                 <div class="col-sm-6 text-right">
-                    Dev: <a href="https://colorlib.com">Gabriel Ortiz</a>
+                    Dev: <a href="">Gabriel Ortiz</a>
                 </div>
             </div>
         </div>
@@ -18,6 +18,6 @@
 <!-- /#right-panel -->
 
 <!-- Scripts -->
-<script src="<?php echo constant('URL')?>/assets/js/main.js"></script>
+<script src="<?php URL?>/assets/js/main.js"></script>
 </body>
 </html>

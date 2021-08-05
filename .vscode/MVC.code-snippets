@@ -1,0 +1,90 @@
+{
+	"Php Initializer":{
+		"prefix": "php",
+		"body": "<?php",
+		"description": "Script php"
+	},
+	
+	"Class Initializer": {
+		"prefix": "rci",
+		"body": [
+	
+		"${1/([^,]+)([,\\s]*|)/attr_reader :$1\n/g}",
+		"${1/([^,]+)([,\\s]*|)/# @param $1 [...]${2:+\n}/g}",
+		"def initialize($1)",
+		"${1/([^,]+)((,\\s*)|)/\t@$1 = $1${2:+\n}/g}",
+		"end"
+		],
+	
+		"description": "Initialize Class"
+	},
+	"Model": {
+		"prefix": "Model",
+		"body": [
+			//header
+			"class ${1} extends Model implements IModel, JsonSerializable\n{",
+
+			//attributes
+			"${2/([^,]+)((,\\s*)|)/\tprivate $$1;${2:+\n}/g}",
+
+			//construct
+			"\n\tpublic function __construct()\n\t{\n\t\tparent::__construct();\n\t}",
+
+			//setters && getters
+			"${2/([^,]+)((,\\s*)|)/\tpublic function get$1(){ return $this->$1; }${2:+\n}/g}",
+			"\n${2/([^,]+)((,\\s*)|)/\tpublic function set$1($$1) { $this->$1 = $$1; }${2:+\n}/g}",
+			"\n\tpublic function __set(\\$name,\\$value)\n\t{\n\t\t\\$function = 'set' . \\$name;\n\t\treturn \\$this->\\$function(\\$value);\n\t}\n\tpublic function __get(\\$name)\n\t{\n\t\t\\$function = 'get'. \\$name; \n\t\treturn \\$this->\\$function();\n\t}",
+
+			//save
+			"\tpublic function Save()\n\t{\n\t\ttry\n\t\t{\n\t\t\t\\$query = \\$this->prepare('INSERT INTO CURRENCIES(${2/([^,]+)((,\\s*)|)/$1${2:+, }/g})",
+        	"\t\t\tVALUES(${2/([^,]+)((,\\s*)|)/:$1${2:+, }/g})');",
+			"\t\t\t\\$query->execute([\n${2/([^,]+)((,\\s*)|)/\t\t\t\t'$1' => $this->$1${2:+,\n}/g}\n\t\t\t\t]);",
+			"\t\t\treturn true;",
+			"\t\t}",
+			"\t\tcatch (PDOException \\$ex)",
+			"\t\t{",
+			"\t\t\terror_log('${1}::Save->PDOException: '. \\$ex);",
+			"\t\t\treturn false;",
+			"\t\t}",
+			"\t}",
+
+			//update
+			"\tpublic function Update()",
+			"\t{",
+			"\t\ttry",
+			"\t\t{",
+			"\t\t\t\\$query = \\$this->prepare('UPDATE CURRENCIES SET ${2/([^,]+)((,\\s*)|)/$1 = :$1${2:+, }/g} WHERE ID = :ID');",
+			"\t\t\t\\$query->execute([",
+			"${2/([^,]+)((,\\s*)|)/\t\t\t\t'$1' => $this->$1${2:+,\n}/g}",
+			"\t\t\t]);",
+			"",
+			"\t\t\treturn true;",
+			"\t\t}",
+			"\t\tcatch(PDOException \\$ex)",
+			"\t\t{",
+				"\t\t\terror_log('CURRENCY::UpdateItem->PDOException: ' . \\$ex);",
+				"\t\t\treturn false;",
+			"\t\t}",
+			"\t}",
+
+			//from
+			"\tpublic function From(\\$data) ",
+			"\t{",
+			"${2/([^,]+)((,\\s*)|)/\t\t$this->$1 = $data['$1'];${2:+\n}/g}",
+			"\t}",
+			
+			//jsonserialize and array
+			"\tpublic function jsonSerialize()",
+			"\t{",
+			"\t\treturn json_encode(get_object_vars(\\$this));",
+			"\t}",
+			"",
+			"\tpublic function array()",
+			"\t{",
+			"\t\treturn get_object_vars(\\$this);",
+			"\t}",
+			"}",
+		],
+		"description": "Log output to console"
+	}
+}
